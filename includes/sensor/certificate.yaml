@@ -1,0 +1,4 @@
+# certificate
+sensor:
+  - platform: cert_expiry
+    host: myhome50.duckdns.org:8123

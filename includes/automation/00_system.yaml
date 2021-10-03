@@ -1,0 +1,53 @@
+- id: Запуск инстанса
+  alias: start
+  initial_state: true
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:  
+    - service: telegram_bot.send_message
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        message: | 
+             {{"\U0001F4AC"}} Основной сервер Raspberry Pi 4 B 4GB
+             {{"\U0001F567"}} Запущен в {{ states('sensor.time_date') }} 
+             {{"\U0001F4C3"}} Отчет о состоянии будет через 1 минуту  
+    - delay: 00:01:10
+    - service: telegram_bot.send_message
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        message: | 
+             {{"\U0001F4AC"}} Основной сервер Raspberry Pi 4 B 4GB
+             {{"\U0001F567"}} Отчет за {{ states('sensor.time_date') }}
+             {{"\U0001F503"}} Режим управления - {{ states('switch.control_mode') }} 
+             {{"\U0001F4A1"}} недоступно - {{ states('sensor.unavailable_now_light') }} 
+             {{"\U0001F50C"}} недоступно - {{ states('sensor.unavailable_now_switch') }} 
+             {{"\U0001F321"}} Сенсоров недоступно - {{ states('sensor.unavailable_now_sensor') }} 
+             {{"\U0001F51F"}} Бинарных сенсоров недоступно - {{ states('sensor.unavailable_now_binary_sensor') }} 
+    # - delay: 00:00:10
+    # - service: localtuya.reload
+    #   data: {}
+
+
+- id: Очистка уведомлений о паролях
+  alias: persistent_notification_clear_pwned
+  initial_state: true
+  mode: parallel
+  trigger:
+    - platform: event
+      event_type: call_service
+      event_data:
+        domain: persistent_notification
+        service: create
+  condition:
+    - condition: template
+      value_template: >
+        {{ 'supervisor_issue_pwned' in trigger.event.data.service_data.notification_id }}
+  action:
+    - service: persistent_notification.dismiss
+      data:
+        notification_id: >
+          {{ trigger.event.data.service_data.notification_id }}
+          

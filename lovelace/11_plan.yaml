@@ -1,0 +1,728 @@
+title: План квартиры
+panel: true
+icon: mdi:floor-plan
+cards:
+
+    - type: vertical-stack
+      cards:
+
+#            - type: custom:plan-coordinates
+            - type: picture-elements
+              style: |
+                   ha-card {
+                     color: #000000;
+                     font-weight: bold;
+                     font-size: 14px;
+                   }
+              image: /local/plan.png
+              elements:
+
+                - type: image
+                  entity: camera.camera_vxod_profile000_mainstream
+                  camera_image: camera.camera_vxod_profile000_mainstream
+                  style:
+                    top: 4%
+                    left: 25%
+                    width: 15%
+                    border: 1px solid white
+                    border-radius: 10%
+
+                - type: image
+                  entity: camera.camera_zal_profile000_mainstream
+                  camera_image: camera.camera_zal_profile000_mainstream
+                  style:
+                    top: 4%
+                    left: 40%
+                    width: 15%
+                    border: 1px solid white
+                    border-radius: 10%
+
+                - type: image
+                  entity: camera.camera_spal_profile000_mainstream
+                  camera_image: camera.camera_spal_profile000_mainstream
+                  style:
+                    top: 4%
+                    left: 55%
+                    width: 15%
+                    border: 1px solid white
+                    border-radius: 10%
+
+                - type: image
+                  entity: camera.camera_kux_profile000_mainstream
+                  camera_image: camera.camera_kux_profile000_mainstream
+                  style:
+                    top: 4%
+                    left: 70%
+                    width: 15%
+                    border: 1px solid white
+                    border-radius: 10%
+
+# Режимы работ - автоматизации 
+                - type: state-icon
+                  title: Режим управления
+                  icon: mdi:server
+                  tap_action:
+                      action: toggle
+                  entity: switch.control_mode
+                  style:
+                     top: 6%
+                     left: 5% 
+                     
+                - type: state-icon
+                  title: Окна закрыты
+                #   icon: mdi:server
+                  tap_action:
+                      action: toggle
+                  entity: binary_sensor.okna_closed
+                  style:
+                     top: 6%
+                     left: 6% 
+                     
+                - type: state-icon
+                  title: Активность в доме
+                #   icon: mdi:server
+                  tap_action:
+                      action: toggle
+                  entity: binary_sensor.occupancy
+                  style:
+                     top: 6%
+                     left: 7% 
+
+
+# Мониторинг
+                - type: state-label
+                  entity: sensor.unavailable_now_light
+                  prefix: "Светильники - "
+                  suffix: " отвалилось"
+                  style:
+                     top: 1%
+                     left: 7% 
+
+                - type: state-label
+                  entity: sensor.unavailable_now_switch
+                  prefix: "Выключатели - "
+                  suffix: " отвалилось"
+                  style:
+                     top: 2%
+                     left: 7% 
+
+                - type: state-label
+                  entity: sensor.unavailable_now_sensor
+                  prefix: "Сенсоры - "
+                  suffix: " отвалилось"
+                  style:
+                     top: 3%
+                     left: 7% 
+
+                - type: state-label
+                  entity: sensor.unavailable_now_binary_sensor
+                  prefix: "Бинарники - "
+                  suffix: " отвалилось"
+                  style:
+                     top: 4%
+                     left: 7% 
+
+
+# Входная дверь
+                - type: state-icon
+                  entity: binary_sensor.datchik_dveri_v_prix_contact
+                  style:
+                     top: 90%
+                     left: 12% 
+
+# Свет в прихожей
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_prix
+                  style:
+                     top: 90%
+                     left: 15% 
+
+# Энергомонитор
+                - type: state-icon
+                  icon: mdi:car-cruise-control
+                  tap_action:
+                      action: toggle
+                  entity: switch.energy_monitor
+                  style:
+                     top: 91%
+                     left: 17%
+
+# Температура в прихожей
+                - type: state-label
+                  entity: sensor.ble_temperature_xiaomi_mijia_2
+                  style:
+                     top: 83%
+                     left: 16% 
+                     
+# Влажность в прихожей
+                - type: state-label
+                  entity: sensor.ble_humidity_xiaomi_mijia_2
+                  style:
+                     top: 84%
+                     left: 16% 
+
+# Розетка в прихожей
+                - type: state-icon
+                  icon: mdi:power-socket-au
+                  entity: switch.rozetka_v_prihojey
+                  style:
+                     top: 78%
+                     left: 27% 
+
+# Движение в прихожей
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_prix_occupancy
+                  style:
+                     top: 62%
+                     left: 16% 
+
+# LED лента в коридоре
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.led_lenta_kor
+                  style:
+                     top:  58%
+                     left: 15% 
+
+
+# Свет выключатель в коридоре
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_korid_left
+                  style:
+                     top:  65%
+                     left: 27% 
+
+# Потолочный светильник 1 в коридоре
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp1_v_kor
+                  style:
+                     top:  61%
+                     left: 20% 
+
+# Потолочный светильник 2 в коридоре
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp2_v_kor
+                  style:
+                     top:  61%
+                     left: 35% 
+
+# Потолочный светильник 3 в коридоре
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp3_v_kor
+                  style:
+                     top:  61%
+                     left: 46% 
+
+# Движение в коридоре
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_korid_occupancy
+                  style:
+                     top: 59%
+                     left: 24% 
+
+
+# Свет в ванной 
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_korid_right
+                  style:
+                     top:  66%
+                     left: 27% 
+
+# Потолочный светильник 1 в ванной
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp1_v_van
+                  style:
+                     top:  69%
+                     left: 34% 
+
+# Потолочный светильник 2 в ванной
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp2_v_van
+                  style:
+                     top:  69%
+                     left: 48% 
+
+# Потолочный светильник 3 в ванной
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp3_v_van
+                  style:
+                     top:  77%
+                     left: 48% 
+
+# Потолочный светильник 4 в ванной
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lamp4_v_van
+                  style:
+                     top:  77%
+                     left: 34% 
+
+# Входная дверь в ванную
+                - type: state-icon
+                  entity: binary_sensor.datchik_dveri_v_vanna_contact
+                  style:
+                     top: 68%
+                     left: 28% 
+
+# Движение в ванной 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_vanna_occupancy
+                  style:
+                     top: 79%
+                     left: 46% 
+
+# Датчик протечки в ванной 
+                - type: state-icon
+                  entity: binary_sensor.datchik_protechki_vanna_water_leak
+                  style:
+                     top: 80%
+                     left: 37% 
+
+# Температура в ванной
+                - type: state-label
+                  entity: sensor.datchik_temper_vanna_temperature
+                  style:
+                     top: 74%
+                     left: 43% 
+
+# Влажность в ванной
+                - type: state-label
+                  entity: sensor.datchik_temper_vanna_humidity
+                  style:
+                     top: 75%
+                     left: 43% 
+
+# Вентиляция в ванной
+                - type: state-icon
+                  icon: mdi:electric-switch-closed
+                  tap_action:
+                      action: toggle
+                  entity: switch.sonoff_1000eccecd
+                  style:
+                     top:  80%
+                     left: 36% 
+
+
+# Выключатель на кухне
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_kux
+                  style:
+                     top: 64%
+                     left: 56% 
+
+# Люстра в кухнне лампа 1
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp1_v_kux
+                  style:
+                     top:  65%
+                     left: 63% 
+
+# Люстра в кухнне лампа 2
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp2_v_kux
+                  style:
+                     top:  66%
+                     left: 63% 
+
+# Люстра в кухнне лампа 3
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp3_v_kux
+                  style:
+                     top:  67%
+                     left: 63% 
+# Датчик дыма на кухне
+                - type: state-icon
+                  entity: binary_sensor.datchik_dyma_kux_smoke
+                  style:
+                     top: 76%
+                     left: 56% 
+
+# Датчик протечки под раковиной на кухне
+                - type: state-icon
+                  entity: binary_sensor.datchik_protechki_kux_water_leak
+                  style:
+                     top: 80%
+                     left: 56% 
+
+# Датчик протечки под батареей на кухне
+                - type: state-icon
+                  entity: binary_sensor.datchik_protechki_kux_b_water_leak
+                  style:
+                     top: 60%
+                     left: 82% 
+
+# Движение на кухне 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_kux_occupancy
+                  style:
+                     top: 76%
+                     left: 81% 
+
+# Розетка для вытяжки
+                - type: state-icon
+                  icon: mdi:power-socket-au
+                  entity: switch.rozetka_v_kux
+                  style:
+                     top: 78%
+                     left: 72% 
+
+# окно на кухне
+                - type: state-icon
+                  entity: binary_sensor.datchik_okna_v_kux_contact
+                  style:
+                     top: 66%
+                     left: 84% 
+
+# Свет в кладовке
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_klad
+                  style:
+                     top: 30%
+                     left: 16% 
+
+# Движение в кладовке 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_klad_occupancy
+                  style:
+                     top: 13%
+                     left: 22% 
+
+
+# Настольная лампа в спальне
+                - type: state-icon
+                  icon: mdi:floor-lamp
+                  tap_action:
+                      action: toggle
+                  entity: light.nastol_lamp_v_spal
+                  style:
+                     top:  24%
+                     left: 31% 
+
+# Движение в спальне 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_spal_occupancy
+                  style:
+                     top: 29%
+                     left: 30% 
+
+# Свет в спальне выключатель люстры
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_spal_left
+                  style:
+                     top:  30%
+                     left: 69% 
+
+# Свет в спальне выключатель потолочных светильников
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_spal_right
+                  style:
+                     top:  30%
+                     left: 68% 
+
+# Потолочный светильник в спальне слева
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_lev_lamp_v_spal
+                  style:
+                     top:  14%
+                     left: 39% 
+
+# Потолочный светильник в спальне справо
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.pot_prav_lamp_v_spal
+                  style:
+                     top:  27%
+                     left: 67% 
+
+# окно в спальне
+                - type: state-icon
+                  entity: binary_sensor.datchik_okna_v_spal_contact
+                  style:
+                     top: 19%
+                     left: 84% 
+
+# Датчик протечки под батареей в спальне
+                - type: state-icon
+                  entity: binary_sensor.datchik_protechki_spal_water_leak
+                  style:
+                     top: 21%
+                     left: 84% 
+
+# Температура в спальне
+                - type: state-label
+                  entity: sensor.datchik_temper_spal_temperature
+                  style:
+                     top: 28%
+                     left: 42% 
+                     
+# Влажность в спальне
+                - type: state-label
+                  entity: sensor.datchik_temper_spal_humidity
+                  style:
+                     top: 29%
+                     left: 42% 
+
+# Атмосферное давление в спальне
+                - type: state-label
+                  entity: sensor.datchik_temper_spal_pressure_mmhg
+                  style:
+                     top: 30%
+                     left: 42% 
+
+
+# Свет в зале слево
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_zal_lev
+                  style:
+                     top: 55%
+                     left: 30% 
+
+# Свет в зале справо
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_zal_prav_left
+                  style:
+                     top: 55%
+                     left: 53% 
+
+# Свет в зале люстра
+                - type: state-icon
+                  icon: mdi:nintendo-switch
+                  tap_action:
+                      action: toggle
+                  entity: switch.vykluch_v_zal_prav_right
+                  style:
+                     top: 55%
+                     left: 52% 
+
+# Температура в зале
+                - type: state-label
+                  entity: sensor.datchik_temper_zal_temperature
+                  style:
+                     top: 51%
+                     left: 52% 
+                     
+# Влажность в зале
+                - type: state-label
+                  entity: sensor.datchik_temper_zal_humidity
+                  style:
+                     top: 52%
+                     left: 52% 
+
+# Атмосферное давление в зале
+                - type: state-label
+                  entity: sensor.datchik_temper_zal_pressure_mmhg
+                  style:
+                     top: 53%
+                     left: 52% 
+
+# окно в зале
+                - type: state-icon
+                  entity: binary_sensor.datchik_okna_v_zal_contact
+                  style:
+                     top: 42%
+                     left: 84% 
+
+# Датчик протечки под батареей в зале
+                - type: state-icon
+                  entity: binary_sensor.datchik_protechki_zal_water_leak
+                  style:
+                     top: 44%
+                     left: 84% 
+# Розетка в зале
+                - type: state-icon
+                  icon: mdi:power-socket-au
+                  entity: switch.rozetka_v_zale
+                  style:
+                     top: 33%
+                     left: 67% 
+
+# Розетка в зале для кондиционера
+                - type: state-icon
+                  entity: switch.xiaomi_gateway
+                  style:
+                     top: 55%
+                     left: 81% 
+
+# Настольная лампа в зале
+                - type: state-icon
+                  icon: mdi:floor-lamp
+                  tap_action:
+                      action: toggle
+                  entity: light.mi_smart_led_bulb_essential
+                  style:
+                     top:  34%
+                     left: 70% 
+
+# Свет люстра в зале лампочка 1
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp1_v_zal
+                  style:
+                     top:  42%
+                     left: 48% 
+
+# Свет люстра в зале лампочка 2
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp2_v_zal
+                  style:
+                     top:  42%
+                     left: 49% 
+
+# Свет люстра в зале лампочка 3
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp3_v_zal
+                  style:
+                     top:  42%
+                     left: 50% 
+
+# Свет люстра в зале лампочка 4
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp4_v_zal
+                  style:
+                     top:  42%
+                     left: 51% 
+
+# Свет люстра в зале лампочка 5
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp5_v_zal
+                  style:
+                     top:  42%
+                     left: 52% 
+
+# Свет люстра в зале лампочка 6
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.lustra_lamp6_v_zal
+                  style:
+                     top:  42%
+                     left: 53% 
+
+# Ночник на шлюзе
+#                - type: state-icon
+#                  tap_action:
+#                      action: toggle
+#                  entity: light.lumi_light
+#                  style:
+#                     top:  36%
+#                     left: 15% 
+
+# LED лента в зале
+                - type: state-icon
+                  tap_action:
+                      action: toggle
+                  entity: light.wled
+                  style:
+                     top:  32%
+                     left: 40% 
+
+# Движение в зале слева 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+                  style:
+                     top: 36%
+                     left: 28% 
+
+# Движение в зале справо 
+                - type: state-icon
+                  entity: binary_sensor.datchik_dvijeniya_v_zal_prav_occupancy
+                  style:
+                     top: 36%
+                     left: 79% 
+
+# Потребление - электроинергия
+                - type: state-label
+                  entity: sensor.energy_monitor_power
+                  prefix: "Потребление энергии в квартире-"
+                  style:
+                     top: 5%
+                     left: 7% 
+
+
+# Погода             
+                - type: state-label
+                  entity: weather.home_assistant
+                  style:
+                     top: 53%
+                     left: 94%  
+
+# Температура на улице
+                - type: state-label
+                  entity: sensor.datchik_temper_ulica_temperature
+                  style:
+                     top: 54%
+                     left: 94% 
+                     
+# Влажность на улице
+                - type: state-label
+                  entity: sensor.datchik_temper_ulica_humidity
+                  style:
+                     top: 55%
+                     left: 94% 
+
+# Атмосферное давление на улице
+                - type: state-label
+                  entity: sensor.datchik_temper_ulica_pressure_mmhg
+                  style:
+                     top: 56%
+                     left: 94% 
+

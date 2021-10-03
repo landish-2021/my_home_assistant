@@ -1,0 +1,144 @@
+- alias: 01_enter_photo
+  description: "Фото при входе"
+  initial_state: true
+  mode: single
+  trigger:
+## Открытие входной двери
+   - platform: state
+     entity_id: binary_sensor.datchik_dveri_v_prix_contact
+     from: 'off'
+     to: 'on'
+  condition:
+   - condition: state
+     entity_id: switch.control_mode
+     state: 'on'      
+   - condition: state
+     entity_id: timer.camphoto
+     state: 'idle'      
+#   - condition: state
+#     entity_id: switch.vykluch_v_prix
+#     state: 'on'    
+#   - condition: state
+#     entity_id: binary_sensor.datchik_dvijeniya_v_prix_occupancy
+#     state: 'on'    
+  action: 
+   - service: telegram_bot.send_message
+     data_template:
+       target:
+           - !secret chat_id_andrey
+       message: | 
+            {{"\U0001F6AA"}} Входная дверь открыта в {{ states.sensor.time_date.state }}
+   - delay: 00:00:08
+   - service: script.turn_on
+     entity_id: 
+        - script.photo_reolink_vxod
+   - service: timer.start
+     entity_id: timer.camphoto
+   - delay:
+       minutes: 3
+
+#- alias: 01_enter_photo_timer
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.datchik_dveri_v_prix_contact
+#      from: 'on'
+#      to: 'off'
+#  action:
+#    - service: timer.cancel
+#      entity_id: timer.camphoto
+       
+- alias: 02_enter_photo
+  description: "Фото при открытия окна в спальне"
+  initial_state: true
+  mode: single
+  trigger:
+## Открытие окна в спальне
+   - platform: state
+     entity_id: binary_sensor.datchik_okna_v_spal_contact
+     from: 'off'
+     to: 'on'
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_okna_v_spal_contact
+     state: 'on'
+   - condition: state
+     entity_id: timer.camphoto
+     state: 'idle'      
+  action: 
+   - service: telegram_bot.send_message
+     data_template:
+       target:
+           - !secret chat_id_andrey
+       message: | 
+            {{"\U0001F6AA"}} Окно в спальне открыто в {{ states.sensor.time_date.state }}
+   - service: script.turn_on
+     entity_id: 
+        - script.photo_reolink_spal
+   - service: timer.start
+     entity_id: timer.camphoto
+   - delay:
+       minutes: 3
+       
+- alias: 03_enter_photo
+  description: "Фото при открытия окна в кухне"
+  initial_state: true
+  mode: single
+  trigger:
+## Открытие окна в спальне
+   - platform: state
+     entity_id: binary_sensor.datchik_okna_v_kux_contact
+     from: 'off'
+     to: 'on'
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_okna_v_kux_contact
+     state: 'on'  
+   - condition: state
+     entity_id: timer.camphoto
+     state: 'idle'      
+  action: 
+   - service: telegram_bot.send_message
+     data_template:
+       target:
+           - !secret chat_id_andrey
+       message: | 
+            {{"\U0001F6AA"}} Окно в кухне открыто в {{ states.sensor.time_date.state }}
+   - service: script.turn_on
+     entity_id: 
+        - script.photo_reolink_kux
+   - service: timer.start
+     entity_id: timer.camphoto
+   - delay:
+       minutes: 3
+       
+- alias: 04_enter_photo
+  description: "Фото при открытия окна в зале"
+  initial_state: true
+  mode: single
+  trigger:
+## Открытие окна в спальне
+   - platform: state
+     entity_id: binary_sensor.datchik_okna_v_zal_contact
+     from: 'off'
+     to: 'on'
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_okna_v_zal_contact
+     state: 'on' 
+   - condition: state
+     entity_id: timer.camphoto
+     state: 'idle'      
+  action: 
+   - service: telegram_bot.send_message
+     data_template:
+       target:
+           - !secret chat_id_andrey
+       message: | 
+            {{"\U0001F6AA"}} Окно в зале открыто в {{ states.sensor.time_date.state }}
+   - service: script.turn_on
+     entity_id: 
+        - script.photo_reolink_zal
+   - service: timer.start
+     entity_id: timer.camphoto
+   - delay:
+       minutes: 3

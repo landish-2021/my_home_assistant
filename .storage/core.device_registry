@@ -1,0 +1,2268 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "OS"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant Operating System",
+                "name": "Home Assistant Operating System",
+                "sw_version": "6.4",
+                "entry_type": "service",
+                "id": "5df91b35023c264aa56f3034c8b0df9a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a41bc000dfba2514a1f4a6d5512e0249"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "6a6521d13130f1b4877bd04fff815bf8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_configurator"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "File editor",
+                "sw_version": "5.3.3",
+                "entry_type": "service",
+                "id": "e0b3c19bb7a60aa0798bc56b9d3cab37",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_mosquitto"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Mosquitto broker",
+                "sw_version": "6.0.1",
+                "entry_type": "service",
+                "id": "20c7beda20cd553a67e6cc643f416701",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "cebe7a76_hassio_google_drive_backup"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Google Drive Backup Repository",
+                "model": "Home Assistant Add-on",
+                "name": "Home Assistant Google Drive Backup",
+                "sw_version": "0.105.2",
+                "entry_type": "service",
+                "id": "8cbdc5bb6674368fe83d6225f3641f50",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "71dafae6433979a5ea2596ec694a86ef"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "7dde01cc3781ec67"
+                    ]
+                ],
+                "manufacturer": "HUAWEI",
+                "model": "BKL-L09",
+                "name": "BKL-L09",
+                "sw_version": "29",
+                "entry_type": null,
+                "id": "950895b8f1cf41b30c38e3dd43b5f2fa",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_samba"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Samba share",
+                "sw_version": "9.5.1",
+                "entry_type": "service",
+                "id": "2a82431d1d718552110283b6e75f9794",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_mariadb"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "MariaDB",
+                "sw_version": "2.4.0",
+                "entry_type": "service",
+                "id": "53b5fe9021634c29073f7398ffc86cc9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_ssh"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Community Add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "SSH & Web Terminal",
+                "sw_version": "9.0.1",
+                "entry_type": "service",
+                "id": "87bb37552567d904d8b98089b77df073",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00049fbbdf"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara socket Zigbee (QBCZ11LM)",
+                "name": "Rozetka_v_prihojey",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "2df92ecfaa9d0d12cf53342510dbf278",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_spotify"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Community Add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Spotify Connect",
+                "sw_version": "0.9.1",
+                "entry_type": "service",
+                "id": "66b5cd146e424cb18267b515e292bdf8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "d9c6bbede321f67dee1e4346ed14ccbb"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "spotify",
+                        "31s4wpz2vcxlcpxk66rdaytrs2xu"
+                    ]
+                ],
+                "manufacturer": "Spotify AB",
+                "model": "Spotify open",
+                "name": "Spotify \u0410\u043d\u0434\u0440\u0435\u0439 \u0421\u043a\u0443\u0440\u0430\u0442\u043e\u0432\u0441\u043a\u0438\u0439",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "98b32584fb7b65fd434bb080ef7821a4",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "1cf5f8018bb92ad258da78f719fa8621"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yeelight",
+                        "0x000000000eb5292a"
+                    ]
+                ],
+                "manufacturer": "Yeelight",
+                "model": "color5",
+                "name": "Yeelight Color5 0xeb5292a",
+                "sw_version": "19",
+                "entry_type": null,
+                "id": "793d31dcead5b15dcf5dfd9fde35803c",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": "Mi Smart LED Bulb Essential",
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "99fda4f24f988a2d3d3dee0483e2144f"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yandex_station",
+                        "FF98F02995ECE59B4A43E7E0"
+                    ]
+                ],
+                "manufacturer": "\u042f\u043d\u0434\u0435\u043a\u0441",
+                "model": "\u0421\u0442\u0430\u043d\u0446\u0438\u044f \u041c\u0438\u043d\u0438",
+                "name": "\u042f\u043d\u0434\u0435\u043a\u0441 \u041c\u0438\u043d\u0438",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "c835e9d52ecd22d3c4c34134eac0502c",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067ed2fd"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiJia wireless switch (WXKG01LM)",
+                "name": "Mi_knopka",
+                "sw_version": "Zigbee2MQTT 1.18.1",
+                "entry_type": null,
+                "id": "45c081598e440dfa204e4814022c87f2",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0005c13682"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiJia Honeywell smoke detector (JTYJ-GD-01LM/BW)",
+                "name": "Datchik_dyma_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "aab1e510669b0f9f951aee8883e97708",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006793e8e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+                "name": "Datchik_temper_vanna",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "d42da102a6b501e5b5ebce666df8f998",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006502b32"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara water leak sensor (SJCGQ11LM)",
+                "name": "Datchik_protechki_vanna",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "1697798002da9e6f3a95ecf6f76f6da9",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006501a94"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara water leak sensor (SJCGQ11LM)",
+                "name": "Datchik_protechki_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5cdde407b8fb627204fc8be33cd97c47",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00024a484e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Mi/Aqara smart home cube (MFKZQ01LM)",
+                "name": "Kub_Aqara",
+                "sw_version": "Zigbee2MQTT 1.18.1",
+                "entry_type": null,
+                "id": "3c844deb0868c2b83443c2320d175497",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "03eab396029028f665000f1be3745cb8"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "homekit_controller",
+                        "serial-number",
+                        "811RAGK29935"
+                    ],
+                    [
+                        "homekit_controller",
+                        "accessory-id",
+                        "40:E1:6C:B6:5E:4B"
+                    ]
+                ],
+                "manufacturer": "LG Electronics",
+                "model": "43UK6450PLC",
+                "name": "LG webOS TV 8ACD",
+                "sw_version": "05.30.10",
+                "entry_type": null,
+                "id": "860af83921c4d6b7475ac0023e6d0ad4",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000478d4e9"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara socket Zigbee (QBCZ11LM)",
+                "name": "Rozetka_v_zale",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "ed43df2f1ae2c44c771e1ab1fcae7296",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000594fe2b"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 2 gang smart wall switch (no neutral wire) (QBKG22LM)",
+                "name": "Vykluch_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "cb1f070c0ec698bb1068b497335bdc28",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00058017d7"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 1 gang smart wall switch (with neutral wire) (QBKG23LM)",
+                "name": "Vykluch_v_klad",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "493a15a86c6ad443109fbbdfc08ddd08",
+                "via_device_id": null,
+                "area_id": "kladovka",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00056a2c16"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 1 gang smart wall switch (with neutral wire) (QBKG23LM)",
+                "name": "Vykluch_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "6edcf9ec3f4cf9f1d8fb70c6e19abf0a",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00058ddc95"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 single gang smart wall switch (no neutral wire) (QBKG21LM)",
+                "name": "Vykluch_v_prix",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "0fc8bfebc245590113b759bff11c4b4f",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00059594a1"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 2 gang smart wall switch (no neutral wire) (QBKG22LM)",
+                "name": "Vykluch_v_korid",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "614b7ddf214c42d0ea77fe44d887fac6",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0005943a73"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 single gang smart wall switch (no neutral wire) (QBKG21LM)",
+                "name": "Vykluch_v_zal_lev",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "3d348dc0a7ca743c98f87cde801edff5",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00056a078f"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara D1 2 gang smart wall switch (no neutral wire) (QBKG22LM)",
+                "name": "Vykluch_v_zal_prav",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "1682d3da6cf444e935d540bc02ad1f1d",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00065851a7"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_vanna",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "24b66b6adc4aedf1e8e8cc220968bba8",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006360779"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_prix",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "495b1c24740b2913fbf8ca6c5d10f3be",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00068b9160"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "f66f4ad4891487aeb8a89d806990e202",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067ca7ba"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_zal_lev",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "007368931c25dbac8ee16a1f2b685af0",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000689d4fe"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_zal_prav",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "4212880042c7e62402ad6f5d5d9cc46e",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006a27b3c"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "59d8f5951c89c52b7759a34db270daee",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000633cd8c"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_korid",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "4ba7dc834bc3fe36270b28f782072524",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006335f81"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara human body movement and illuminance sensor (RTCGQ11LM)",
+                "name": "Datchik_dvijeniya_v_klad",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "e26c8e01fae77e72b1fff7a3c15091f0",
+                "via_device_id": null,
+                "area_id": "kladovka",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000659cd49"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+                "name": "Datchik_dveri_v_prix",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "75eb554d78cd39ca9b83aa724f5e2ba2",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0005225e66"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+                "name": "Datchik_okna_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "f89efd513ab79d8f108cb59b0341fc46",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00052241ef"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+                "name": "Datchik_okna_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "b4922e2c80329e199d73f49b568f772f",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00052264c7"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+                "name": "Datchik_okna_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "d89cde02b6a69fd020830607c783a603",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "b2f783daa244acbf9ff7e38e8a01b040"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:39:43:65:66:84"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "onvif",
+                        "68:39:43:65:66:84"
+                    ]
+                ],
+                "manufacturer": "Manufacturer",
+                "model": "IPC_513SD5",
+                "name": "Camera-spal",
+                "sw_version": "v3.0.0.183_21012804",
+                "entry_type": null,
+                "id": "fa82795757db2fdb9ac1eefb191a567b",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00066f95b6"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara wireless switch (WXKG11LM)",
+                "name": "Knopka_Aqara",
+                "sw_version": "Zigbee2MQTT 1.18.1",
+                "entry_type": null,
+                "id": "2f6365048d090a12f8b0453f69d6e754",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "45df7312_zigbee2mqtt"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Add-on: Zigbee2mqtt",
+                "model": "Home Assistant Add-on",
+                "name": "Zigbee2mqtt",
+                "sw_version": "1.21.2-1",
+                "entry_type": "service",
+                "id": "bac6d8b209530444cd96e604543fb52b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7a0b116fbeb60fbfe756c0521843d360"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:71:db:dd:5b:d4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "onvif",
+                        "EC:71:DB:DD:5B:D4"
+                    ]
+                ],
+                "manufacturer": "Manufacturer",
+                "model": "IPC",
+                "name": "Camera-vxod",
+                "sw_version": "V1.0.0.1",
+                "entry_type": null,
+                "id": "d17b762f8edaa578f495c48fec933d1e",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "34a4a1c2851bd1b5b4a28358fe19f30d"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "64:90:c1:e3:3e:5f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_miio",
+                        "64:90:c1:e3:3e:5f"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.acpartner.v3",
+                "name": "Xiaomi Gateway",
+                "sw_version": "1.4.1_162",
+                "entry_type": null,
+                "id": "459d0e659e38354aef3eaeb70570df16",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067cb287"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+                "name": "Datchik_temper_ulica",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "6891cdd1b43255e571d4fa70eb69154a",
+                "via_device_id": null,
+                "area_id": "ulitsa",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006c04636"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+                "name": "Datchik_dveri_v_vanna",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "892291a617ebb3425c3ad851ad9273ca",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "b4d253625a3a56928018cadca09d0d59"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "491213f2a1d8eecffb587a836cdaaf76"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "\u0417\u0430\u043b",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "890cf33e2192409c62eca67b090b641d",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00041da4fb"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+                "name": "Datchik_temper_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "2d404fcab59eefc5581980684d37fc2f",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_duckdns"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Duck DNS",
+                "sw_version": "1.14.0",
+                "entry_type": "service",
+                "id": "f4fa8eaff1877d76524a7024345a265a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_letsencrypt"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Let's Encrypt",
+                "sw_version": "4.11.0",
+                "entry_type": "service",
+                "id": "d103cf87d1d97f8d75a3b5e1176cb4fa",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_nginx_proxy"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "NGINX Home Assistant SSL proxy",
+                "sw_version": "3.0.2",
+                "entry_type": "service",
+                "id": "48c22e1c65c15788f4f7cbbd40ff6fbc",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_dnsmasq"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Dnsmasq",
+                "sw_version": "1.4.4",
+                "entry_type": "service",
+                "id": "226f12834efdf16ea77390e679d2eb99",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00068b37aa"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+                "name": "Datchik_temper_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "d20e2e8f7d25f7566ce8a0e8fa43eb58",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067220c8"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp1_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "dd2527e1658ad64e47fa1a3f4363c705",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006722a74"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp2_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "afbd48ccf838c31b10ccee04e20b2f5f",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067cefb0"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp3_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "6b9a32cf716bb3a49436fcb49155fd16",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006722cea"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp4_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "1abf971f345a1cd34ae408858fb1015f",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00067ceec3"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp5_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "89e4c3b36a46588f9c945a53be966e01",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d000689a10f"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara smart LED bulb (ZNLDP12LM)",
+                "name": "lustra_lamp6_v_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5f053208826d3eb1062fec8e108ab1dc",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_chrony"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Community Add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "chrony",
+                "sw_version": "2.2.0",
+                "entry_type": "service",
+                "id": "6814eea9bbbbaef0be21d575eda159a6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "0df58b2a388e6f35c0fa1d4ae7acf6e1"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_miot_raw",
+                        "212a01-cloud-549478"
+                    ]
+                ],
+                "manufacturer": "Chuangmi",
+                "model": "chuangmi.plug.212a01",
+                "name": "Mi Smart Power Plug 2 (Wi-Fi and Bluetooth Gateway)",
+                "sw_version": "2.1.8_0028",
+                "entry_type": null,
+                "id": "368b94e1cf962dd6653d398e0bdb84a8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "6b915dfb047e9c7ac8ce41f866b7ec62"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:41:1d:fc:e5:a3"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "onvif",
+                        "b0:41:1d:fc:e5:a3"
+                    ]
+                ],
+                "manufacturer": "Manufacturer",
+                "model": "IPC_513SD5",
+                "name": "Camera-kux",
+                "sw_version": "v3.0.0.183_21012804",
+                "entry_type": null,
+                "id": "efd6904a445ea38ddd04a913964f9c57",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "5a6ab524ac10f4975539ea0dc70171f2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:39:43:f8:1b:f1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "onvif",
+                        "68:39:43:f8:1b:f1"
+                    ]
+                ],
+                "manufacturer": "Manufacturer",
+                "model": "IPC_513SD5",
+                "name": "Camera-zal",
+                "sw_version": "v3.0.0.183_21012804",
+                "entry_type": null,
+                "id": "e96f31bab6ec3007f1136bb2220e8dda",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0023ab5c3b"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "Contact sensor (SNZB-04)",
+                "name": "stul_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "73ef17b17757d661b62bf454b716bd15",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x804b50fffe0471f7"
+                    ]
+                ],
+                "manufacturer": "Neo",
+                "model": "Temperature & humidity sensor and alarm (NAS-AB02B0)",
+                "name": "sirena",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "2f5ae7ff046fe687a7d89eb26aa958de",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b00234d472d"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lev_lamp_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5666ffb5b0b8fbe9984c632e7d7d3341",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b00234d6fd3"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_prav_lamp_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "533c40f5302ab6716a6b0a09e63f84d1",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0xbc33acfffefbfad5"
+                    ]
+                ],
+                "manufacturer": "TuYa",
+                "model": "Zigbee smart energy meter DDS238-2 Zigbee (TS0601_din)",
+                "name": "energy_monitor",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5785cf8445e8f1af12f817c786c2608f",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0xb4e3f9fffe2062d4"
+                    ]
+                ],
+                "manufacturer": "TuYa",
+                "model": "Smart plug (with power monitoring) (TS011F_plug)",
+                "name": "rozetka_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "0f0ced5ce6e83a5fa7fdfa466fcd6794",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0023200725"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp3_v_kor",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "3b86ba9e003936e52689655e4806c712",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0023519c79"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp2_v_kor",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "2a2cbdff5990d43733c8e759fb2e93bd",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0023504f30"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp1_v_kor",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5e75626738bbe5807cb061c2096364be",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "125af8dbba46f4261267f0a5491902a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "wled",
+                        "308398a52beb"
+                    ]
+                ],
+                "manufacturer": "WLED",
+                "model": "FOSS",
+                "name": "WLED",
+                "sw_version": "0.12.0",
+                "entry_type": null,
+                "id": "187aaba95ae9e27082c337dcd91acd4f",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "011f636405f21700f872cb2f103dce65"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d0:66:7b:09:45:5d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "samsungtv",
+                        "079c6bcc-e9d2-ef01-e776-afe7a785fde4"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics",
+                "model": "UE32D6500",
+                "name": "UE32D6500",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "fbda66eac0a570987595eb536fe0887f",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b00221dae86"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "lustra_lamp1_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "30cf0549d2079efaf8b5e81e2554fcbe",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0022d46b17"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "lustra_lamp2_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "8356e2d10b4a6a951a649718f25e401e",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b00226b865d"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "lustra_lamp3_v_kux",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "4e676a186e7b804eeff6180cb09bf2cc",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x84fd27fffe5c06f5"
+                    ]
+                ],
+                "manufacturer": "TuYa",
+                "model": "Zigbee light (TS0501B)",
+                "name": "led_lenta_kor",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "9534a4e4bc16c4285096c79f83a2abed",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0022d45fea"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "Nastol_lamp_v_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "382ec04d281c563f0d3a90f3c8fa44bb",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0xcc86ecfffef3ea72"
+                    ]
+                ],
+                "manufacturer": "Moes",
+                "model": "Smart temperature and humidity meter with display (ZSS-ZK-THL)",
+                "name": "datchik_temper_moes",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "c0ac680463c38fd8d4f03187bdb84084",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b0024529984"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp1_v_van",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "4a5dd0b11d4a03239b409d919917de53",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b002450de90"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp2_v_van",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "5f99c806259945c73adabbcddf63efc0",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b002453618e"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp3_v_van",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "889478a0fa68f2451c9b31f206fe4a4a",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00124b002450df54"
+                    ]
+                ],
+                "manufacturer": "Lonsonho",
+                "model": "Zigbee 3.0 LED-bulb, RGBW LED (ZB-RGBCW)",
+                "name": "pot_lamp4_v_van",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "e5c8b2b9e8528a8fd2791f0bddd9e3be",
+                "via_device_id": null,
+                "area_id": "vannaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7c8b2591151c9c440fe624ac633211f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "openweathermap",
+                        "53.60291810104679-87.33675688505174"
+                    ]
+                ],
+                "manufacturer": "OpenWeather",
+                "model": null,
+                "name": "OpenWeatherMap",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "e996852187f2b5555a09ac36062efbc2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "34be86a67f70d7671e07522eb8a5ee01"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_miot_raw",
+                        "v2-cloud-542790"
+                    ]
+                ],
+                "manufacturer": "Mijia",
+                "model": "mijia.vacuum.v2",
+                "name": "\u0420\u043e\u0431\u043e\u0442-\u043f\u044b\u043b\u0435\u0441\u043e\u0441 \u0441 \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 \u0432\u043b\u0430\u0436\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438 Mi (\u0431\u0430\u0437\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442",
+                "sw_version": "2.0.8",
+                "entry_type": null,
+                "id": "cb676b3651a7350e283cda6848e5b70c",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "6c34ba905af2812c2e15c60a362dbbfc"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_miot_raw",
+                        "v1-cloud-d4lc00"
+                    ]
+                ],
+                "manufacturer": "Hhcc",
+                "model": "hhcc.plantmonitor.v1",
+                "name": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0439",
+                "sw_version": "1.0.1_318",
+                "entry_type": null,
+                "id": "6f156f157c293e19e090c9c172437e28",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006c47a7d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara water leak sensor (SJCGQ11LM)",
+                "name": "datchik_protechki_spal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "8f98b2e06c0b4c24c28d27ea676b8b2e",
+                "via_device_id": null,
+                "area_id": "spalnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006c4d9fa"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara water leak sensor (SJCGQ11LM)",
+                "name": "datchik_protechki_zal",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "a5fa5c208c5419dab033663ba8686293",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d0006c47a4d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Aqara water leak sensor (SJCGQ11LM)",
+                "name": "datchik_protechki_kux_b",
+                "sw_version": "Zigbee2MQTT 1.21.2",
+                "entry_type": null,
+                "id": "d562fbf2125ab4c6840a5b42b16300ce",
+                "via_device_id": null,
+                "area_id": "kukhnia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "5fb22c8cdaaf379942985eddb64ece6d"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:1a9f26d8445111e79e0a001346622f4c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:1a9f26d8445111e79e0a001346622f4c"
+                    ]
+                ],
+                "manufacturer": "D-Link Corporation",
+                "model": "DIR-853",
+                "name": "D-Link Router",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "af8e256f42627d1341f6405b3458330c",
+                "via_device_id": null,
+                "area_id": "gostinaia",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_esphome"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Community Add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "ESPHome",
+                "sw_version": "2021.9.2",
+                "entry_type": "service",
+                "id": "bbf168a21c9282db945b6cca9f79b0dd",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a706c2450c3ce5e03873f16a0fda2cc8"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_miot_raw",
+                        "t2-cloud-e0eg00"
+                    ]
+                ],
+                "manufacturer": "Miaomiaoce",
+                "model": "miaomiaoce.sensor_ht.t2",
+                "name": "Mi Temperature and Humidity Monitor 2",
+                "sw_version": "1.0.0_0130",
+                "entry_type": null,
+                "id": "8da7e8536f1b1e43d013f431658116fb",
+                "via_device_id": null,
+                "area_id": "prikhozhaia",
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": [
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "7ad98f9c_zigbee2mqtt"
+                    ]
+                ],
+                "id": "83da8e27ce09f4215c5634e1618a1919",
+                "orphaned_timestamp": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0x00158d00057311fb"
+                    ]
+                ],
+                "id": "99ed91cabced5da1d3b9b8c29d19502c",
+                "orphaned_timestamp": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "xiaomi_gateway"
+                    ]
+                ],
+                "id": "35634be27b50f0cfb2ce98f9976d6c8b",
+                "orphaned_timestamp": null
+            },
+            {
+                "config_entries": [
+                    "80d9fe6c97fc34d99c74a9c54a0fc7df"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "a0d7b954_motioneye"
+                    ]
+                ],
+                "id": "3b51ade85eb9063c2353de968cb8bafe",
+                "orphaned_timestamp": null
+            },
+            {
+                "config_entries": [
+                    "a5032ba1ecaa6e0c1cb59066e9ba5dd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "zigbee2mqtt_0xcc86ecfffe5d5ea0"
+                    ]
+                ],
+                "id": "7699540b8c4e295e57829e7059d55d81",
+                "orphaned_timestamp": null
+            },
+            {
+                "config_entries": [],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:8077bd2c-23ec-476c-b9a7-347a67d429d4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:8077bd2c-23ec-476c-b9a7-347a67d429d4"
+                    ]
+                ],
+                "id": "2627314589b1fd504f9eaea229815c0f",
+                "orphaned_timestamp": 1632452877.4784896
+            },
+            {
+                "config_entries": [],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:d79e1323-02e4-40ec-a1c4-cd36c102b3c9"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:d79e1323-02e4-40ec-a1c4-cd36c102b3c9"
+                    ]
+                ],
+                "id": "9cf10b4d66d382e363b9ff2466ef94ad",
+                "orphaned_timestamp": 1632567503.990702
+            },
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ble_monitor",
+                        "A4:C1:38:1B:8E:66"
+                    ]
+                ],
+                "id": "ace097fe7b5b14ddc83d67dfa9eb704d",
+                "orphaned_timestamp": 1633246426.6235924
+            },
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ble_monitor",
+                        "C4:7C:8D:6D:77:05"
+                    ]
+                ],
+                "id": "8dfdaa1ab3d5cab99be514fbbf05e984",
+                "orphaned_timestamp": 1633246426.6235924
+            }
+        ]
+    }
+}

@@ -1,0 +1,310 @@
+# Включение потолочного света
+- alias: Свет в зале слева Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: 007368931c25dbac8ee16a1f2b685af0
+     entity_id: sensor.datchik_dvijeniya_v_zal_lev_illuminance_lux
+     domain: sensor
+     below: 20
+   - condition: state
+     entity_id: switch.vykluch_v_zal_lev
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "23:00:00"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_zal_lev
+     
+- alias: Свет в зале с право Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_zal_prav_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: 4212880042c7e62402ad6f5d5d9cc46e
+     entity_id: sensor.datchik_dvijeniya_v_zal_prav_illuminance_lux
+     domain: sensor
+     below: 20
+   - condition: state
+     entity_id: switch.vykluch_v_zal_prav_left
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "23:00:00"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_zal_prav_left
+
+# Отключение потолочного света
+- alias: Свет в зале слева Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_zal_lev
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.vykluch_v_zal_lev
+     
+- alias: Свет в зале с право Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_zal_prav_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 0
+      seconds: 20
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_zal_prav_left
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.vykluch_v_zal_prav_left
+  
+ # Включение люстры в зале am
+- alias: Свет в зале люстра свет Вкл pm.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.stul_zal_contact
+     to: "off"
+   - platform: state
+     entity_id: sensor.kub_aqara_action
+     to: flip90
+#     to: "shake"
+   - platform: state
+     entity_id: sensor.vykluch_v_zal_prav_click
+     to: "right"
+#   - platform: state
+#     entity_id: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+#     to: "on"
+  condition:
+#   - type: is_illuminance
+#     condition: device
+#     device_id: 007368931c25dbac8ee16a1f2b685af0
+#     entity_id: sensor.datchik_dvijeniya_v_zal_lev_illuminance_lux
+#     domain: sensor
+#     below: 20
+   - condition: state
+     entity_id: light.lustra_lamp1_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp2_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp3_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp4_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp5_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp6_v_zal
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "09:00:00"
+  action:
+   - service: script.turn_on
+     entity_id: script.lustra_na_50
+
+ # Включение люстры в зале pm
+- alias: Свет в зале люстра свет Вкл pm.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.stul_zal_contact
+     to: "off"
+   - platform: state
+     entity_id: sensor.kub_aqara_action
+     to: flip90
+#     to: "shake"
+   - platform: state
+     entity_id: sensor.vykluch_v_zal_prav_click
+     to: "right"
+#   - platform: state
+#     entity_id: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+#     to: "on"
+  condition:
+#   - type: is_illuminance
+#     condition: device
+#     device_id: 007368931c25dbac8ee16a1f2b685af0
+#     entity_id: sensor.datchik_dvijeniya_v_zal_lev_illuminance_lux
+#     domain: sensor
+#     below: 20
+   - condition: state
+     entity_id: light.lustra_lamp1_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp2_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp3_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp4_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp5_v_zal
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp6_v_zal
+     state: "off"
+   - condition: time
+     after: "16:00:00"
+     before: "23:00:00"
+  action:
+   - service: script.turn_on
+     entity_id: script.lustra_na_50
+   
+# Отключение люстры в зале
+- alias: Свет в зале люстра свет Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.stul_svet
+     to: "on"
+#   - platform: state
+#     entity_id: binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy
+#     to: "off"
+#     for:
+#      hours: 0
+#      minutes: 1
+#      seconds: 20
+#      milliseconds: 0
+   - platform: state
+     entity_id: sensor.kub_aqara_action
+     to: flip90
+#     to: "shake"
+   - platform: state
+     entity_id: sensor.vykluch_v_zal_prav_click
+     to: "right"
+  condition:
+   - condition: state
+     entity_id: light.lustra_lamp1_v_zal
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp2_v_zal
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp3_v_zal
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp4_v_zal
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp5_v_zal
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp6_v_zal
+     state: "on"
+  action:
+   - service: script.turn_on
+     entity_id: script.lustra_zal_off
+
+
+- alias: Кубик люстра в зале яркость +
+  description: ''
+  trigger:
+#  - platform: device
+#    domain: mqtt
+#    device_id: 3c844deb0868c2b83443c2320d175497
+#    type: action
+#    subtype: rotate_right
+#    discovery_id: 0x00158d00024a484e action_rotate_right
+  - platform: state
+    entity_id: sensor.kub_aqara_action
+    to: "rotate_right"
+  condition: []
+  action:
+  - type: brightness_increase
+    device_id: dd2527e1658ad64e47fa1a3f4363c705
+    entity_id: light.lustra_lamp1_v_zal
+    domain: light
+  - type: brightness_increase
+    device_id: afbd48ccf838c31b10ccee04e20b2f5f
+    entity_id: light.lustra_lamp2_v_zal
+    domain: light
+  - type: brightness_increase
+    device_id: 6b9a32cf716bb3a49436fcb49155fd16
+    entity_id: light.lustra_lamp3_v_zal
+    domain: light
+  - type: brightness_increase
+    device_id: 1abf971f345a1cd34ae408858fb1015f
+    entity_id: light.lustra_lamp4_v_zal
+    domain: light
+  - type: brightness_increase
+    device_id: 89e4c3b36a46588f9c945a53be966e01
+    entity_id: light.lustra_lamp5_v_zal
+    domain: light
+  - type: brightness_increase
+    device_id: 5f053208826d3eb1062fec8e108ab1dc
+    entity_id: light.lustra_lamp6_v_zal
+    domain: light
+  mode: single
+  
+
+- alias: Кубик люстра в зале яркость -
+  description: ''
+  trigger:
+#  - platform: device
+#    domain: mqtt
+#    device_id: 3c844deb0868c2b83443c2320d175497
+#    type: action
+#    subtype: rotate_left
+#    discovery_id: 0x00158d00024a484e action_rotate_left
+  - platform: state
+    entity_id: sensor.kub_aqara_action
+    to: "rotate_left"
+  condition: []
+  action:
+  - type: brightness_decrease
+    device_id: dd2527e1658ad64e47fa1a3f4363c705
+    entity_id: light.lustra_lamp1_v_zal
+    domain: light
+  - type: brightness_decrease
+    device_id: afbd48ccf838c31b10ccee04e20b2f5f
+    entity_id: light.lustra_lamp2_v_zal
+    domain: light
+  - type: brightness_decrease
+    device_id: 6b9a32cf716bb3a49436fcb49155fd16
+    entity_id: light.lustra_lamp3_v_zal
+    domain: light
+  - type: brightness_decrease
+    device_id: 1abf971f345a1cd34ae408858fb1015f
+    entity_id: light.lustra_lamp4_v_zal
+    domain: light
+  - type: brightness_decrease
+    device_id: 89e4c3b36a46588f9c945a53be966e01
+    entity_id: light.lustra_lamp5_v_zal
+    domain: light
+  - type: brightness_decrease
+    device_id: 5f053208826d3eb1062fec8e108ab1dc
+    entity_id: light.lustra_lamp6_v_zal
+    domain: light
+  mode: single

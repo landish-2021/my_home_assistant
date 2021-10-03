@@ -1,0 +1,8 @@
+# включение кондиционера по температуры
+  - binary_sensor:
+      # при повышении температуры
+      - name: condey_-
+        state: "{{ (states('sensor.datchik_temper_zal_temperature')|float) < (states('input_number.room_temperature')|float - 1) }}"
+      #  при снижении температуры
+      - name: condey_+
+        state: "{{ (states('sensor.datchik_temper_zal_temperature')|float) > (states('input_number.room_temperature')|float + 1) }}"

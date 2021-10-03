@@ -1,0 +1,96 @@
+# Сигнализация
+
+# Срабатывания датчиков открытия
+  - alias: 'Trigger alarm открытие'
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.datchik_okna_v_kux_contact
+        to: "on"
+      - platform: state
+        entity_id: binary_sensor.datchik_okna_v_zal_contact
+        to: "on"
+      - platform: state
+        entity_id: binary_sensor.datchik_okna_v_spal_contact
+        to: "on"
+      - platform: state
+        entity_id: binary_sensor.datchik_dveri_v_prix_contact
+        to: "on"
+    condition:
+      - condition: state
+        entity_id: alarm_control_panel.home_50_alarm
+        state: armed_away
+    action:
+      - service: alarm_control_panel.alarm_trigger
+        target:
+          entity_id: alarm_control_panel.home_50_alarm
+
+# Отправка сообщения в телеграм
+  - alias: 'Отправка сообщения alarm triggered'
+    trigger:
+      - platform: state
+        entity_id: alarm_control_panel.home_50_alarm
+        to: "triggered"
+    action:
+      - service: telegram_bot.send_message
+        data_template:
+          target:
+            - !secret chat_id_andrey
+          message: | 
+             {{"\U0001F6A8"}} Тревога дверь или окна открыты в {{ states('sensor.time_date') }} 
+      - service: switch.turn_on
+        entity_id: switch.sirena_alarm
+      - service: scene.turn_on
+        entity_id: scene.alarm_on
+
+  - alias: Сигнализация, постановка на охрану
+    trigger:
+      - platform: tag
+        tag_id: 49901b04-6eb7-4a03-9370-33b674229510
+      - platform: state
+        entity_id: device_tracker.bkl_l09
+        to: 'not_home'
+    condition:
+      - condition: state
+        entity_id: alarm_control_panel.home_50_alarm
+        state: 'disarmed'
+    action:
+      - service: alarm_control_panel.alarm_arm_away
+        data:
+          entity_id: alarm_control_panel.home_50_alarm
+          code: 1250
+      - service: telegram_bot.send_message
+        data_template:
+          target:
+            - !secret chat_id_andrey
+          message: | 
+             {{"\U0000231B"}} Охрана квартиры включена в {{ states('sensor.time_date') }} 
+
+  - alias: Сигнализация. Опр.польз. дверь, снятие
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.datchik_dveri_v_prix_contact
+        to: 'on'
+      - platform: tag
+        tag_id: 49901b04-6eb7-4a03-9370-33b674229510
+    condition:
+      - condition: state
+        entity_id: alarm_control_panel.home_50_alarm
+        state: 'armed_away'
+      - condition: or
+        conditions:
+          - condition: state
+            entity_id: device_tracker.bkl_l09
+            state: 'home'
+    action:
+      - service: alarm_control_panel.alarm_disarm
+        data:
+          entity_id: alarm_control_panel.home_50_alarm
+          code: 1250
+      - service: telegram_bot.send_message
+        data_template:
+          target:
+            - !secret chat_id_andrey
+          message: | 
+             {{"\U0001F3E0"}} Охрана квартиры отключена в {{ states('sensor.time_date') }} 
+      - service: scene.turn_on
+        entity_id: scene.alarm_off

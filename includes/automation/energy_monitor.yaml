@@ -1,0 +1,55 @@
+  - alias: IFTTT_energy отправка в google энергомонитор
+    trigger:
+    - event_data:
+        entity_id: sensor.energy_monitor_energy
+      event_type: state_changed  
+      platform: event
+    action:
+      - service: ifttt.trigger
+        data_template: {"event":"energy_mon", "value1":"{{ trigger.event.data.entity_id }}", "value2":"{{ trigger.event.data.new_state.state }}"}
+        # "value2":"{{ trigger.event.data.old_state.state }}
+        # "value3":"{{ trigger.event.data.new_state.state }}"
+        
+  - alias: IFTTT_power отправка в google энергомонитор
+    trigger:
+    - event_data:
+        entity_id: sensor.energy_monitor_power
+      event_type: state_changed
+      platform: event
+    action:
+      - service: ifttt.trigger
+        data_template: {"event":"energy_mon", "value1":"{{ trigger.event.data.entity_id }}", "value2":"{{ trigger.event.data.new_state.state }}"}
+        
+  - alias: IFTTT_current отправка в google энергомонитор
+    trigger:
+    - event_data:
+        entity_id: sensor.energy_monitor_current
+      event_type: state_changed
+      platform: event 
+    action:
+      - service: ifttt.trigger
+        data_template: {"event":"energy_mon", "value1":"{{ trigger.event.data.entity_id }}", "value2":"{{ trigger.event.data.new_state.state }}"}
+
+  - alias: IFTTT_voltage отправка в google энергомонитор
+    trigger:
+    - event_data:
+        entity_id: sensor.energy_monitor_voltage
+      event_type: state_changed
+      platform: event 
+    action:
+      - service: ifttt.trigger
+        data_template: {"event":"energy_mon", "value1":"{{ trigger.event.data.entity_id }}", "value2":"{{ trigger.event.data.new_state.state }}"}
+
+
+  - alias: IFTTT_cost отправка в google энергомонитор
+    trigger:
+    - event_data:
+        entity_id: sensor.energy_monitor_energy_cost
+      event_type: state_changed
+      platform: event
+    action:
+      - service: ifttt.trigger
+        data_template: {"event":"energy_mon", "value1":"{{ trigger.event.data.entity_id }}", "value2":"{{ trigger.event.data.old_state.state }}", "value3":"{{ trigger.event.data.new_state.state }}"}
+        # "value2":"{{ trigger.event.data.old_state.state }}
+        # "value3":"{{ trigger.event.data.new_state.state }}"
+

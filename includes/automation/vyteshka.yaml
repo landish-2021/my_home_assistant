@@ -1,0 +1,32 @@
+# Включение вытяжки на кухне
+- alias: Вытяжка на кухне Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.vyteshka_on
+     to: "on"
+  condition:
+   - condition: state
+     entity_id: switch.rozetka_v_kux
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "23:00:00"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.rozetka_v_kux
+
+# Отключение вытяжки на кухне
+- alias: Вытяжка на кухне Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.vyteshka_off
+     to: "on"
+  condition:
+   - condition: state
+     entity_id: switch.rozetka_v_kux
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.rozetka_v_kux

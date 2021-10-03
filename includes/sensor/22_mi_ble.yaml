@@ -1,0 +1,29 @@
+  - platform: min_max
+    name: best_ficus_rssi
+    type: max
+    entity_ids:
+      - sensor.ble_rssi_c47c8d6d7705
+
+  - platform: template
+    sensors:
+      
+      ficus_rssi_summ:
+        friendly_name: "ficus rssi"
+        value_template: "{{ states.sensor.best_ficus_rssi.state }}"
+        unit_of_measurement: 'dB'
+        icon_template: >-
+           {% set signal_level = states.sensor.best_ficus_rssi.state|int %}
+           {% if is_state('sensor.best_ficus_rssi', 'unknown') %}
+              mdi:signal-off
+           {% else %}
+             {% if signal_level >= -70 %}
+               mdi:signal-cellular-3
+             {% elif signal_level >= -80 %}
+               mdi:signal-cellular-2
+             {% elif signal_level >= -90 %}
+               mdi:signal-cellular-1
+             {% elif signal_level >= -100 %}
+               mdi:signal-cellular-outline
+             {% endif %}
+           {% endif %}
+

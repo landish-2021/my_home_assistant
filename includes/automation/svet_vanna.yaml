@@ -1,0 +1,79 @@
+# Включение света
+- alias: Свет в ванной Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_korid_click
+     to: "right"
+   - platform: state
+     entity_id: binary_sensor.datchik_dveri_v_vanna_contact
+     from: "off"
+     to: "on"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_vanna_occupancy
+     to: "on"
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_dveri_v_vanna_contact
+     state: "on"
+#   - condition: state
+#     entity_id: switch.vykluch_v_korid_right
+#     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp1_v_van
+     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp2_v_van
+     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp3_v_van
+     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp4_v_van
+     state: "off"
+  action:
+#   - service: switch.turn_on
+#     entity_id: switch.vykluch_v_korid_right
+   - service: script.turn_on
+     entity_id: script.van_na_50
+
+# Отключение света
+- alias: Свет в ванной Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_korid_click
+     to: "right"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_vanna_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_dveri_v_vanna_contact
+     state: "off"
+#   - condition: state
+#     entity_id: switch.vykluch_v_korid_right
+#     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp1_v_van
+     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp2_v_van
+     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp3_v_van
+     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp4_v_van
+     state: "on"
+  action:
+#   - service: switch.turn_off
+#     entity_id: switch.vykluch_v_korid_right
+   - service: script.turn_on
+     entity_id: script.van_off
+ 

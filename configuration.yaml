@@ -1,0 +1,216 @@
+homeassistant:
+  name: Osinniki
+  latitude: !secret latitude_coord
+  longitude: !secret longitude_coord
+  elevation: 237
+  unit_system: metric
+  currency: RUB
+  time_zone: Asia/Novokuznetsk
+  internal_url: !secret internal_url
+  external_url: !secret external_url
+  # Customization file
+#   customize: !include customize.yaml
+  customize: !include_dir_merge_named includes/customize
+  packages: !include_dir_merge_named includes/packages
+
+# Example configuration.yaml
+  media_dirs:
+    media: /media
+
+  allowlist_external_dirs:
+   - /config
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+#default_config:
+
+# Ручная конфигурация
+# Отображение панели настроек в интерфейсе
+config:
+#Сканирование доступных устройств в сети
+ssdp:
+# Включение официального интерфейса
+frontend:
+  themes: !include_dir_merge_named themes
+# Включение карты
+map:
+# Включение поддержки приложения
+mobile_app:
+discovery:
+# Отслеживание солнца
+sun:
+# API для предоставления информации о системе и ее компонентах
+system_health:
+# Сенсор для отображения последней версии НА
+updater:
+# Потоковое изображение с камер
+stream:
+# Включение истории
+history:
+# Включение журнала
+logbook:
+
+logger:
+  default: info
+  logs:
+    libav.rtsp: critical
+  
+# Знаки зодиака
+zodiac:
+
+# Отображение Zigbee карты
+webhook:
+
+zigbee2mqtt_networkmap:
+ 
+panel_iframe:
+  networkmap:
+    title: 'Zigbee Map'
+    url: '/local/community/zigbee2mqtt_networkmap/map.html'
+    icon: 'mdi:graphql'
+
+# Включение раздела Энергия
+energy: default_config:'configuration.yaml
+
+# НА Медиа браузер
+media_source:
+
+# Облоко НА
+cloud:
+
+# медиоплеер MDP
+#media_player:
+#  - platform: mpd
+#    host: 192.168.31.65
+#    port: 6600
+
+# поиск ble устройств
+device_tracker:
+  - platform: bluetooth_tracker
+
+# Сертификаты SSL
+http:
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+
+# Интерфейс (панель)
+lovelace:
+  mode: yaml
+  resources:
+   - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+     type: module
+   - url: /hacsfiles/lovelace-multiple-entity-row/multiple-entity-row.js
+     type: module
+   - url: /hacsfiles/mini-media-player/mini-media-player-bundle.js
+     type: module
+   - url: /local/mini-media-player-bundle.js?v=1.12.1
+     type: module  
+   - url: /hacsfiles/spotify-card/spotify-card.js
+     type: module
+   - url: /hacsfiles/battery-state-card/battery-state-card.js
+     type: module
+   - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+     type: module
+   - url: /hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js
+     type: js 
+   - url: /hacsfiles/canvas-gauge-card/canvas-gauge-card.js
+     type: module
+   - url: /hacsfiles/simple-thermostat/simple-thermostat.js
+     type: module
+   - url: /hacsfiles/weather-card/weather-card.js
+     type: module
+   - url: /hacsfiles/lovelace-card-mod/card-mod.js
+     type: module
+   - url: /hacsfiles/stack-in-card/stack-in-card.js
+     type: module
+   - url: /hacsfiles/air-visual-card/air-visual-card.js
+     type: module
+   - url: /hacsfiles/logbook-card/logbook-card.js
+     type: module
+   - url: /hacsfiles/entity-attributes-card/entity-attributes-card.js
+     type: module
+   - url: /hacsfiles/lovelace-tempometer-gauge-card/tempometer-gauge-card.js
+     type: module
+   - url: /hacsfiles/home-assistant-sun-card/home-assistant-sun-card.js
+     type: module
+   - url: /hacsfiles/plan-coordinates/plan-coordinates.js
+     type: module
+   - url: /hacsfiles/miflora-card/miflora-card.js
+     type: module
+   - url: /hacsfiles/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js
+     type: module
+   - url: /hacsfiles/vacuum-card/vacuum-card.js
+     type: module
+
+
+# Телеграм бот
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api_key
+    allowed_chat_ids: 
+      - !secret chat_id_andrey
+
+# IFTTT
+ifttt:
+  key: !secret ifttt_key
+
+# Спотифай авторизация
+spotify:
+  client_id: !secret spotify_id
+  client_secret: !secret spotify_secret
+
+# Соноф WI-FI реле авторизация  
+sonoff:
+  username: !secret sonoff_id
+  password: !secret sonoff_passwd
+
+# Text to speech
+tts:
+  - platform: google_translate
+#    language: ru
+
+hacs:
+  token: !secret HACS_github
+  appdaemon: true
+  python_script: true
+  theme: true
+
+# Платформы
+mqtt:
+## Выбрать один из вариантов для брокера!  
+  broker: core-mosquitto  # Локальный брокер
+  discovery: true
+  discovery_prefix: homeassistant  
+  username: !secret mqtt_name
+  password: !secret mqtt_passwd
+  birth_message:
+    topic: 'homeassistant/status'
+    payload: 'online'
+  will_message:
+    topic: 'homeassistant/status'
+    payload: 'offline'
+
+#Вынос во внешние файлы
+timer: !include includes/timer.yaml
+input_boolean: !include includes/input_boolean.yaml
+group: !include includes/groups.yaml
+scene: !include includes/scenes.yaml
+recorder: !include includes/recorder.yaml
+notify: !include includes/notify.yaml
+#camera: !include includes/camera.yaml
+template: !include includes/template.yaml
+utility_meter: !include includes/utility_meter.yaml
+input_number: !include includes/input_number.yaml
+input_select: !include includes/input_select.yaml
+plant: !include includes/plants.yaml
+alarm_control_panel: !include includes/alarm_control_panels.yaml
+climate: !include includes/climate.yaml
+yandex_smart_home: !include includes/yandex_smart_home.yaml
+mqtt_statestream: !include includes/mqtt_statestream.yaml
+
+#Вынос во внешние папки
+sensor: !include_dir_merge_list includes/sensor
+automation: !include_dir_merge_list includes/automation
+switch: !include_dir_merge_list includes/switches
+script: !include_dir_merge_named includes/scripts
+binary_sensor: !include_dir_merge_list includes/bin_sensor

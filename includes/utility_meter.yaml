@@ -1,0 +1,19 @@
+## Расчет на 1 тариф
+  um_one_daily_energy_monitor:
+    source: sensor.energy_monitor_energy
+    cycle: daily
+    tariffs:
+      - electicity
+
+  um_one_monthly_energy_monitor:
+    source: sensor.energy_monitor_energy
+    cycle: monthly
+    tariffs:
+      - electicity
+
+  um_one_yearly_energy_monitor:
+    source: sensor.energy_monitor_energy
+    cycle: yearly
+    tariffs:
+      - electicity
+

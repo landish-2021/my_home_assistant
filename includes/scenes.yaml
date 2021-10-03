@@ -1,0 +1,85 @@
+  - name: alarm_on
+    entities:
+      light.mi_smart_led_bulb_essential:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+        effect: Police
+      light.pot_prav_lamp_v_spal:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.pot_lev_lamp_v_spal:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+#      light.lumi_light:
+#        state: on
+#        brightness_pct: 50
+#        rgb_color: [255, 0, 0]
+      light.pot_lamp1_v_kor:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.pot_lamp2_v_kor:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.pot_lamp3_v_kor:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.wled:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+        effect: Police
+      light.lustra_lamp1_v_kux:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.lustra_lamp2_v_kux:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]
+      light.lustra_lamp3_v_kux:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]  
+      light.pot_lamp1_v_van:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]  
+      light.pot_lamp2_v_van:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]  
+      light.pot_lamp3_v_van:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]  
+      light.pot_lamp4_v_van:
+        state: on
+        brightness_pct: 50
+        rgb_color: [255, 0, 0]  
+
+
+        
+  - name: alarm_off
+    entities:
+      light.mi_smart_led_bulb_essential: off
+      light.pot_prav_lamp_v_spal: off
+      light.pot_lev_lamp_v_spal: off
+#      light.lumi_light: off
+      light.pot_lamp1_v_kor: off
+      light.pot_lamp2_v_kor: off
+      light.pot_lamp3_v_kor: off
+      light.wled: off
+      light.lustra_lamp1_v_kux: off
+      light.lustra_lamp2_v_kux: off
+      light.lustra_lamp3_v_kux: off
+      light.pot_lamp1_v_van: off
+      light.pot_lamp2_v_van: off
+      light.pot_lamp3_v_van: off
+      light.pot_lamp4_v_van: off
+

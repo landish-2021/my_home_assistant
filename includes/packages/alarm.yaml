@@ -1,0 +1,354 @@
+alarm:
+
+    sensor: 
+        - platform: mqtt
+          state_topic: "date_time/Datchik_dyma_kux/selftest"
+          name: '0x00158d0005c13682_selftest'
+            
+        - platform: mqtt
+          state_topic: "date_time/Datchik_dyma_kux/alarm"
+          name: '0x00158d0005c13682_alarm'
+
+    automation:
+        - id: Кухня, обнаружение дыма
+          alias: kn_detect_smoke
+          initial_state: true
+          trigger:       
+           - platform: state
+             entity_id: binary_sensor.datchik_dyma_kux_smoke
+             to: 'on'
+          condition:
+            - condition: state
+              entity_id: switch.control_mode
+              state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F6AC"}} В кухне обнаружен дым в {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.warning
+              
+        - id: Кухня, задымление устранено
+          alias: kn_detect_smoke_off
+          initial_state: true
+          trigger:       
+           - platform: state
+             entity_id: binary_sensor.datchik_dyma_kux_smoke
+             from: 'on'
+             to: 'off'
+          condition:
+            - condition: state
+              entity_id: switch.control_mode
+              state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F6AD"}} Задымление устранено {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok        
+                     
+            
+        - id: Ванная, протечка возле стиральной машины
+          alias: ln_wleak_washmash_on
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_vanna_water_leak
+           to: 'on'
+          condition:
+          - condition: state
+            entity_id: switch.control_mode
+            state: 'on'  
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U000026F2"}} Обнаружена протечка - стиральная машина {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.warning
+              
+        - id: Ванная, протечка возле стиральной машины устранена
+          alias: ln_wleak_washmash_off
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_vanna_water_leak
+           from: 'on'
+           to: 'off'
+          condition:
+          - condition: state
+            entity_id: switch.control_mode
+            state: 'on' 
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U00002600"}} Протечка устранена - стиральная машина {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok
+              
+              
+        - id: Кухня, протечка под раковиной
+          alias: kn_wleak_on
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_kux_water_leak
+           to: 'on'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F374"}} Обнаружена протечка - кухня под раковиной {{ states('sensor.time_date') }}
+            - service: script.turn_on
+              entity_id: script.warning
+        
+        - id: Кухня, протечка под раковиной устранена
+          alias: kn_kitchen_wleak_washstand_off
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_kux_water_leak
+           from: 'on'
+           to: 'off'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U00002600"}} Протечка устранена - кухня под раковиной {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok
+
+        - id: Кухня, протечка под батареей
+          alias: bat_kn_wleak_on
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_kux_b_water_leak
+           to: 'on'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F374"}} Обнаружена протечка - кухня под батареей {{ states('sensor.time_date') }}
+            - service: script.turn_on
+              entity_id: script.warning
+        
+        - id: Кухня, протечка под батареей устранена
+          alias: bat_kn_kitchen_wleak_washstand_off
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_kux_b_water_leak
+           from: 'on'
+           to: 'off'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U00002600"}} Протечка устранена - кухня под батареей {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok
+
+        - id: Зал, протечка под батареей
+          alias: bat_zl_wleak_on
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_zal_water_leak
+           to: 'on'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F374"}} Обнаружена протечка - зал под батареей {{ states('sensor.time_date') }}
+            - service: script.turn_on
+              entity_id: script.warning
+        
+        - id: Зал, протечка под батареей устранена
+          alias: bat_zl_kitchen_wleak_washstand_off
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_zal_water_leak
+           from: 'on'
+           to: 'off'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U00002600"}} Протечка устранена - зал под батареей {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok
+
+        - id: Спальня, протечка под батареей
+          alias: bat_sp_wleak_on
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_spal_water_leak
+           to: 'on'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U0001F374"}} Обнаружена протечка - спальня под батареей {{ states('sensor.time_date') }}
+            - service: script.turn_on
+              entity_id: script.warning
+        
+        - id: Спальня, протечка под батареей устранена
+          alias: bat_sp_kitchen_wleak_washstand_off
+          initial_state: true
+          trigger:       
+           platform: state
+           entity_id: binary_sensor.datchik_protechki_spal_water_leak
+           from: 'on'
+           to: 'off'
+          condition:
+           - condition: state
+             entity_id: switch.control_mode
+             state: 'on'
+          action:
+            - service: telegram_bot.send_message
+              data_template:
+                target:
+                    - !secret chat_id_andrey
+                message: | 
+                     {{"\U00002600"}} Протечка устранена - спальня под батареей {{ states('sensor.time_date') }} 
+            - service: script.turn_on
+              entity_id: script.all_ok
+
+    script:
+        en_smoke_selftest:
+          alias: Самотестирование датчика дыма в кухне
+          sequence:
+            - service: mqtt.publish
+              data_template:
+                topic: "zigbee2mqtt/Datchik_dyma_kux/set"
+                payload_template: '{"selftest": ""}'
+            - service: mqtt.publish
+              data_template:
+                topic: "date_time/Datchik_dyma_kux/selftest"
+                payload: "{{ states('sensor.time_date')}}"
+                retain: true
+                
+                
+        warning:
+          alias: Включение тревоги
+          sequence:
+            - service: light.turn_on
+              entity_id: 
+                - light.mi_smart_led_bulb_essential
+                - light.pot_prav_lamp_v_spal
+                - light.pot_lev_lamp_v_spal
+#                - light.lumi_light
+                - light.pot_lamp1_v_kor
+                - light.pot_lamp2_v_kor
+                - light.pot_lamp3_v_kor
+                - light.lustra_lamp1_v_kux
+                - light.lustra_lamp2_v_kux
+                - light.lustra_lamp3_v_kux
+                - light.pot_lamp1_v_van
+                - light.pot_lamp2_v_van
+                - light.pot_lamp3_v_van
+                - light.pot_lamp4_v_van
+                
+                
+              data_template:
+                brightness_pct: 50
+                rgb_color: [255, 0, 0]
+        
+        all_ok:
+          alias: Выключение тревоги
+          sequence:
+            - service: light.turn_on
+              entity_id: 
+                - light.mi_smart_led_bulb_essential
+                - light.pot_prav_lamp_v_spal
+                - light.pot_lev_lamp_v_spal
+#                - light.lumi_light
+                - light.pot_lamp1_v_kor
+                - light.pot_lamp2_v_kor
+                - light.pot_lamp3_v_kor
+                - light.lustra_lamp1_v_kux
+                - light.lustra_lamp2_v_kux
+                - light.lustra_lamp3_v_kux
+                - light.pot_lamp1_v_van
+                - light.pot_lamp2_v_van
+                - light.pot_lamp3_v_van
+                - light.pot_lamp4_v_van
+              
+              data_template:
+                brightness_pct: 50
+                rgb_color: [0, 255, 0]
+            - delay: 00:00:10
+            
+            - service: light.turn_off
+              entity_id: 
+                - light.mi_smart_led_bulb_essential
+                - light.pot_prav_lamp_v_spal
+                - light.pot_lev_lamp_v_spal
+#                - light.lumi_light
+                - light.pot_lamp1_v_kor
+                - light.pot_lamp2_v_kor
+                - light.pot_lamp3_v_kor
+                - light.lustra_lamp1_v_kux
+                - light.lustra_lamp2_v_kux
+                - light.lustra_lamp3_v_kux
+                - light.pot_lamp1_v_van
+                - light.pot_lamp2_v_van
+                - light.pot_lamp3_v_van
+                - light.pot_lamp4_v_van
+                

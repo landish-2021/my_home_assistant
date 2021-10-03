@@ -1,0 +1,63 @@
+{
+    "version": "6",
+    "key": "hacs/121934877.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@syssi"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "develop",
+        "description": "Xiaomi Mi and Aqara Air Conditioning Companion integration for Home Assistant",
+        "domain": "xiaomi_miio_airconditioningcompanion",
+        "domains": [],
+        "downloads": 0,
+        "etag_repository": "W/\"dd8c507139393c55780abb9cfccd40f10550032fb392ad33b85ba9f769b8811c\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "syssi/xiaomi_airconditioningcompanion",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "121934877",
+        "iot_class": "local_polling",
+        "installed": true,
+        "installed_commit": "7948d1b",
+        "installed_version": "0.2.2",
+        "open_issues": 42,
+        "last_commit": "2e9dd7d",
+        "last_version": "0.2.2",
+        "last_updated": "2021-08-29T10:18:31Z",
+        "manifest_name": "Xiaomi Mi and Aqara Air Conditioning Companion",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-08-29T10:18:31",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "0.2.2",
+            "0.2.1",
+            "0.2.0",
+            "0.1.0"
+        ],
+        "selected_tag": null,
+        "show_beta": true,
+        "stargazers_count": 342,
+        "topics": [
+            "acpartner",
+            "airconditioning",
+            "aqara",
+            "custom-component",
+            "home-assistant",
+            "infrared",
+            "xiaomi"
+        ],
+        "zip_release": false
+    }
+}

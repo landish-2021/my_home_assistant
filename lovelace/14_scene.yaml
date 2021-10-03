@@ -1,0 +1,20 @@
+##################   Сцены
+title: Сцены
+icon: mdi:lightbulb-on
+cards:
+    
+      - type: vertical-stack
+        cards:
+        
+          - type: light
+            entity: light.mi_smart_led_bulb_essential
+            name: Настольная лампа в зале
+
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: input_select.brightness_mode
+              - entity: input_select.color_temp_mode
+              - entity: input_select.rgb_mode
+              - entity: scene.alarm_on
+              - entity: scene.alarm_off

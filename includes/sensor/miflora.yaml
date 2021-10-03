@@ -1,0 +1,14 @@
+# Example configuration.yaml entry
+
+#  - platform: miflora
+#    mac: "c4:7c:8d:6d:77:05"
+#    name: ble battery Flower Care
+#    force_update: true
+#    median: 3
+#    go_unavailable_timeout: 43200
+#    monitored_conditions:
+#      - battery
+
+
+# mac      c47c8d6d7705
+

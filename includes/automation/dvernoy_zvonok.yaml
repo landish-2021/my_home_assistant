@@ -1,0 +1,28 @@
+# Дверной звонок на Google колонку
+- alias: Дверной звонок
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.knopka_aqara_click
+     to: "double"
+   - platform: state
+     entity_id: sensor.knopka_aqara_click
+     to: "single"
+  action:
+   - service: media_player.play_media
+     data:
+       media_content_id: https://myhome50.duckdns.org:8123/local/zvonok_bit.mp3
+       media_content_type: music
+     target:
+       entity_id: media_player.zal
+#   - service: media_player.play_media
+#     data:
+#       media_content_id: '<speaker audio="dialogs-upload/0b07c3a8-e136-4e81-9179-eec5f1d91698/bbe14c70-c427-4a39-a66e-a2598a07a82a.opus">'
+#       media_content_id: '<speaker audio="dialogs-upload/0b07c3a8-e136-4e81-9179-eec5f1d91698/3d29d2fd-601c-44ba-9fb3-00456e40705b.opus">'
+#       media_content_type: dialog
+#     target:
+#       entity_id: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+   - service: script.turn_on
+     entity_id:
+        - script.telegramm_zvonok_messager
+

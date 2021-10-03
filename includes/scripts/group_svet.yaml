@@ -1,0 +1,230 @@
+
+group_on:
+  alias: group ON включение всех управляемых лампочек
+  sequence:
+   - service: light.turn_on
+     data:
+       entity_id: group.light_room_spal
+   - service: light.turn_on
+     data:
+       entity_id: group.light_room_zal_lustra
+   - service: light.turn_on
+     data:
+       entity_id: group.light_room_kor
+   - service: light.turn_on
+     data:
+       entity_id: group.light_room_kux
+   - service: light.turn_on
+     data:
+       entity_id: group.light_room_van
+   - service: light.turn_on
+     data:
+       entity_id: light.nastol_lamp_v_spal
+   - service: light.turn_on
+     data:
+       entity_id: light.mi_smart_led_bulb_essential
+
+group_off:
+  alias: group OFF выключение всех управляемых лампочек
+  sequence:
+   - service: light.turn_off
+     data:
+       entity_id: group.light_room_spal
+   - service: light.turn_off
+     data:
+       entity_id: group.light_room_zal_lustra
+   - service: light.turn_off
+     data:
+       entity_id: group.light_room_kor
+   - service: light.turn_off
+     data:
+       entity_id: group.light_room_kux
+   - service: light.turn_off
+     data:
+       entity_id: group.light_room_van
+   - service: light.turn_off
+     data:
+       entity_id: light.nastol_lamp_v_spal
+   - service: light.turn_off
+     data:
+       entity_id: light.mi_smart_led_bulb_essential
+
+lustra_na_50:
+  alias: Установка яркости на люстре 50% и дневной белый свет
+  sequence:
+   - service: light.turn_on
+     entity_id: light.lustra_lamp1_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp2_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp3_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp4_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000   
+   - service: light.turn_on
+     entity_id: light.lustra_lamp5_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp6_v_zal
+     data_template:
+       brightness_pct: 50
+       kelvin: 4000
+
+lustra_zal_off:
+  alias: Отключение люстры в зале
+  sequence:
+   - service: light.turn_off
+     entity_id: light.lustra_lamp1_v_zal
+   - service: light.turn_off
+     entity_id: light.lustra_lamp2_v_zal
+   - service: light.turn_off
+     entity_id: light.lustra_lamp3_v_zal
+   - service: light.turn_off
+     entity_id: light.lustra_lamp4_v_zal
+   - service: light.turn_off
+     entity_id: light.lustra_lamp5_v_zal
+   - service: light.turn_off
+     entity_id: light.lustra_lamp6_v_zal
+
+
+spal_na_50:
+  alias: Установка яркости на светильниках в спальне 50% и желтый свет
+  sequence:
+   - service: light.turn_on
+     entity_id: light.pot_lev_lamp_v_spal
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 2700
+   - service: light.turn_on
+     entity_id: light.pot_prav_lamp_v_spal
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 2700
+
+spal_off:
+  alias: Отключение светильников в спальне
+  sequence:
+   - service: light.turn_off
+     entity_id: light.pot_lev_lamp_v_spal
+   - service: light.turn_off
+     entity_id: light.pot_prav_lamp_v_spal
+
+kor_na_50:
+  alias: Установка яркости на светильниках в коридоре 50% и белый свет
+  sequence:
+   - service: light.turn_on
+     entity_id: light.pot_lamp1_v_kor
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.pot_lamp2_v_kor
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.pot_lamp3_v_kor
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+
+kor_off:
+  alias: Отключение светильников в коридоре
+  sequence:
+   - service: light.turn_off
+     entity_id: light.pot_lamp1_v_kor
+   - service: light.turn_off
+     entity_id: light.pot_lamp2_v_kor
+   - service: light.turn_off
+     entity_id: light.pot_lamp3_v_kor
+
+lustra_kux_na_70:
+  alias: Установка яркости на люстре 70% и дневной белый свет
+  sequence:
+   - service: light.turn_on
+     entity_id: light.lustra_lamp1_v_kux
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp2_v_kux
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.lustra_lamp3_v_kux
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+
+lustra_kux_off:
+  alias: Отключение люстры в кухне
+  sequence:
+   - service: light.turn_off
+     entity_id: light.lustra_lamp1_v_kux
+   - service: light.turn_off
+     entity_id: light.lustra_lamp2_v_kux
+   - service: light.turn_off
+     entity_id: light.lustra_lamp3_v_kux
+
+van_na_50:
+  alias: Установка яркости на светильниках в ванной 50% и белый свет
+  sequence:
+   - service: light.turn_on
+     entity_id: light.pot_lamp1_v_van
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.pot_lamp2_v_van
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.pot_lamp3_v_van
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+   - service: light.turn_on
+     entity_id: light.pot_lamp4_v_van
+     data_template:
+       brightness_pct: 50
+#       rgb_color: [153, 125, 0]
+       kelvin: 4000
+
+van_off:
+  alias: Отключение светильников в ванной
+  sequence:
+   - service: light.turn_off
+     entity_id: light.pot_lamp1_v_van
+   - service: light.turn_off
+     entity_id: light.pot_lamp2_v_van
+   - service: light.turn_off
+     entity_id: light.pot_lamp3_v_van
+   - service: light.turn_off
+     entity_id: light.pot_lamp4_v_van
+

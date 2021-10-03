@@ -1,0 +1,126 @@
+## Фотографии с камер и отправка в телеграмм
+
+  photo_reolink_zal:
+    alias: Фотография Reolink E1 Pro зал и отправка в телеграмм
+    sequence:
+       - service: camera.snapshot
+         data:
+              entity_id: camera.camera_zal_profile000_mainstream
+              filename: "/config/www/cam_captures/reolink_zal.jpg"
+       - delay: 00:00:15
+       - service: telegram_bot.send_photo
+         data_template:
+           target:
+              - !secret chat_id_andrey
+            # - !secret chat_id_alex
+           file: "/config/www/cam_captures/reolink_zal.jpg"
+
+  photo_reolink_kux:
+    alias: Фотография Reolink E1 Pro кухня и отправка в телеграмм
+    sequence:
+       - service: camera.snapshot
+         data:
+              entity_id: camera.camera_kux_profile000_mainstream
+              filename: "/config/www/cam_captures/reolink_kux.jpg"
+       - delay: 00:00:15
+       - service: telegram_bot.send_photo
+         data_template:
+           target:
+              - !secret chat_id_andrey
+            # - !secret chat_id_alex
+           file: "/config/www/cam_captures/reolink_kux.jpg"
+
+
+  photo_reolink_spal:
+    alias: Фотография Reolink E1 Pro спальня и отправка в телеграмм
+    sequence:
+       - service: camera.snapshot
+         data:
+              entity_id: camera.camera_spal_profile000_mainstream
+              filename: "/config/www/cam_captures/reolink_spal.jpg"
+       - delay: 00:00:15
+       - service: telegram_bot.send_photo
+         data_template:
+           target:
+              - !secret chat_id_andrey
+            # - !secret chat_id_alex
+           file: "/config/www/cam_captures/reolink_spal.jpg"
+           
+  photo_reolink_vxod:
+    alias: Фотография Reolink C1 Pro прихожая и отправка в телеграмм
+    sequence:
+       - service: camera.snapshot
+         data:
+              entity_id: camera.camera_vxod_profile000_mainstream
+              filename: "/config/www/cam_captures/reolink_vxod.jpg"
+       - delay: 00:00:15
+       - service: telegram_bot.send_photo
+         data_template:
+           target:
+              - !secret chat_id_andrey
+            # - !secret chat_id_alex
+           file: "/config/www/cam_captures/reolink_vxod.jpg"
+
+## Скрипт для съемки видео и отправка в телеграмм
+
+  video_reolink_zal:
+    alias: Запись с камеры Reolink E1 Pro зал и отправка в телеграмм
+    sequence:
+    - service: camera.record
+      data_template:
+        entity_id: camera.camera_zal_profile000_mainstream
+        filename: "/config/www/cam_captures/reolink_zal.mp4"
+        duration: 10
+    - delay: 00:00:45
+    - service: telegram_bot.send_video
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        file: "/config/www/cam_captures/reolink_zal.mp4"
+        
+  video_reolink_spal:
+    alias: Запись с камеры Reolink E1 Pro спальня и отправка в телеграмм
+    sequence:
+    - service: camera.record
+      data_template:
+        entity_id: camera.camera_spal_profile000_mainstream
+        filename: "/config/www/cam_captures/reolink_spal.mp4"
+        duration: 10
+    - delay: 00:00:45
+    - service: telegram_bot.send_video
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        file: "/config/www/cam_captures/reolink_spal.mp4"
+        
+  video_reolink_kux:
+    alias: Запись с камеры Reolink E1 Pro кухня и отправка в телеграмм
+    sequence:
+    - service: camera.record
+      data_template:
+        entity_id: camera.camera_kux_profile000_mainstream
+        filename: "/config/www/cam_captures/reolink_kux.mp4"
+        duration: 10
+    - delay: 00:00:45
+    - service: telegram_bot.send_video
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        file: "/config/www/cam_captures/reolink_kux.mp4"
+        
+        
+  video_reolink_vxod:
+    alias: Запись с камеры Reolink C1 Pro в  прихожей и отправка в телеграмм
+    sequence:
+    - service: camera.record
+      data_template:
+        entity_id: camera.camera_vxod_profile000_mainstream
+        filename: "/config/www/cam_captures/reolink_vxod.mp4"
+        duration: 10
+    - delay: 00:00:45
+    - service: telegram_bot.send_video
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        file: "/config/www/cam_captures/reolink_vxod.mp4"
+        

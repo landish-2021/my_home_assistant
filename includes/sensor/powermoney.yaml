@@ -1,0 +1,25 @@
+# Cтоимость по 1 тарифу
+
+  - platform: template
+    sensors:
+      money_day_energy_monitor_day:
+        friendly_name: "Стоимость за текущий день"
+        unit_of_measurement: 'rub'
+        value_template: "{{ (states.sensor.um_one_daily_energy_monitor_electicity.state | float * 2.64)|round(2) }}"
+        icon_template: mdi:square-inc-cash 
+    
+  - platform: template
+    sensors:
+      money_month_energy_monitor_month:
+        friendly_name: "Стоимость за текущий месяц"
+        unit_of_measurement: 'rub'
+        value_template: "{{ (states.sensor.um_one_monthly_energy_monitor_electicity.state | float * 2.64)|round(2) }}"
+        icon_template: mdi:square-inc-cash 
+        
+  - platform: template
+    sensors:
+      money_month_energy_monitor_yearly:
+        friendly_name: "Стоимость за текущий год"
+        unit_of_measurement: 'rub'
+        value_template: "{{ (states.sensor.um_one_yearly_energy_monitor_electicity.state | float * 2.64)|round(2) }}"
+        icon_template: mdi:square-inc-cash        

@@ -1,0 +1,120 @@
+    title: Погода
+    icon: mdi:weather-partly-snowy-rainy
+    
+    cards:
+
+        - type: entities
+          show_header_toggle: false
+          state_color: true
+          entities:
+            - entity: sensor.zodiac
+              type: custom:multiple-entity-row
+              icon: mdi:calendar-month
+              name: Календарь -
+              state_header: Зодиак
+              entities:
+                - entity: sensor.time
+                  name: Время
+                - entity: sensor.date
+                  name: Дата
+
+        - type: vertical-stack
+          cards:
+          - type: markdown
+            content: >
+             **Погода**  
+          - type: custom:weather-card
+            entities:
+            entity: weather.home_assistant
+            number_of_forecasts: '5'
+        
+          - type: custom:sun-card
+            entities:
+            - sun.sun
+            title: Солнце
+            state_color: true
+           
+        - type: vertical-stack
+          cards:
+          - type: markdown
+            content: >
+             **Климат на улице**      
+          - type: entities
+            entities:
+            - entity: sensor.datchik_temper_ulica_temperature
+              name: температура на улице
+            - entity: sensor.datchik_temper_ulica_humidity
+              name: влажность на улице
+            - entity: sensor.datchik_temper_ulica_pressure_mmhg
+              name: давление на улице
+            state_color: true 
+            
+          - type: history-graph
+            entities:
+            - entity: sensor.datchik_temper_ulica_temperature
+              name: температура на улице
+            - entity: sensor.datchik_temper_ulica_humidity
+              name: влажность на улице
+            - entity: sensor.datchik_temper_ulica_pressure_mmhg
+              name: давление на улице
+            hours_to_show: 24
+            refresh_interval: 0  
+
+         
+        - type: vertical-stack
+          cards:
+          - type: markdown
+            content: >
+             **Климат в Зале**  
+          - type: entities
+            entities:
+            - entity: sensor.datchik_temper_zal_temperature
+              name: температура
+            - entity: sensor.datchik_temper_zal_humidity
+              name: влажность
+            - entity: sensor.datchik_temper_zal_pressure_mmhg
+              name: давление
+            state_color: true
+          
+          - type: history-graph
+            entities:
+            - entity: sensor.datchik_temper_zal_temperature
+              name: температура
+            - entity: sensor.datchik_temper_zal_humidity
+              name: влажность
+            - entity: sensor.datchik_temper_zal_pressure_mmhg
+              name: давление
+            hours_to_show: 24
+            refresh_interval: 0  
+            
+        - type: vertical-stack
+          cards:
+          - type: markdown
+            content: >
+             **Управление кондиционером**    
+          - type: custom:simple-thermostat
+            entity: climate.aqara_air_conditioning_companion
+            step_layout: row
+            name: false
+            icon: false
+
+
+
+
+
+        
+        - type: entities
+          show_header_toggle: false
+          entities:         
+          - entity: switch.xiaomi_gateway
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Потребление кондиционером
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.xiaomi_gateway_load_power
+                name: Мощность
+                

@@ -1,0 +1,18 @@
+title: Home Assistant - сервер
+views:
+  - !include lovelace/01_system.yaml
+  - !include lovelace/11_plan.yaml
+  - !include lovelace/03_oxrana.yaml   
+  - !include lovelace/02_pogoda.yaml
+  - !include lovelace/04_light.yaml
+  - !include lovelace/05_zigbee.yaml
+  - !include lovelace/06_monitor_eye.yaml    
+  - !include lovelace/07_monitor_dashboard.yaml
+  - !include lovelace/08_speaker.yaml
+  - !include lovelace/12_camera.yaml
+  - !include lovelace/13_automation.yaml
+  - !include lovelace/10_cc2652p.yaml
+#  - !include lovelace/14_scene.yaml
+  - !include lovelace/15_mi_flora.yaml
+  - !include lovelace/16_vacum.yaml
+  

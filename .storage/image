@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "key": "image",
+    "data": {
+        "items": [
+            {
+                "id": "c2c050a66d2005aa7623b353bd7cacfe",
+                "filesize": 196640,
+                "content_type": "image/jpeg",
+                "name": "\u042f.JPG",
+                "uploaded_at": "2021-07-02T08:39:56.484978+00:00"
+            }
+        ]
+    }
+}

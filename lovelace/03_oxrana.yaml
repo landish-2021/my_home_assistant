@@ -1,0 +1,40 @@
+    title: Охрана
+    icon: mdi:security
+    
+    cards:
+    
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Охрана квартиры** 
+#        - type: alarm-panel
+#          states:
+#            - arm_home
+#            - arm_away
+#            - arm_night
+#          entity: alarm_control_panel.0xbc33acfffe539af5_alarm
+        
+#        - type: alarm-panel
+#          states:
+#            - arm_home
+#            - arm_away
+#            - arm_night
+#          entity: alarm_control_panel.xiaomi_gateway_alarm
+        
+        
+#        - type: alarm-panel
+#          states:
+#            - arm_home
+#            - arm_away
+#            - arm_night
+#          entity: alarm_control_panel.aqara_hub_3169
+
+        - type: alarm-panel #'custom:alarmo-card'
+          name: Квартира 50 панель сигнализации
+          entity: alarm_control_panel.home_50_alarm
+          states:
+            - arm_home
+            - arm_away
+            - arm_night
+            - armed_custom_bypass

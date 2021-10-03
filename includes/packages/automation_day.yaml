@@ -1,0 +1,20 @@
+automation_day:
+
+
+    binary_sensor:
+
+# Выходные и будние
+      - platform: workday
+        country: RU
+
+# Время работы в выходные и будние
+
+      - platform: tod
+        name: weekday_time
+        after: '06:00'
+        before: '22:00'
+    
+      - platform: tod
+        name: weekend_time
+        after: '10:00'
+        before: '22:00'

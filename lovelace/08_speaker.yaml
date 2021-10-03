@@ -1,0 +1,96 @@
+    title: Колонки
+    icon: mdi:speaker
+    
+    cards:
+    
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **колонка Google** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: media_player.zal
+            
+            
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **колонка Yandex** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+              shortcuts:
+                attribute: sound_mode
+                buttons:
+                - icon: 'mdi:voice'
+                  id: Произнеси текст
+                  type: sound_mode
+                - icon: 'mdi:google-assistant'
+                  id: Выполни команду
+                  type: sound_mode
+                - icon: 'mdi:playlist-star'
+                  id: включи мою любимую музыку вперемешку
+                  type: command
+                - icon: 'mdi:playlist-music'
+                  id: включи плейлист дня
+                  type: command
+                - icon: 'mdi:heart'
+                  id: лайк
+                  type: command
+                - icon: 'mdi:heart-off'
+                  id: снять лайк
+                  type: command
+              columns: 6
+              tts:
+                platform: yandex_station
+              type: 'custom:mini-media-player'  
+       
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Spotify**  
+        - type: entities
+          show_header_toggle: false
+          entities:       
+            - entity: media_player.spotify_andrei_skuratovskii 
+            - entity: script.playlist_spotify
+            
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Телевизор в зале LG** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: media_player.lg_webos_tv_8acd
+            
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Телевизор в свальне Samsung** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: media_player.ue32d6500
+            
+        
+#      - type: vertical-stack
+#        cards:
+#        - type: markdown
+#          content: >
+#             **Шлюз Aqara** 
+             
+#        - type: media-control
+#          entity: media_player.mpd
+            

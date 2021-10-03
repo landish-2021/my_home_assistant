@@ -1,0 +1,5 @@
+# Для управления Алисой
+  notifier:
+    - oauth_token: !secret oauth_token
+      skill_id: !secret skill_id
+      user_id: !secret user_id

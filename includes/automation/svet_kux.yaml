@@ -1,0 +1,61 @@
+# Включение люстры на кухне
+- alias: Свет в кухне Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_kux_action
+     to: "single"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_kux_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: f66f4ad4891487aeb8a89d806990e202
+     entity_id: sensor.datchik_dvijeniya_v_kux_illuminance_lux
+     domain: sensor
+     below: 20
+   - condition: state
+     entity_id: light.lustra_lamp1_v_kux
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp2_v_kux
+     state: "off"
+   - condition: state
+     entity_id: light.lustra_lamp3_v_kux
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "22:00:00"
+  action:
+   - service: script.turn_on
+     entity_id: script.lustra_kux_na_70
+     
+# Отключение люстры на кухне
+- alias: Свет в кухне Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_kux_action
+     to: "single"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_kux_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: light.lustra_lamp1_v_kux
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp2_v_kux
+     state: "on"
+   - condition: state
+     entity_id: light.lustra_lamp3_v_kux
+     state: "on"
+  action:
+   - service: script.turn_on
+     entity_id: script.lustra_kux_off

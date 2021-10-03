@@ -1,0 +1,1 @@
+error 2021-09-16 21:11:47: Failed to execute LQI for 'led_lenta_ok'

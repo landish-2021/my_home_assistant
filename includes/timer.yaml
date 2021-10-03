@@ -1,0 +1,11 @@
+zigbee_permit_join:
+    name: Time remaining
+    duration: '00:10:00'
+    
+vent:
+    name: Вентиляция выкл через -
+    duration: '00:10:00'
+
+camphoto:
+    name: Следующее фото на входе через - 
+    duration: '00:03:00'

@@ -1,0 +1,63 @@
+# Включение света
+- alias: Свет в коридоре Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_korid_click
+     to: "left"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_korid_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: 495b1c24740b2913fbf8ca6c5d10f3be
+     entity_id: sensor.datchik_dvijeniya_v_prix_illuminance_lux
+     domain: sensor
+     below: 10
+   - condition: state
+     entity_id: light.pot_lamp1_v_kor
+     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp2_v_kor
+     state: "off"
+   - condition: state
+     entity_id: light.pot_lamp3_v_kor
+     state: "off"
+   - condition: time
+     after: "06:00:00"
+     before: "22:00:00"
+  action:
+   - service: script.turn_on
+     entity_id: script.kor_na_50
+
+
+# Отключение света
+- alias: Свет в коридоре Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.vykluch_v_korid_click
+     to: "left"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_korid_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 0
+      seconds: 20
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: light.pot_lamp1_v_kor
+     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp2_v_kor
+     state: "on"
+   - condition: state
+     entity_id: light.pot_lamp3_v_kor
+     state: "on"
+  action:
+   - service: script.turn_on
+     entity_id: script.kor_off
+  

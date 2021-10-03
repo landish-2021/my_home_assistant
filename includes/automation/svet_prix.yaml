@@ -1,0 +1,63 @@
+# Включение света по движению
+- alias: Свет в прихожей Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_prix_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: 495b1c24740b2913fbf8ca6c5d10f3be
+     entity_id: sensor.datchik_dvijeniya_v_prix_illuminance_lux
+     domain: sensor
+     below: 10
+   - condition: state
+     entity_id: switch.vykluch_v_prix
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "23:00:00"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_prix
+     
+# Включение света по открытию входной двери
+- alias: Свет в прихожей Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dveri_v_prix_contact
+     from: "off"
+     to: "on"
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_prix
+     state: "off"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_prix
+
+# Отключение света
+- alias: Свет в прихожей Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_prix_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_prix_occupancy
+     state: "off"
+   - condition: state
+     entity_id: switch.vykluch_v_prix
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.vykluch_v_prix
+  

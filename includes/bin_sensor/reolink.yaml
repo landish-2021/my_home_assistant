@@ -1,0 +1,35 @@
+#  - platform: template
+#    sensors:
+#      reolink_e1_pro_spal_occupancy:
+#        friendly_name: Движение, спальня
+#        device_class: motion
+#        value_template: "{{ is_state('camera.camera_spal_profile000_mainstream', 'motion') }}"
+#        delay_off: 
+#            seconds: 30
+
+#  - platform: template
+#    sensors:
+#      reolink_e1_pro_zal_occupancy:
+#        friendly_name: Движение, зал
+#        device_class: motion
+#        value_template: "{{ is_state('camera.camera_zal_profile000_mainstream', 'motion') }}"
+#        delay_off: 
+#            seconds: 30
+
+#  - platform: template
+#    sensors:
+#      reolink_c1_pro_prix_occupancy:
+#        friendly_name: Движение, прихожая
+#        device_class: motion
+#        value_template: "{{ is_state('camera.camera_vxod_profile000_mainstream', 'motion') }}"
+#        delay_off: 
+#            seconds: 30
+
+#  - platform: template
+#    sensors:
+#      reolink_e1_pro_kux_occupancy:
+#        friendly_name: Движение, кухня
+#        device_class: motion
+#        value_template: "{{ is_state('camera.camera_kux_profile000_mainstream', 'motion') }}"
+#        delay_off: 
+#            seconds: 30

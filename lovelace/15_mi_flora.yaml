@@ -1,0 +1,101 @@
+##################   Mi Flora
+title: Mi Flora
+icon: mdi:flower
+cards:
+
+    - type: vertical-stack
+      cards:
+        - type: markdown
+          content: >
+            **Растения** 
+
+        - type: plant-status
+          entity: plant.ficus_ble
+          name: Ficus
+
+
+
+#        - type: entities
+#          show_header_toggle: false
+#          entities:
+#            - sensor.ficus_rssi_summ
+#            - entity: sensor.ble_moisture_c47c8d6d7705
+#            - entity: sensor.ble_illuminance_c47c8d6d7705
+#            - entity: sensor.ble_temperature_c47c8d6d7705
+#            - entity: sensor.ble_conductivity_c47c8d6d7705
+#            - entity: sensor.ble_battery_flower_care_battery
+
+#  - type: custom:miflora-card
+#    title: 'Ficus'
+#    image: /local/ficus_baroko_iren.jpg
+#    location: zal
+#    min_moisture: 15
+#    max_moisture: 60
+#    min_conductivity: 100
+#    max_conductivity: 2000
+#    min_temperature: 15
+#    max_temperature: 35
+#    entities:
+#    - entity: sensor.ble_moisture_c47c8d6d7705
+#      type: moisture
+#    - entity: sensor.ble_illuminance_c47c8d6d7705
+#      type: intensity
+#    - entity: sensor.ble_temperature_c47c8d6d7705
+#      type: temperature
+#    - entity: sensor.ble_conductivity_c47c8d6d7705
+#      type: conductivity
+#      name: Fertility
+#    - entity: sensor.ble_battery_flower_care_battery
+#      type: battery
+#    - entity: sensor.ble_rssi_c47c8d6d7705
+#      type: rssi
+#      name: BT Signal
+
+    - type: vertical-stack
+      cards:
+        - type: picture-elements
+          image: /local/ficus_baroko_iren.jpg
+          elements:
+            - type: state-badge
+              entity: sensor.v1_cloud_d4lc00_humidity
+              style:
+                top: 27%
+                left: 10%
+                --ha-label-badge-font-size: 1em
+                color: rgb(255, 255, 255)
+            - type: state-badge
+              entity: sensor.v1_cloud_d4lc00_illumination
+              style:
+                top: 27%
+                left: 25%
+                --ha-label-badge-font-size: 1em
+                color: rgb(255, 255, 255)
+            - type: state-badge
+              entity: sensor.v1_cloud_d4lc00_ec
+              style:
+                top: 27%
+                left: 40%
+                --ha-label-badge-font-size: 1em
+                color: rgb(255, 255, 255)
+            - type: state-label
+              entity: sensor.v1_cloud_d4lc00_temperature
+              style:
+                top: 15%
+                left: 92%
+                --ha-label-badge-font-size: 1em
+                color: rgb(255, 255, 255)
+            - type: state-label
+#              entity: sensor.ble_rssi_c47c8d6d7705
+#              style:
+#                top: 20%
+#                left: 92%
+#                --ha-label-badge-font-size: 1em
+#                color: rgb(255, 255, 255)
+#            - type: state-label
+#              entity: sensor.ble_battery_flower_care_battery
+#              style:
+#                top: 25%
+#                left: 92%
+#                --ha-label-badge-font-size: 1em
+#                color: rgb(255, 255, 255)
+            

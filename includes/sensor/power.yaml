@@ -1,0 +1,9 @@
+  - platform: template
+    sensors:
+     xiaomi_gateway_load_power:
+       value_template: "{{ state_attr('switch.xiaomi_gateway', 'load_power') }}"
+       unit_of_measurement: 'Вт'
+       entity_id: switch.xiaomi_gateway
+       device_class: power
+       friendly_name: 'Потребляевая мощность кондиционенром'
+

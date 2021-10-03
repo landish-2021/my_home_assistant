@@ -1,0 +1,217 @@
+    title: Zigbee
+    icon: mdi:zigbee
+    
+    cards:
+    
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Уровень заряда** 
+             
+        - type: custom:battery-state-card
+          title: "Цветная градация"
+          color_gradient:
+            - "#ff0000" # red
+            - "#ffff00" # yellow
+            - "#00ff00" # green
+          entities:
+            - entity: sensor.datchik_dvijeniya_v_zal_lev_battery
+              name: "Датчик движения зал слево"      
+            - entity: sensor.datchik_dvijeniya_v_zal_prav_battery
+              name: "Датчик движения зал справо"           
+            - entity: sensor.datchik_dyma_kux_battery
+              name: "Датчик дыма на кухне"
+            - entity: sensor.datchik_temper_vanna_battery
+              name: "Датчик температуры в ванной"
+            - entity: sensor.datchik_temper_zal_battery
+              name: "Датчик температуры в зале"
+            - entity: sensor.datchik_protechki_kux_battery
+              name: "Датчик протечки в кухне"
+            - entity: sensor.datchik_protechki_vanna_battery
+              name: "Датчик протечки в ванной"
+            - entity: sensor.mi_knopka_battery
+              name: "Кнопка Mijia"
+            - entity: sensor.kub_aqara_battery
+              name: "Кубик Aqara"
+            - entity: sensor.datchik_dvijeniya_v_spal_battery
+              name: "Датчик движения в спальне"
+            - entity: sensor.datchik_dvijeniya_v_klad_battery
+              name: "Датчик движения в кладовке"
+            - entity: sensor.datchik_dvijeniya_v_korid_battery
+              name: "Датчик движения в коридоре"
+            - entity: sensor.datchik_dvijeniya_v_prix_battery
+              name: "Датчик движения в прихожей"
+            - entity: sensor.datchik_dvijeniya_v_kux_battery
+              name: "Датчик движения в кухне"
+            - entity: sensor.datchik_dvijeniya_v_vanna_battery
+              name: "Датчик движения в ванной"
+            - entity: sensor.datchik_dveri_v_prix_battery
+              name: "Датчик двери в прихожей"
+            - entity: sensor.datchik_okna_v_kux_battery
+              name: "Датчик окна в кухне"
+            - entity: sensor.datchik_okna_v_zal_battery
+              name: "Датчик окна в зале"
+            - entity: sensor.datchik_okna_v_spal_battery
+              name: "Датчик окна в спальне"
+            - entity: sensor.knopka_aqara_battery
+              name: "Кнопка Aqara"
+            - entity: sensor.datchik_temper_ulica_battery
+              name: "Датчик температуры на улице"
+            - entity: sensor.datchik_dveri_v_vanna_battery
+              name: "Датчик двери в ванной"
+            - entity: sensor.datchik_temper_spal_battery
+              name: "Датчик температуры в спальне"
+            - entity: sensor.stul_zal_battery
+              name: "Датчик стул в зале"  
+            - entity: sensor.datchik_temper_moes_battery
+              name: "Датчик температуры Moes"   
+            - entity: sensor.datchik_protechki_spal_battery
+              name: "Датчик протечки в спальне под батареей"
+            - entity: sensor.datchik_protechki_zal_battery
+              name: "Датчик протечки в зале под батареей"
+            - entity: sensor.datchik_protechki_kux_b_battery
+              name: "Датчик протечки в кухне под батареей"  
+
+
+      - type: vertical-stack
+        cards:              
+        - type: markdown
+          content: >
+             **Лампочки** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:
+            - entity: light.pot_lev_lamp_v_spal
+              name: "Левый потолочный светильник в спальне"  
+            - entity: light.pot_prav_lamp_v_spal
+              name: "Правый потолочный светильник в спальне"
+            - entity: light.nastol_lamp_v_spal
+              name: "Настольная лампа в спальне" 
+            - entity: light.lustra_lamp1_v_zal
+              name: "1 лампа люстра в зале"  
+            - entity: light.lustra_lamp2_v_zal
+              name: "2 лампа люстра в зале"  
+            - entity: light.lustra_lamp3_v_zal
+              name: "3 лампа люстра в зале"  
+            - entity: light.lustra_lamp4_v_zal
+              name: "4 лампа люстра в зале"  
+            - entity: light.lustra_lamp5_v_zal
+              name: "5 лампа люстра в зале"  
+            - entity: light.lustra_lamp6_v_zal
+              name: "6 лампа люстра в зале"  
+            - entity: light.pot_lamp1_v_kor
+              name: "1 потолочный светильник в коридоре"  
+            - entity: light.pot_lamp2_v_kor
+              name: "2 потолочный светильник в коридоре"  
+            - entity: light.pot_lamp3_v_kor
+              name: "3 потолочный светильник в коридоре"  
+            - entity: light.lustra_lamp1_v_kux
+              name: "1 лампа люстра в кухне"  
+            - entity: light.lustra_lamp2_v_kux
+              name: "2 лампа люстра в кухне"  
+            - entity: light.lustra_lamp3_v_kux
+              name: "3 лампа люстра в кухне"    
+            - entity: light.led_lenta_kor
+              name: "LED лента в коридоре"    
+#            - entity: light.led_lenta_ok
+#              name: "LED лента RGBW"     
+            - entity: light.pot_lamp1_v_van
+              name: "1 потолочный светильник в ванной"  
+            - entity: light.pot_lamp2_v_van
+              name: "2 потолочный светильник в ванной"  
+            - entity: light.pot_lamp3_v_van
+              name: "3 потолочный светильник в ванной"   
+            - entity: light.pot_lamp4_v_van
+              name: "4 потолочный светильник в ванной"    
+            
+
+#        - type: markdown
+#          content: >
+#             **Шлюз** 
+             
+#        - type: entities
+#          show_header_toggle: false
+#          entities:          
+#            - entity: light.lumi_light
+#              name: "Ночник в зале"  
+
+
+      - type: vertical-stack
+        cards:              
+        - type: markdown
+          content: >
+             **Выключатели** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: switch.vykluch_v_prix
+              name: "Выключатель в прихожей"
+            - entity: switch.vykluch_v_korid_left
+              name: "Выключатель в коридоре свет в коридоре"
+            - entity: switch.vykluch_v_korid_right
+              name: "Выключатель в коридоре свет в ванную"
+            - entity: switch.vykluch_v_kux
+              name: "Выключатель в кухне"
+            - entity: switch.vykluch_v_zal_lev
+              name: "Выключатель в зале левый свет слева" 
+            - entity: switch.vykluch_v_zal_prav_left
+              name: "Выключатель в зале правый свет справо"
+            - entity: switch.vykluch_v_zal_prav_right
+              name: "Выключатель в зале правый люстра"
+            - entity: switch.vykluch_v_klad
+              name: "Выключатель в кладовке"
+            - entity: switch.vykluch_v_spal_left
+              name: "Выключатель в спальне люстра"
+            - entity: switch.vykluch_v_spal_right
+              name: "Выключатель в спальне светильники"  
+              
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Розетки** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:          
+            - entity: switch.rozetka_v_prihojey
+              name: "Розетка в прихожей"
+            - entity: sensor.rozetka_v_prihojey_power
+              name: "Розетка в прихожей мощнось"
+            - entity: switch.rozetka_v_zale
+              name: "Розетка в зале"
+            - entity: sensor.rozetka_v_zale_power
+              name: "Розетка в зале мощность"
+            - entity: switch.rozetka_v_kux
+              name: "Розетка в кухне"
+            - entity: sensor.rozetka_v_kux_power
+              name: "Розетка в кухне мощность"  
+              
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Окна дверь** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:   
+            - entity: binary_sensor.datchik_dveri_v_prix_contact
+              name: "Дверь в прихожей"
+            - entity: binary_sensor.datchik_dveri_v_vanna_contact
+              name: "Дверь в ванной"
+            - entity: binary_sensor.datchik_okna_v_kux_contact
+              name: "Окно в кухне"
+            - entity: binary_sensor.datchik_okna_v_zal_contact
+              name: "Окно в зале"
+            - entity: binary_sensor.datchik_okna_v_spal_contact 
+              name: "Окно в спальне"
+          
+          

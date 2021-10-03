@@ -1,0 +1,150 @@
+- alias: 00_telegramm_ping
+  initial_state: true
+  trigger:
+  - platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/ping'
+  condition:
+   - condition: state
+     entity_id: switch.control_mode
+     state: 'on'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        message: | 
+             {{"\U0001F4AC"}} Управление на основном сервере
+             {{"\U0001F567"}} Отчет о состояни систем на {{ states('sensor.time_date') }}
+             {{"\U0001F4A1"}} Светильников недоступно - {{ states('sensor.unavailable_now_light') }} 
+             {{"\U0001F50C"}} Свичей недоступно - {{ states('sensor.unavailable_now_switch') }} 
+             {{"\U0001F321"}} Сенсоров недоступно - {{ states('sensor.unavailable_now_sensor') }} 
+             {{"\U0001F51F"}} Бинарных сенсоров недоступно - {{ states('sensor.unavailable_now_binary_sensor') }} 
+
+#  Автоматизация - запрос на отправку фото по команде /photo
+#  В данной автоматизации использован шаблон target: '{{ trigger.event.data.user_id }}' - отправляющий фото тому пользователю, который прислал запрос.
+           
+- alias: Запрос на фото отчет зал
+  initial_state: true
+  trigger:
+  - platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/photo_zal'
+  action:
+    - service: camera.snapshot
+      data:
+           entity_id: camera.camera_zal_profile000_mainstream
+           filename: "/config/www/cam_captures/reolink_zal.jpg"
+    - delay: 00:00:15
+    - service: telegram_bot.send_photo
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        file: "/config/www/cam_captures/reolink_zal.jpg" 
+            
+- alias: Запрос на фото отчет кухня
+  initial_state: true
+  trigger:
+  - platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/photo_kux'
+  action:
+    - service: camera.snapshot
+      data:
+           entity_id: camera.camera_kux_profile000_mainstream
+           filename: "/config/www/cam_captures/reolink_kux.jpg"
+    - delay: 00:00:15
+    - service: telegram_bot.send_photo
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        file: "/config/www/cam_captures/reolink_kux.jpg" 
+            
+- alias: Запрос на фото отчет спальня
+  initial_state: true
+  trigger:
+  - platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/photo_spal'
+  action:
+    - service: camera.snapshot
+      data:
+          entity_id: camera.camera_spal_profile000_mainstream
+          filename: "/config/www/cam_captures/reolink_spal.jpg"
+    - delay: 00:00:15
+    - service: telegram_bot.send_photo
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        file: "/config/www/cam_captures/reolink_spal.jpg"       
+        
+- alias: Запрос на фото отчет прихожая
+  initial_state: true
+  trigger:
+  - platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/photo_prix'
+  action:
+    - service: camera.snapshot
+      data:
+          entity_id: camera.camera_vxod_profile000_mainstream
+          filename: "/config/www/cam_captures/reolink_vxod.jpg"
+    - delay: 00:00:15
+    - service: telegram_bot.send_photo
+      data_template:
+        target: '{{ trigger.event.data.user_id }}'
+        file: "/config/www/cam_captures/reolink_vxod.jpg"       
+
+# Mi Flora
+- alias: Mi Flora проблема
+  trigger:
+  - platform: time
+    at: "19:00:00"
+  condition:
+  - condition: state
+    entity_id: plant.ficus_ble
+    state: 'problem'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        message: |
+             {{"\U0001F337"}} "Цветок требует к себе внимания"
+
+- alias: Mi flora sensors available
+  trigger:
+  - platform: time
+    at: "19:10:00"
+  condition:
+  - condition: state
+    entity_id: sensor.v1_cloud_d4lc00_humidity
+    state: 'unavailable'
+  action:
+    - service: telegram_bot.send_message
+      data_template:
+        target:
+            - !secret chat_id_andrey
+        message:  |
+             {{"\U0001F337"}} "Mi Flora сенсор не доступн"
+
+
+# Отчет по недоступности Zigbee устройств
+- alias: Z2m offline detection
+  description: ''
+  use_blueprint:
+    path: Mr-Groch/offline-notification-for-sensors-with-last_seen.yaml
+    input:
+      time: '10:10:00'
+      actions:
+      - service: notify.telegram_andrey
+        data:
+          message: 'Зигби устройства  недоступны: {{sensors}}'
+      day: 0
+      hours: 5
+
+
+
+

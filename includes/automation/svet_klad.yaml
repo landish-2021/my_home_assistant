@@ -1,0 +1,38 @@
+# Включение света
+- alias: Свет в кладовке Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_klad_occupancy
+     to: "on"
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_klad
+     state: "off"
+   - condition: time
+     after: "05:00:00"
+     before: "23:00:00"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_klad
+
+# Отключение света
+- alias: Свет в кладовке Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_klad_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 0
+      seconds: 20
+      milliseconds: 0
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_klad
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.vykluch_v_klad  
+  

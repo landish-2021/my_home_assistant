@@ -1,0 +1,387 @@
+    title: Устройства
+    icon: mdi:monitor-dashboard
+
+    cards:
+
+    - type: vertical-stack
+      cards: 
+
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.t2_cloud_e0eg00_level
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Климат в прихожей
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.t2_cloud_e0eg00_temperature
+                name: Температура            
+              - entity: sensor.t2_cloud_e0eg00_humidity
+                name: Влажность      
+
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_temper_spal_battery
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Климат в спальне
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.datchik_temper_spal_temperature
+                name: Температура            
+              - entity: sensor.datchik_temper_spal_humidity
+                name: Влажность
+              - entity: sensor.datchik_temper_spal_pressure_mmhg
+                name: Давление  
+
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_temper_zal_battery
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Климат в зале
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.datchik_temper_zal_temperature
+                name: Температура            
+              - entity: sensor.datchik_temper_zal_humidity
+                name: Влажность
+              - entity: sensor.datchik_temper_zal_pressure_mmhg
+                name: Давление  
+         
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_temper_vanna_battery
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Климат в ванной
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.datchik_temper_vanna_temperature
+                name: Температура            
+              - entity: sensor.datchik_temper_vanna_humidity
+                name: Влажность
+              - entity: sensor.datchik_temper_vanna_pressure_mmhg
+                name: Давление  
+                
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_temper_moes_battery
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Датчик температуры Moes #Климат в ванной
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.datchik_temper_moes_temperature
+                name: Температура            
+              - entity: sensor.datchik_temper_moes_humidity
+                name: Влажность
+              - entity: sensor.datchik_temper_moes_illuminance_lux
+                name: Освещенность
+                
+             
+                
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_temper_ulica_battery
+            type: custom:multiple-entity-row
+            icon: mdi:home-thermometer
+            name: Климат на улице
+            state_header: Уровень заряда
+            entities:
+              - entity: sensor.datchik_temper_ulica_temperature
+                name: Температура            
+              - entity: sensor.datchik_temper_ulica_humidity
+                name: Влажность
+              - entity: sensor.datchik_temper_ulica_pressure_mmhg
+                name: Давление          
+         
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.datchik_dyma_kux_battery
+            type: custom:multiple-entity-row
+            icon: mdi:smoke-detector
+            name: Датчик дыма в кухне
+            state_header: Уровень заряда
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dyma_kux_linkquality
+                name: Сигнал
+
+    - type: vertical-stack
+      cards: 
+
+        - type: entities
+          show_header_toggle: false
+          entities: 
+          - entity: switch.rozetka_v_prihojey
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Розетка в прихожей
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.rozetka_v_prihojey_power
+                name: Мощность           
+              - entity: sensor.rozetka_v_prihojey_linkquality
+                name: Сигнал  
+        
+        - type: entities
+          show_header_toggle: false
+          entities:         
+          - entity: switch.rozetka_v_zale
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Розетка в зале
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.rozetka_v_zale_power
+                name: Мощность           
+              - entity: sensor.rozetka_v_zale_linkquality
+                name: Сигнал  
+
+        - type: entities
+          show_header_toggle: false
+          entities:         
+          - entity: switch.rozetka_v_kux
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Розетка вытяжка на кухне
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.rozetka_v_kux_power
+                name: Мощность
+              - entity: sensor.rozetka_v_kux_voltage
+                name: U в сети
+              - entity: sensor.rozetka_v_kux_linkquality
+                name: Сигнал  
+
+        - type: entities
+          show_header_toggle: false
+          entities:         
+          - entity: switch.xiaomi_gateway
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Кондиционер в зале
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.xiaomi_gateway_load_power
+                name: Мощность           
+
+        - type: entities
+          show_header_toggle: false
+          entities:         
+          - entity: switch.212a01_cloud_549478
+            type: custom:multiple-entity-row
+            icon: mdi:power-socket-eu
+            toggle: true
+            state_color: true
+            name: Розетка с BLE
+            secondary_info: last-changed
+            state_header: Состояние          
+            entities:
+              - entity: sensor.212a01_cloud_549478_power
+                name: Мощность           
+
+    - type: vertical-stack
+      cards: 
+
+        - type: entities
+          show_header_toggle: false
+          entities:       
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_zal_lev_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение зал левый
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_zal_lev_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_zal_lev_linkquality
+                name: Сигнал      
+                
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_zal_prav_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение зал правый
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_zal_prav_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_zal_prav_linkquality
+                name: Сигнал         
+                
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_spal_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение спальня
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_spal_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_spal_linkquality
+                name: Сигнал      
+                
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_klad_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение кладовка
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_klad_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_klad_linkquality
+                name: Сигнал      
+                
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_korid_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение коридор
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_korid_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_korid_linkquality
+                name: Сигнал      
+               
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_prix_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение прихожая
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_prix_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_prix_linkquality
+                name: Сигнал         
+                
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_kux_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение кухня
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_kux_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_kux_linkquality
+                name: Сигнал            
+             
+          - type: section
+          - entity: sensor.datchik_dvijeniya_v_vanna_battery
+            type: custom:multiple-entity-row
+            icon: mdi:run
+            name: Движение ванная
+            state_header: Заряд
+            entities:
+              - attribute: last_seen
+                format: relative
+                name: Отклик
+              - entity: sensor.datchik_dvijeniya_v_vanna_illuminance_lux
+                name: Освещ-ть
+              - entity: sensor.datchik_dvijeniya_v_vanna_linkquality
+                name: Сигнал              
+                
+    - type: vertical-stack
+      cards: 
+
+        - type: entities
+          show_header_toggle: false
+          entities:       
+          - type: section
+          - entity: sensor.bkl_l09_uroven_zariada_akkumuliatora
+            type: custom:multiple-entity-row
+            icon: mdi:cellphone
+            name: Мой сотовый
+            state_header: Заряд
+            entities:
+              - entity: device_tracker.bkl_l09
+                name: нахождение
+ 
+    - type: vertical-stack
+      cards: 
+
+        - type: entities
+          show_header_toggle: false
+          entities:       
+          - type: section
+          - entity: sensor.energy_monitor_current
+            type: custom:multiple-entity-row
+            icon: mdi:car-cruise-control
+            name: Энергомонитор
+            state_header: Текущие
+            entities:
+              - entity: sensor.energy_monitor_energy
+                name: Энергия
+              - entity: sensor.energy_monitor_power
+                name: Мощность  
+              - entity: sensor.energy_monitor_voltage
+                name: U сети      
+              - entity: sensor.energy_monitor_linkquality
+                name: Сигнал  
+              - entity: switch.energy_monitor
+                name: Реле 
+
+        - type: markdown
+          content: >
+             **Расход энергии по энергомонитору кВт - 1 тариф**
+ 
+        - type: entities
+          show_header_toggle: false
+          entities:
+          - entity: sensor.um_one_daily_energy_monitor_electicity
+            name: День
+          - entity: sensor.money_day_energy_monitor_day
+          - entity: sensor.um_one_monthly_energy_monitor_electicity
+            name: Месяц
+          - entity: sensor.money_month_energy_monitor_month
+          - entity: sensor.um_one_yearly_energy_monitor_electicity
+            name: Год
+          - entity: sensor.money_month_energy_monitor_yearly

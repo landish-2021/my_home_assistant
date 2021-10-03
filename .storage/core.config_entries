@@ -1,0 +1,750 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "80d9fe6c97fc34d99c74a9c54a0fc7df",
+                "version": 1,
+                "domain": "hassio",
+                "title": "Supervisor",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "system",
+                "unique_id": "hassio",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "a41bc000dfba2514a1f4a6d5512e0249",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "ad0b308b48bcf72bd0faf6b2941942a3",
+                "version": 1,
+                "domain": "rpi_power",
+                "title": "Raspberry Pi Power Supply Checker",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "bd083213ae420038f33751964531e3bd",
+                "version": 1,
+                "domain": "xiaomi_gateway3",
+                "title": "landish.osnk@mail.ru",
+                "data": {
+                    "servers": [
+                        "cn",
+                        "ru"
+                    ],
+                    "username": "landish.osnk@mail.ru",
+                    "password": "751250As",
+                    "user_id": 4185191603,
+                    "ssecurity": "2lWGSOwYiPU/IrjIi2ZOtw==",
+                    "service_token": "TzEn7jZrJEsiZGT13QnMZw/b/lSxi3O+PX9AxT5NJ0CzrPyv1+hrYP3QpjhpgxBS8fUY0RpWCC2a0IczvhtpIo6fY+69CE5BGH41mxxcufJ0I5ZTMAlRVxNszNiAHK8R0lH8ZB2upBuNEtaemxatt720FRlLF2nDBiSYvQJcyNE="
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "a5032ba1ecaa6e0c1cb59066e9ba5dd7",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "configuration.yaml",
+                "data": {
+                    "broker": "core-mosquitto",
+                    "port": 1883,
+                    "username": "user50",
+                    "password": "user50",
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "d9c6bbede321f67dee1e4346ed14ccbb",
+                "version": 1,
+                "domain": "spotify",
+                "title": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0421\u043a\u0443\u0440\u0430\u0442\u043e\u0432\u0441\u043a\u0438\u0439",
+                "data": {
+                    "auth_implementation": "spotify",
+                    "token": {
+                        "access_token": "BQAl5dhVyL4ARDEGTU7M3lT2vf5WNKFojyFVe_pAu1oO5aUrWsNwdPwmN5PVPTVcIHZJkO9aMGcgol9sEBUpVDUGX9MyJ_SlDkCunCbQ6_x1sNpZ7fezMS0tOl0-PNe2ehIlt1M19e0VRYi3_egrsIX-S_9hcT-ka7DCuS2GWXYFA7O70dleNepkGPMlJo5v9QtFATQ6s-y613kIYiJHqhccptR_iCzc6g",
+                        "token_type": "Bearer",
+                        "expires_in": 3600,
+                        "refresh_token": "AQDEv8F93fizNnw3Fqv38FkhNTsoHahIKHpU0vvwVbGSZFyBvwIpWpVYVD14Sq3ySnse-nrHBd_D3S1PN9YnmlLG9pBSrAfjwbR531KwbQm7OPpbnT3xa9BU9T81FwL5A-Q",
+                        "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
+                        "expires_at": 1633257937.6033874
+                    },
+                    "id": "31s4wpz2vcxlcpxk66rdaytrs2xu",
+                    "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0421\u043a\u0443\u0440\u0430\u0442\u043e\u0432\u0441\u043a\u0438\u0439"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "31s4wpz2vcxlcpxk66rdaytrs2xu",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "1cf5f8018bb92ad258da78f719fa8621",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "192.168.31.158",
+                "data": {
+                    "host": "192.168.31.158",
+                    "id": "0x000000000eb5292a"
+                },
+                "options": {
+                    "name": "",
+                    "model": "color5",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "0x000000000eb5292a",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "99fda4f24f988a2d3d3dee0483e2144f",
+                "version": 1,
+                "domain": "yandex_station",
+                "title": "andrey-skuratovskiy",
+                "data": {
+                    "x_token": "AQAAAAABgI8OAAAVsyPvhu4-0UiOtXMKoZy0D_E",
+                    "music_token": "AgAAAAABgI8OAAG8Xrh3dOEru02GqgEKTexZqDc",
+                    "cookie": "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"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "andrey-skuratovskiy",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "71dafae6433979a5ea2596ec694a86ef",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "BKL-L09",
+                "data": {
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2021.9.0-full (723)",
+                    "device_name": "BKL-L09",
+                    "manufacturer": "HUAWEI",
+                    "model": "BKL-L09",
+                    "os_name": "Android",
+                    "os_version": "29",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "ebv8cYbjRaGht2Q6W67Zah:APA91bElis9andC26XTwiStATGKT_wefmZI_QjAMsd8O2qUD8xs-YCLCU8jHbw-8Kqb0fAn4s2Isnp83B0Wj6WHZHnuyOp1adQFcL2h01fujN21Qo4GpAEHMloWEkZn4tfjKdruCdThK"
+                    },
+                    "device_id": "7dde01cc3781ec67",
+                    "webhook_id": "4a2ab9e0cbab2d1882186c4abc71dcc9c66207b6efa50da835199c687239a7c1",
+                    "user_id": "af10a108b0a34405b55a94a2e51e4461"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.homeassistant.companion.android-7dde01cc3781ec67",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "03eab396029028f665000f1be3745cb8",
+                "version": 1,
+                "domain": "homekit_controller",
+                "title": "LG webOS TV 8ACD",
+                "data": {
+                    "AccessoryPairingID": "40:E1:6C:B6:5E:4B",
+                    "AccessoryLTPK": "75135fbe5a5d21b4a5749392a3e8664da12dfcd50b1ceb2d8c79b17168e625e6",
+                    "iOSPairingId": "5403e0dc-c2d4-4e62-852d-ba9bfabbac7e",
+                    "iOSDeviceLTSK": "3e7150a7d50222c87614e2d730b8bdd7ab1e34474d82650ac9771a5e8700308a",
+                    "iOSDeviceLTPK": "74376477fe950124e08dee224e3686a9f61b368706f2406a033360e81a4d19bf",
+                    "AccessoryIP": "192.168.31.254",
+                    "AccessoryPort": 45190,
+                    "Connection": "IP"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "40:e1:6c:b6:5e:4b",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b2f783daa244acbf9ff7e38e8a01b040",
+                "version": 1,
+                "domain": "onvif",
+                "title": "Camera-spal - 68:39:43:65:66:84",
+                "data": {
+                    "port": 8000,
+                    "host": "192.168.31.9",
+                    "name": "Camera-spal",
+                    "username": "admin",
+                    "password": "Mirex2007",
+                    "snapshot_auth": "digest"
+                },
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "68:39:43:65:66:84",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7a0b116fbeb60fbfe756c0521843d360",
+                "version": 1,
+                "domain": "onvif",
+                "title": "Camera-vxod - EC:71:DB:DD:5B:D4",
+                "data": {
+                    "port": 8000,
+                    "host": "192.168.31.11",
+                    "name": "Camera-vxod",
+                    "username": "admin",
+                    "password": "Mirex2007",
+                    "snapshot_auth": "digest"
+                },
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "EC:71:DB:DD:5B:D4",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "34a4a1c2851bd1b5b4a28358fe19f30d",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "Xiaomi Gateway",
+                "data": {
+                    "config_flow_device": "gateway",
+                    "host": "192.168.31.224",
+                    "token": "da1b33173c9efa981595b3386a0d0613",
+                    "model": "lumi.acpartner.v3",
+                    "mac": "64:90:c1:e3:3e:5f"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "64:90:c1:e3:3e:5f",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b4d253625a3a56928018cadca09d0d59",
+                "version": 1,
+                "domain": "cast",
+                "title": "Google Cast",
+                "data": {
+                    "ignore_cec": [],
+                    "known_hosts": [],
+                    "uuid": [],
+                    "user_id": "85f20eb0293e44bc979c2c66d1ac319c"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "cast",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "1070beee8dca9e27b04ebe5af6147505",
+                "version": 1,
+                "domain": "webrtc",
+                "title": "WebRTC Camera",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "8cba871ace757055caa831bef3dabecc",
+                "version": 1,
+                "domain": "xiaomi_miot_raw",
+                "title": "land************l.ru",
+                "data": {
+                    "password": "751250As",
+                    "username": "landish.osnk@mail.ru",
+                    "user_id": 4185191603,
+                    "ssecurity": "VMxC8rpj0vdLqQMvj5i/WQ==",
+                    "service_token": "f/jKdWFuwhYCaPSDi47tYKybpqz6M4yU2/tppoNvC5ArZkUrMFDuAF29nteeXTabG9dMTObxfIa7KuUyhMKP9hvwOqjV5jl5c+D7lm0DBwyiTwhlnJ+ahydxamlcelBO6OnolsGZ0HePPseb5XxQYVyN3wp6A8mVUzT8HMyNf3I=",
+                    "server_location": "cn",
+                    "batch_add": false
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "f8bec08bbc5d386f95133dce38e5cc25",
+                "version": 1,
+                "domain": "xiaomi_aqara",
+                "title": "192.168.31.224",
+                "data": {
+                    "host": "192.168.31.224",
+                    "mac": "64:90:c1:e3:3e:5f"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "64:90:c1:e3:3e:5f",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b67176194c0ba0450bdf351d0d6616ea",
+                "version": 1,
+                "domain": "homekit_controller",
+                "title": "Mi Smart Home Hub-7664",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "9d:76:ec:55:e2:3e",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "0df58b2a388e6f35c0fa1d4ae7acf6e1",
+                "version": 1,
+                "domain": "xiaomi_miot_raw",
+                "title": "Mi Smart Power Plug 2 (Wi-Fi and Bluetooth Gateway)",
+                "data": {
+                    "ett_id_migrated": true,
+                    "name": "Mi Smart Power Plug 2 (Wi-Fi and Bluetooth Gateway)",
+                    "host": "192.168.31.226",
+                    "token": "c84ba4aacb7ec84cb1e575f76f8d8127",
+                    "devtype": [
+                        "switch",
+                        "sensor",
+                        "binary_sensor",
+                        "number",
+                        "select"
+                    ],
+                    "mapping": "{\"switch\":{\"switch_status\":{\"siid\":2,\"piid\":1},\"temperature\":{\"siid\":2,\"piid\":6},\"working_time\":{\"siid\":2,\"piid\":7}},\"power_consumption\":{\"power_consumption\":{\"siid\":5,\"piid\":1},\"electric_current\":{\"siid\":5,\"piid\":2},\"voltage\":{\"siid\":5,\"piid\":3},\"electric_power\":{\"siid\":5,\"piid\":6}}}",
+                    "params": "{\"switch\":{\"switch_status\":{\"power_on\":true,\"power_off\":false},\"main\":true},\"power_consumption\":{\"electric_power\":{\"value_ratio\":0.01,\"unit\":\"W\"}}}",
+                    "cloud_write": true,
+                    "update_from_cloud": {
+                        "did": "395549478",
+                        "userId": 4185191603,
+                        "serviceToken": "k59gwiOCfog1eJgQFHhVeMUVzl9KuZYvisBs16j2MHJW6xapDX/5DjaIng4ND4IE17e2Kvw4tx4Z1Mj40xR4ta0WXcn58+tI9aAsWCV02PavdnXPhSrzReF/oI3bkXjYZiYrLP5c6L81t3b1B/iZuQeKM2xy9P82Kot9TIVwLyY=",
+                        "ssecurity": "X2H+NbmHqfoD4WmvP0zKHw==",
+                        "server_location": "cn"
+                    },
+                    "cloud_device_info": {
+                        "name": "Mi Smart Power Plug 2 (Wi-Fi and Bluetooth Gateway)",
+                        "mac": "54:48:E6:ED:F2:09",
+                        "did": "395549478",
+                        "model": "chuangmi.plug.212a01",
+                        "fw_version": "2.1.8_0028"
+                    }
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "batch_add",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "6b915dfb047e9c7ac8ce41f866b7ec62",
+                "version": 1,
+                "domain": "onvif",
+                "title": "Camera-kux - b0:41:1d:fc:e5:a3",
+                "data": {
+                    "name": "Camera-kux",
+                    "host": "192.168.31.8",
+                    "port": 8000,
+                    "username": "admin",
+                    "password": "Mirex2007",
+                    "snapshot_auth": "digest"
+                },
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "b0:41:1d:fc:e5:a3",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5a6ab524ac10f4975539ea0dc70171f2",
+                "version": 1,
+                "domain": "onvif",
+                "title": "Camera-zal - 68:39:43:f8:1b:f1",
+                "data": {
+                    "name": "Camera-zal",
+                    "host": "192.168.31.10",
+                    "port": 8000,
+                    "username": "admin",
+                    "password": "Mirex2007",
+                    "snapshot_auth": "digest"
+                },
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "68:39:43:f8:1b:f1",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "68b92120a321fabdecb70915548a6f10",
+                "version": 1,
+                "domain": "homekit_controller",
+                "title": "Mi Smart Home Hub-7664",
+                "data": {
+                    "AccessoryIP": "192.168.31.67",
+                    "AccessoryPort": 44700
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "e5:c5:db:8a:20:00",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "0896ac9afaa5d43fcf2431c4097052ee",
+                "version": 1,
+                "domain": "ifttt",
+                "title": "IFTTT Webhook",
+                "data": {
+                    "webhook_id": "6ff9dd2b2a20559f1371d61634f352a54c667534cbbe8d0523990c912e48551c",
+                    "cloudhook": false
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b59d931efe624a85e8deded42e1044ce",
+                "version": 1,
+                "domain": "yandex_smart_home",
+                "title": "Yandex Smart Home",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "125af8dbba46f4261267f0a5491902a6",
+                "version": 1,
+                "domain": "wled",
+                "title": "wled-a52beb",
+                "data": {
+                    "host": "192.168.31.6",
+                    "mac": "308398a52beb"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "308398a52beb",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "011f636405f21700f872cb2f103dce65",
+                "version": 2,
+                "domain": "samsungtv",
+                "title": "UE32D6500",
+                "data": {
+                    "host": "192.168.31.155",
+                    "mac": "d0:66:7b:09:45:5d",
+                    "manufacturer": "Samsung Electronics",
+                    "method": "legacy",
+                    "model": "UE32D6500",
+                    "name": "UE32D6500",
+                    "port": 55000
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ssdp",
+                "unique_id": "079c6bcc-e9d2-ef01-e776-afe7a785fde4",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7c8b2591151c9c440fe624ac633211f2",
+                "version": 2,
+                "domain": "openweathermap",
+                "title": "OpenWeatherMap",
+                "data": {
+                    "name": "OpenWeatherMap",
+                    "latitude": 53.60291810104679,
+                    "longitude": 87.33675688505174,
+                    "mode": "daily",
+                    "language": "ru",
+                    "api_key": "08db8b9a6e8cee4c8d38a993b6225a25"
+                },
+                "options": {
+                    "mode": "onecall_daily",
+                    "language": "ru"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "53.60291810104679-87.33675688505174",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "34be86a67f70d7671e07522eb8a5ee01",
+                "version": 1,
+                "domain": "xiaomi_miot_raw",
+                "title": "\u0420\u043e\u0431\u043e\u0442-\u043f\u044b\u043b\u0435\u0441\u043e\u0441 \u0441 \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 \u0432\u043b\u0430\u0436\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438 Mi (\u0431\u0430\u0437\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442",
+                "data": {
+                    "ett_id_migrated": true,
+                    "name": "\u0420\u043e\u0431\u043e\u0442-\u043f\u044b\u043b\u0435\u0441\u043e\u0441 \u0441 \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 \u0432\u043b\u0430\u0436\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438 Mi (\u0431\u0430\u0437\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442",
+                    "host": "192.168.31.225",
+                    "token": "8ae9151fdb19c1558d262d24db7b8c0c",
+                    "devtype": [
+                        "fan",
+                        "sensor",
+                        "vacuum",
+                        "number",
+                        "select",
+                        "binary_sensor"
+                    ],
+                    "mapping": "{\"vacuum\":{\"status\":{\"siid\":2,\"piid\":1},\"fault\":{\"siid\":2,\"piid\":2},\"mode\":{\"siid\":2,\"piid\":4},\"target_water_level\":{\"siid\":2,\"piid\":5},\"speed\":{\"siid\":2,\"piid\":6}},\"battery\":{\"battery_level\":{\"siid\":3,\"piid\":1},\"charging_state\":{\"siid\":3,\"piid\":2}},\"filter\":{\"filter_life_level\":{\"siid\":11,\"piid\":1},\"filter_left_time\":{\"siid\":11,\"piid\":2}},\"a_l\":{\"vacuum_start_sweep\":{\"siid\":2,\"aiid\":1},\"vacuum_stop_sweeping\":{\"siid\":2,\"aiid\":2},\"vacuum_start_charge\":{\"siid\":2,\"aiid\":3},\"identify_identify\":{\"siid\":6,\"aiid\":1},\"filter_reset_filter_life\":{\"siid\":11,\"aiid\":1},\"brush_cleaner_reset_brush_life\":{\"siid\":14,\"aiid\":1},\"brush_cleaner_2_reset_brush_life\":{\"siid\":15,\"aiid\":1},\"go_charging_start_charging\":{\"siid\":13,\"aiid\":1},\"go_charging_stop_charging\":{\"siid\":13,\"aiid\":2}}}",
+                    "params": "{\"vacuum\":{\"fault\":{\"No Faults\":0,\"Left-wheel-error\":1,\"Right-whelel-error\":2,\"Cliff-error\":3,\"Low-battery-error\":4,\"Bump-error\":5,\"Main-brush-error\":6,\"Side-brush-error\":7,\"Fan-motor-error\":8,\"Dustbin-error\":9,\"Charging-error\":10,\"No-wate-error\":11,\"Pick-up-error\":12},\"speed\":{\"Silence\":0,\"Stanrd\":1,\"Middle\":2,\"Enchance\":3},\"mode\":{\"Auto-clean\":1,\"Spot-clean\":2,\"Wallflow-clean\":3},\"status\":{\"Idle\":1,\"Sweeping\":2,\"Paused\":3,\"Error\":4,\"Charging\":5,\"Go Charging\":6},\"target_water_level\":{\"access\":7,\"format\":\"uint8\",\"unit\":null,\"value_list\":{\"Level1\":1,\"Level2\":2,\"Level3\":3}},\"main\":true},\"battery\":{\"battery_level\":{\"access\":5,\"format\":\"uint8\",\"unit\":\"percentage\",\"value_range\":[0,100,1]},\"charging_state\":{\"access\":5,\"format\":\"uint8\",\"unit\":null,\"value_list\":{\"Not-charging\":0,\"Charging\":1,\"Charging-competely\":2}}},\"filter\":{\"filter_life_level\":{\"access\":5,\"format\":\"uint8\",\"unit\":\"percentage\",\"value_range\":[0,100,1]},\"filter_left_time\":{\"access\":5,\"format\":\"uint16\",\"unit\":\"minutes\",\"value_range\":[0,18000,1]}}}",
+                    "cloud_write": true,
+                    "update_from_cloud": {
+                        "did": "335542790",
+                        "userId": 4185191603,
+                        "serviceToken": "lIIszbFJVPMGNoRyhNG5t5Anq/OcNeyV+F7cST4mleJK3X5AtMMw40Ewmf0UOEosIOVMCKkJWZ32KDyegwGwZ9XA5/Q1g++YIJOctorPGrQUG0+f7MSSF41DYCqrGER6hSAyMtxRzBWLh6f8mBtCWHvBzhJNNi431NONzusYjXQ=",
+                        "ssecurity": "eq5/1zxr4a/Q7ObE5pziQQ==",
+                        "server_location": "ru"
+                    },
+                    "cloud_device_info": {
+                        "name": "\u0420\u043e\u0431\u043e\u0442-\u043f\u044b\u043b\u0435\u0441\u043e\u0441 \u0441 \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 \u0432\u043b\u0430\u0436\u043d\u043e\u0439 \u0443\u0431\u043e\u0440\u043a\u0438 Mi (\u0431\u0430\u0437\u043e\u0432\u0430\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442",
+                        "mac": "64:90:C1:A2:7B:D9",
+                        "did": "335542790",
+                        "model": "mijia.vacuum.v2",
+                        "fw_version": "2.0.8"
+                    }
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "6c34ba905af2812c2e15c60a362dbbfc",
+                "version": 1,
+                "domain": "xiaomi_miot_raw",
+                "title": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0439",
+                "data": {
+                    "ett_id_migrated": true,
+                    "name": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0439",
+                    "host": "255.255.255.255",
+                    "token": "00000000000000000000000000000000",
+                    "model": "hhcc.plantmonitor.v1",
+                    "devtype": [
+                        "sensor",
+                        "number",
+                        "select",
+                        "binary_sensor"
+                    ],
+                    "mapping": "{\"plant_monitor\":{\"temperature\":{\"siid\":3,\"piid\":2},\"relative_humidity\":{\"siid\":2,\"piid\":1},\"soil_ec\":{\"siid\":2,\"piid\":2},\"illumination\":{\"siid\":2,\"piid\":3}}}",
+                    "params": "{\"plant_monitor\":{\"temperature\":{\"access\":5,\"format\":\"float\",\"unit\":\"celsius\"},\"relative_humidity\":{\"access\":5,\"format\":\"float\",\"unit\":\"percentage\",\"value_range\":[0,100,1]},\"soil_ec\":{\"access\":5,\"format\":\"uint16\",\"unit\":\"\\u00b5S/cm\",\"value_range\":[0,5000,1]},\"illumination\":{\"access\":5,\"format\":\"float\",\"unit\":\"lux\",\"value_range\":[0,10000,1]},\"main\":true}}",
+                    "cloud_write": true,
+                    "update_from_cloud": {
+                        "did": "blt.3.17tpjmld4lc00",
+                        "userId": 4185191603,
+                        "serviceToken": "K8CSW9XWB6qwM20DAGW4ljw9TbXSl8p+f3+07TsaE0CWYtDpymkHagSTLZBlgfWpbD3V7y10IrW2JIEWUTyrsmKU+z50XdPCr2hUlX2KUI1zOQcW1vflsKhakXLiCPvu5fGheBojZ5t4I503/+vQ0uD/IGCiQLzuNiB86kladF0=",
+                        "ssecurity": "7wxkgzs6uBEYAjVAa5f0pA==",
+                        "server_location": "cn"
+                    },
+                    "cloud_device_info": {
+                        "name": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0439",
+                        "mac": "C4:7C:8D:6D:77:05",
+                        "did": "blt.3.17tpjmld4lc00",
+                        "model": "hhcc.plantmonitor.v1",
+                        "fw_version": "1.0.1_318"
+                    }
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "batch_add",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5fb22c8cdaaf379942985eddb64ece6d",
+                "version": 1,
+                "domain": "upnp",
+                "title": "Debian router",
+                "data": {
+                    "udn": "uuid:1a9f26d8445111e79e0a001346622f4c",
+                    "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                    "hostname": "46.241.121.154"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "uuid:1a9f26d8445111e79e0a001346622f4c::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "3995f898e809c34a15ae14cbc1d53267",
+                "version": 1,
+                "domain": "tuya_v2",
+                "title": "landish.osnk@mail.ru",
+                "data": {
+                    "o0o0o0": "e83056c0ce45dd3c5c822915d4b69cf7751fbead8a4d35c862f3e8e7e600ef7982902f2ceb0f09a65ff5a4389b656ff1773b154c83cbf622efa194211d9b724c50e31a8bb0256b18f8408ba4db63fa258e260558a5c904313ed8256b0310c356c675e905ba89b709b70e224aca4afeedac8543b09e597b0f0ced2a1ab03a159c01336ff247c48ebf0d3dc478eea181f5dafb8c6845ecbb9b2f2974ab0c05c3f60ba6c665e6402f9e174c1f0c8822b2226aa656ac2b1bc7457d9e2980197e537eb7034f37d5be66b9650ac0406d9890b74da88bd35a0c6428025335a1c4e348a90e42acb30c182ec77bcbc5a6e3f71536ad020d4be396e26a9643b9fcbb05e9f80122b94db0cff0eac2bce2df7ad1cf72",
+                    "00oo00": "AgVaBFUXWUBfFFgGX0UVERURRRM/Uw4TUFxKVFpWQE4=",
+                    "oo00oo": "f607c22c8b525dae6b5facf03825b8a8c8f678928c20b7d81f7d7406ca6017c6"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7e3baef7d0570e76f06e3fad5496c281",
+                "version": 2,
+                "domain": "ble_monitor",
+                "title": "Bluetooth Low Energy Monitor",
+                "data": {},
+                "options": {
+                    "bt_interface": [
+                        "DC:A6:32:A0:A1:27"
+                    ],
+                    "period": 60,
+                    "discovery": true,
+                    "active_scan": true,
+                    "decimals": 1,
+                    "log_spikes": false,
+                    "use_median": false,
+                    "restore_state": false,
+                    "report_unknown": false,
+                    "devices": [],
+                    "is_flow": true,
+                    "hci_interface": [
+                        0
+                    ]
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "Bluetooth Low Energy Monitor",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "a706c2450c3ce5e03873f16a0fda2cc8",
+                "version": 1,
+                "domain": "xiaomi_miot_raw",
+                "title": "Mi Temperature and Humidity Monitor 2",
+                "data": {
+                    "ett_id_migrated": true,
+                    "name": "Mi Temperature and Humidity Monitor 2",
+                    "host": "255.255.255.255",
+                    "token": "00000000000000000000000000000000",
+                    "model": "miaomiaoce.sensor_ht.t2",
+                    "devtype": [
+                        "sensor",
+                        "number",
+                        "select",
+                        "binary_sensor"
+                    ],
+                    "mapping": "{\"temperature_humidity_sensor\":{\"temperature\":{\"siid\":2,\"piid\":1},\"relative_humidity\":{\"siid\":2,\"piid\":2}},\"battery\":{\"battery_level\":{\"siid\":3,\"piid\":1}}}",
+                    "params": "{\"temperature_humidity_sensor\":{\"temperature\":{\"access\":5,\"format\":\"float\",\"unit\":\"celsius\",\"value_range\":[-30,100,0.1]},\"relative_humidity\":{\"access\":5,\"format\":\"float\",\"unit\":\"percentage\",\"value_range\":[0,100,0.1]},\"main\":true},\"battery\":{\"battery_level\":{\"access\":5,\"format\":\"uint8\",\"unit\":\"percentage\",\"value_range\":[0,100,1]}}}",
+                    "cloud_write": true,
+                    "update_from_cloud": {
+                        "did": "blt.3.1831b98e0eg00",
+                        "userId": 4185191603,
+                        "serviceToken": "iWJEiymeoOA0B1ytuE63aEaPmW/suEDfzBFvIe7CKcMafq9z9iDpk9nI8d9IaTuKGE0p/8xK7NHbAr2hlbxSGsx9ffccUJPT5SZJxhDaAMWuRSPAV/SGVXg238iSLxaxvKSdNkufqf1O0tbRnyWylqLV4heVGRqm75ov9rkE2OE=",
+                        "ssecurity": "9BwUO3yn6MI9QMsXXTVKFA==",
+                        "server_location": "cn"
+                    },
+                    "cloud_device_info": {
+                        "name": "Mi Temperature and Humidity Monitor 2",
+                        "mac": "A4:C1:38:1B:8E:66",
+                        "did": "blt.3.1831b98e0eg00",
+                        "model": "miaomiaoce.sensor_ht.t2",
+                        "fw_version": "1.0.0_0130"
+                    }
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "batch_add",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}

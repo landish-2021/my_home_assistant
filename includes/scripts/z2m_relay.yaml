@@ -1,0 +1,87 @@
+# Отвязка клавиш на выключателе от реле в спальне
+  set_decoupled_left_spal:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_spal/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "decoupled"}}'
+          
+  set_decoupled_right_spal:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_spal/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "decoupled"}}'
+          
+  set_control_left_spal:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_spal/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "control_left_relay"}}'
+          
+  set_control_right_spal:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_spal/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "control_right_relay"}}'
+
+
+# Отвязка клавиш на выключателе от реле в зале справо
+  set_decoupled_left_zal_r:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_zal_prav/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "decoupled"}}'
+          
+  set_decoupled_right_zal_r:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_zal_prav/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "decoupled"}}'
+          
+  set_control_left_zal_r:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_zal_prav/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "control_left_relay"}}'
+          
+  set_control_right_zal_r:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_zal_prav/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "control_right_relay"}}'
+
+# Отвязка клавиш на выключателе от реле в коридоре
+  set_decoupled_left_kor:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_korid/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "decoupled"}}'
+          
+  set_decoupled_right_kor:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_korid/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "decoupled"}}'
+          
+  set_control_left_kor:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_korid/system/set"
+          payload_template: '{ "operation_mode": {"button": "left", "state": "control_left_relay"}}'
+          
+  set_control_right_kor:  
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "zigbee2mqtt/Vykluch_v_korid/system/set"
+          payload_template: '{ "operation_mode": {"button": "right", "state": "control_right_relay"}}'

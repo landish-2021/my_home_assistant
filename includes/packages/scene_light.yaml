@@ -1,0 +1,140 @@
+#scene_light:
+
+#    scene:
+
+#      - name: off_light
+#        entities:
+#           light.mi_smart_led_bulb_essential: off
+
+#      - name: on_light
+#        entities:
+#           light.mi_smart_led_bulb_essential: on
+
+#      - name: fourth
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               brightness_pct: 25
+
+#      - name: half
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               brightness_pct: 50
+
+#      - name: three_quarters
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               brightness_pct: 75
+
+#      - name: full
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               brightness_pct: 100 
+
+#      - name: warm
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               kelvin: 2700
+
+#      - name: medium
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               kelvin: 4000
+
+#      - name: cold
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               kelvin: 6500
+
+#      - name: film
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               rgb_color: [169, 153, 255]
+
+#      - name: red
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               rgb_color: [255, 0, 0]
+
+#      - name: forest
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#              state: "on"
+#              rgb_color: [0, 255, 81]
+
+#      - name: romance
+#        entities:
+#          light.mi_smart_led_bulb_essential: 
+#               state: "on"
+#               effect: Romance
+
+#      - name: slowtemp
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               effect: Slow Temp
+
+#      - name: alarm
+#        entities:
+#           light.mi_smart_led_bulb_essential:
+#               state: "on"
+#               effect: Alarm
+
+#    input_select:
+               
+#      brightness_mode:
+#        name: brightness
+#        options:
+#          - fourth
+#          - half
+#          - three_quarters
+#          - full
+#        initial: three_quarters
+#        icon: mdi:brightness-percent
+
+#      color_temp_mode:
+#        name: color_temp
+#        options:
+#          - warm
+#          - medium
+#          - cold
+#        initial: medium
+#        icon: mdi:theme-light-dark
+
+#      rgb_mode:
+#        name: color_temp
+#        options:
+#          - film
+#          - red
+#          - forest
+#          - romance
+#          - slowtemp
+#          - alarm
+#        initial: film
+#        icon: mdi:television-ambient-light
+
+#    automation:
+               
+#    - id: Смена сцен
+#      alias: change_scene
+#      initial_state: true
+#      trigger:
+#        - platform: state
+#          entity_id: input_select.brightness_mode
+#        - platform: state
+#          entity_id: input_select.color_temp_mode
+#        - platform: state
+#          entity_id: input_select.rgb_mode          
+#      action:
+#        - service: scene.turn_on
+#          data_template:
+#            entity_id: scene.{{trigger.to_state.state}}
+#            transition: 2

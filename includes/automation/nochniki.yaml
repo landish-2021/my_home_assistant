@@ -1,0 +1,53 @@
+# Включение ночников
+- alias: Включение ночника Вкл.
+  initial_state: true
+  trigger:
+   - platform: sun
+     event: sunset
+  condition:
+#   - condition: state
+#     entity_id: switch.rozetka_v_prihojey
+#     state: "off"
+#   - condition: state
+#     entity_id: light.lumi_light
+#     state: "off"
+   - condition: state
+     entity_id: light.led_lenta_kor
+     state: "off"
+  action:
+#   - service: switch.turn_on
+#     entity_id: switch.rozetka_v_prihojey
+#   - service: light.turn_on
+#     entity_id: light.lumi_light
+#     data_template:
+#       brightness_pct: 10
+#       rgb_color: [255,178,0]
+   - service: light.turn_on
+     entity_id: light.led_lenta_kor
+     data_template:
+       brightness_pct: 5
+
+
+# Выключение ночников
+- alias: Выключение ночника Выкл.
+  initial_state: true
+  trigger:
+   - platform: sun
+     event: sunrise
+  condition:
+#   - condition: state
+#     entity_id: switch.rozetka_v_prihojey
+#     state: "on"
+#   - condition: state
+#     entity_id: light.lumi_light
+#     state: "on"
+   - condition: state
+     entity_id: light.led_lenta_kor
+     state: "on"
+  action:
+#   - service: switch.turn_off
+#     entity_id: switch.rozetka_v_prihojey
+#   - service: light.turn_off
+#     entity_id: light.lumi_light
+   - service: light.turn_off
+     entity_id: light.led_lenta_kor

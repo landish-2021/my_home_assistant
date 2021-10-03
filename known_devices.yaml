@@ -1,0 +1,42 @@
+
+user_pc:
+  name: USER-PC
+  mac: BT_5C:F3:70:98:0B:E3
+  icon:
+  picture:
+  track: true
+
+mi_phone:
+  name: Mi Phone
+  mac: BT_78:02:F8:05:6E:0F
+  icon:
+  picture:
+  track: true
+
+va324t:
+  name: VA324T
+  mac: BT_18:3B:9B:CB:B9:CA
+  icon:
+  picture:
+  track: true
+
+honor_view10:
+  name: Honor View10
+  mac: BT_90:94:97:AE:C4:B6
+  icon:
+  picture:
+  track: true
+
+honor_8a:
+  name: Honor 8A
+  mac: BT_04:8C:9A:C9:F4:34
+  icon:
+  picture:
+  track: true
+
+realme_c3:
+  name: realme C3
+  mac: BT_D0:28:BA:77:44:58
+  icon:
+  picture:
+  track: true

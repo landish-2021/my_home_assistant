@@ -1,0 +1,48 @@
+ # Sensor for monitoring the bridge state
+  - platform: mqtt
+    name: zigbee2mqtt_bridge_state
+    state_topic: "zigbee2mqtt/bridge/state"
+    icon: mdi:router-wireless
+
+# Sensor for Showing the Zigbee2MQTT Version
+  - platform: mqtt
+    name: Zigbee2MQTT Version
+    state_topic: "zigbee2mqtt/bridge/config"
+    value_template: "{{ value_json.version }}"
+    icon: mdi:zigbee
+
+  # Sensor for Showing the Coordinator Version
+  - platform: mqtt
+    name: Coordinator Version
+    state_topic: "zigbee2mqtt/bridge/config"
+    value_template: "{{ value_json.coordinator }}"
+    icon: mdi:chip
+  - platform: command_line 
+    name: Zigbee2mqtt Latest Version 
+    command: curl -s https://github.com/Koenkk/zigbee2mqtt/releases/latest | cut -d'"' -f2 | rev | cut -d'/' -f1 | rev 
+    scan_interval: 600
+
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'time_date'
+
+  - platform: systemmonitor
+    resources:
+    - type: processor_use
+    - type: disk_use_percent
+      arg: /
+    - type: memory_use_percent
+    - type: last_boot
+    - type: disk_free
+      arg: /
+
+  - platform: sql
+    db_url: mysql://hass:hass@core-mariadb/homeassistant?charset=utf8
+    queries:
+      - name: Maria DB size
+        query: 'SELECT table_schema "database", Round(Sum(data_length + index_length) / 1048576, 2) "value" FROM information_schema.tables WHERE table_schema="homeassistant" GROUP BY table_schema;'
+        column: 'value'
+        unit_of_measurement: MB
+

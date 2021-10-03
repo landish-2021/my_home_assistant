@@ -1,0 +1,40 @@
+# Отключения лампы после проподания питания
+- alias: Отключение после востановления питания Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: light.mi_smart_led_bulb_essential
+     from: "unavailable"
+     to: "on"
+  action:
+   - service: light.turn_off
+     entity_id: light.mi_smart_led_bulb_essential
+     
+#- alias: Отключение светильников после востановления питания Выкл.
+#  initial_state: true
+#  trigger:
+#   - platform: state
+#     entity_id: light.28d1272c3f06_light
+#     from: "unavailable"
+#     to: "on"
+#   - platform: state
+#     entity_id: light.28d1272cfd44_light
+#     from: "unavailable"
+#     to: "on"
+#  action:
+#   - service: light.turn_off
+#     entity_id: light.28d1272c3f06_light
+#   - service: light.turn_off
+#     entity_id: light.28d1272cfd44_light
+
+# Отключения WLED после проподания питания
+- alias: Отключение после востановления питания Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: light.wled
+     from: "unavailable"
+     to: "on"
+  action:
+   - service: light.turn_off
+     entity_id: light.wled

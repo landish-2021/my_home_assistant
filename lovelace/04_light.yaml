@@ -1,0 +1,216 @@
+    title: Освещение
+    icon: mdi:lightbulb-group
+    
+          
+    cards:
+    
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Панель переключателей** 
+             
+        - type: entities
+          show_header_toggle: false
+          entities:
+#           - entity: light.lumi_light
+#             name: ночник Aqara-hub
+           - entity: light.mi_smart_led_bulb_essential
+             name: Настольная лампа в зале
+           - entity: light.nastol_lamp_v_spal
+             name: Настольная лампа в спальне
+           - entity: group.light_room_spal
+             name: Светильники в спальне в группе
+           - entity: group.light_room_zal_lustra
+             name: Лампочки в люстре в зале в группе
+           - entity: group.light_room_kux
+             name: Лампочки в люстре в кухне в группе 
+           - entity: group.light_room_kor
+             name: Светильники в коридоре в группе
+           - entity: group.light_room_van
+             name: Светильники в ванной в группе  
+           - entity: light.pot_lev_lamp_v_spal
+             name: Светильник левый в спальне
+           - entity: light.pot_prav_lamp_v_spal
+             name: Светильник правый в спальне
+           - entity: light.lustra_lamp1_v_zal
+             name: Люстра в зале лампа 1
+           - entity: light.lustra_lamp2_v_zal
+             name: Люстра в зале лампа 2 
+           - entity: light.lustra_lamp3_v_zal
+             name: Люстра в зале лампа 3
+           - entity: light.lustra_lamp4_v_zal
+             name: Люстра в зале лампа 4
+           - entity: light.lustra_lamp5_v_zal
+             name: Люстра в зале лампа 5
+           - entity: light.lustra_lamp6_v_zal
+             name: Люстра в зале лампа 6
+           - entity: light.lustra_lamp6_v_zal
+             name: Люстра в зале лампа 6
+           - entity: light.pot_lamp1_v_kor
+             name: Светильник в коридоре лампа 1
+           - entity: light.pot_lamp2_v_kor
+             name: Светильник в коридоре лампа 2
+           - entity: light.pot_lamp3_v_kor
+             name: Светильник в коридоре лампа 3
+           - entity: light.wled
+             name: RGB Светодиодная лента в зале
+           - entity: light.lustra_lamp1_v_kux
+             name: Люстра в кухне лампа 1
+           - entity: light.lustra_lamp2_v_kux
+             name: Люстра в кухне лампа 2 
+           - entity: light.lustra_lamp3_v_kux
+             name: Люстра в кухне лампа 3
+           - entity: light.pot_lamp1_v_van
+             name: Светильник в ванной лампа 1
+           - entity: light.pot_lamp2_v_van
+             name: Светильник в ванной лампа 2
+           - entity: light.pot_lamp3_v_van
+             name: Светильник в ванной лампа 3
+           - entity: light.pot_lamp4_v_van
+             name: Светильник в ванной лампа 4
+           - entity: light.led_lenta_kor
+             name: LED лента в коридоре 
+           
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Светильники в зале**    
+              
+        - type: horizontal-stack
+          cards:
+#            - type: light
+#              entity: light.lumi_light
+#              name: ночник Aqara-hub
+#              icon: mdi:weather-night
+            - type: light
+              entity: light.mi_smart_led_bulb_essential
+              name: Настольная лампа в зале
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Светильники в спальне**    
+              
+        - type: horizontal-stack
+          cards:
+            - type: light
+              entity: light.nastol_lamp_v_spal
+              name: Настольная лампа в спальне
+            - type: light
+              entity: light.pot_lev_lamp_v_spal
+              name: Светильник левый в спальне
+            - type: light
+              entity: light.pot_prav_lamp_v_spal
+              name: Светильник правый в спальне
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Светильники в коридоре**    
+              
+        - type: horizontal-stack
+          cards:
+            - type: light
+              entity: light.pot_lamp1_v_kor
+              name: Светильник в коридоре лампа 1
+            - type: light
+              entity: light.pot_lamp2_v_kor
+              name: Светильник в коридоре лампа 2
+            - type: light
+              entity: light.pot_lamp3_v_kor
+              name: Светильник в коридоре лампа 3
+              
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Люстра в зале**    
+              
+        - type: horizontal-stack
+          cards:      
+            - type: light
+              entity: light.lustra_lamp1_v_zal
+              name: Люстра в зале лампа 1
+            - type: light
+              entity: light.lustra_lamp2_v_zal
+              name: Люстра в зале лампа 2
+            - type: light
+              entity: light.lustra_lamp3_v_zal
+              name: Люстра в зале лампа 3
+            - type: light
+              entity: light.lustra_lamp4_v_zal
+              name: Люстра в зале лампа 4
+            - type: light
+              entity: light.lustra_lamp5_v_zal
+              name: Люстра в зале лампа 5
+            - type: light
+              entity: light.lustra_lamp6_v_zal
+              name: Люстра в зале лампа 6  
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Люстра в кухне**    
+              
+        - type: horizontal-stack
+          cards:      
+            - type: light
+              entity: light.lustra_lamp1_v_kux
+              name: Люстра в кухне лампа 1
+            - type: light
+              entity: light.lustra_lamp2_v_kux
+              name: Люстра в кухне лампа 2
+            - type: light
+              entity: light.lustra_lamp3_v_kux
+              name: Люстра в кухне лампа 3
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Светильники в ванной**    
+              
+        - type: horizontal-stack
+          cards:
+            - type: light
+              entity: light.pot_lamp1_v_van
+              name: Светильник в коридоре лампа 1
+            - type: light
+              entity: light.pot_lamp2_v_van
+              name: Светильник в коридоре лампа 2
+            - type: light
+              entity: light.pot_lamp3_v_van
+              name: Светильник в коридоре лампа 3
+            - type: light
+              entity: light.pot_lamp4_v_van
+              name: Светильник в коридоре лампа 4
+
+
+      - type: vertical-stack
+        cards:
+        - type: markdown
+          content: >
+             **Светодиодные ленты**    
+              
+        - type: horizontal-stack
+          cards:
+            - type: light
+              entity: light.wled
+              name: RGB Светодиодная лента в зале
+            - type: light
+              entity: light.led_lenta_kor
+              name: LED лента в коридоре 
+#            - type: light 
+#              entity: light.led_lenta_ok
+#              name: "LED лента RGBW"     
+              

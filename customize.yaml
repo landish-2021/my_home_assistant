@@ -1,0 +1,13 @@
+#Бинарные сенсоры
+
+#Светильники
+#light.aqara_hub_3169:
+#  friendly_name: Шлюз Aqara ночник
+#  icon: mdi:star-circle-outline
+
+#Розетки, выключатели 
+switch.rozetka_v_prihojey:
+  friendly_name: Розетка в прихожей Zigbee
+  device_class: plug  
+  icon: mdi:power
+

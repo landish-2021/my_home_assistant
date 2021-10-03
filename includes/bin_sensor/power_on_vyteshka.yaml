@@ -1,0 +1,17 @@
+# Сенсор установленной мощности для включения и отключения вытяжки на кухне
+
+      - platform: template
+        sensors:
+          vyteshka_on:
+            friendly_name: "Включение вытяжки на кухне"
+            value_template: "{{ states('sensor.energy_monitor_power') | float > 500 }}"
+            delay_on: 
+                minutes: 10
+
+      - platform: template
+        sensors:
+          vyteshka_off:
+            friendly_name: "Выключение вытяжки на кухне"
+            value_template: "{{ states('sensor.energy_monitor_power') | float < 600 }}"
+            delay_on: 
+                minutes: 3

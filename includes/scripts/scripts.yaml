@@ -1,0 +1,8 @@
+
+  playlist_spotify:
+    sequence:
+      - service: media_player.play_media
+        data:
+          entity_id: media_player.spotify_andrei_skuratovskii
+          media_content_id: "https://open.spotify.com/playlist/37i9dQZEVXcCDf3wV0MaCj?si=e9c61c5d5b814798"
+          media_content_type: playlist

@@ -1,0 +1,16 @@
+# Составной датчик движения
+  - platform: template
+    sensors:
+      super_motion:
+        friendly_name: "Движение в доме"
+        device_class: motion
+        value_template: >- 
+          {{ is_state('binary_sensor.datchik_dvijeniya_v_prix_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_korid_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_spal_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_zal_lev_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_zal_prav_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_klad_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_vanna_occupancy', 'on')
+             or is_state('binary_sensor.datchik_dvijeniya_v_kux_occupancy', 'on')  }} 
+             

@@ -1,0 +1,207 @@
+climate:
+
+    # Установка температура для кондиционера
+    input_number:
+      room_temperature:
+        name: Температура включения обогрева
+        icon: mdi:thermostat-box
+        mode: slider
+        initial: 24
+        min: 16
+        max: 30
+        step: 1
+
+    # Сенсор установленной температуры для кондиционера
+    sensor:
+      - platform: template
+        sensors:
+          fake_temperature:
+            unit_of_measurement: "degrees"
+            value_template: "{{ states('input_number.room_temperature') | float }}"
+
+
+
+
+
+
+    automation:
+    
+        # Включение сушки кондиционера
+        - alias: conditioner_zal_sushka_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_humidity
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               humidity: 60
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: dry
+           - service: climate.turn_on
+        
+        # Включение автоматического режима кондиционера
+        - alias: conditioner_zal_auto_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: auto
+           - service: climate.turn_on
+           
+        # Включение вентелящии кондиционера
+        - alias: conditioner_zal_vent_on_auto
+          initial_state: false
+          trigger:
+            platform: time
+            at: "07:00:00"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_fan_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               fan_mode: auto
+           
+           
+           
+           
+        # Включение обогрева кондиционера
+        - alias: conditioner_zal_obogrev_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+           - platform: template
+             value_template: "{{ (states('sensor.datchik_temper_zal_temperature')|float) < (states('input_number.room_temperature')|float - 1) }}"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: heat
+           - service: climate.turn_on
+           
+        # Включение охлаждения кондиционера
+        - alias: conditioner_zal_xolod_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+           - platform: template
+             value_template: "{{ (states('sensor.datchik_temper_zal_temperature')|float) > (states('input_number.room_temperature')|float + 1) }}" 
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: cool
+           - service: climate.turn_on
+           
+        # Включение на нагрев 24 градуса кондиционера
+        - alias: conditioner_zal_24_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_temperature
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               temperature: 24
+           - service: climate.set_fan_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               fan_mode: auto
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: heat
+           - service: climate.turn_on
+           
+        # Включение на охолождения 24 градуса кондиционера
+        - alias: conditioner_zal_24_on
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "07:00:00"
+          condition:
+           - condition: state
+             entity_id: binary_sensor.okna_closed
+             state: 'on'
+          action:
+           - service: climate.set_temperature
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               temperature: 24
+           - service: climate.set_fan_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               fan_mode: auto
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: cool
+           - service: climate.turn_on
+           
+           
+        # Выключение кондиционера
+        - alias: conditioner_zal_off
+          initial_state: false
+          trigger:
+           - platform: time
+             at: "21:00:00"
+           - platform: state
+             entity_id: binary_sensor.okna_closed
+             to: 'off'
+           - platform: state
+             entity_id: sensor.datchik_temper_zal_temperature
+             to: "24"
+          action:
+           - service: climate.set_hvac_mode
+             target:
+               entity_id: climate.aqara_air_conditioning_companion
+             data:
+               hvac_mode: 'off'
+           - service: climate.turn_off
+           
+           

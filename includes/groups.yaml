@@ -1,0 +1,44 @@
+#  - group.Light_all
+
+light_room_spal:
+  name: Свет потолочные светильники в спальне
+  all: true
+  entities:
+    - light.pot_lev_lamp_v_spal
+    - light.pot_prav_lamp_v_spal
+
+light_room_zal_lustra:
+  name: Свет люстра в зале
+  all: true
+  entities:
+    - light.lustra_lamp1_v_zal
+    - light.lustra_lamp2_v_zal
+    - light.lustra_lamp3_v_zal
+    - light.lustra_lamp4_v_zal
+    - light.lustra_lamp5_v_zal
+    - light.lustra_lamp6_v_zal
+
+light_room_kor:
+  name: Свет потолочные светильники в коридоре
+  all: true
+  entities:
+    - light.pot_lamp1_v_kor
+    - light.pot_lamp2_v_kor
+    - light.pot_lamp3_v_kor
+
+light_room_kux:
+  name: Свет люстра в кухне
+  all: true
+  entities:
+    - light.lustra_lamp1_v_kux
+    - light.lustra_lamp2_v_kux
+    - light.lustra_lamp3_v_kux
+
+light_room_van:
+  name: Свет потолочные светильники в ванной
+  all: true
+  entities:
+    - light.pot_lamp1_v_van
+    - light.pot_lamp2_v_van
+    - light.pot_lamp3_v_van
+    - light.pot_lamp4_v_van

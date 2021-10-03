@@ -1,0 +1,7 @@
+# Кондиционер
+  - platform: xiaomi_miio_airconditioningcompanion
+    name: Aqara Air Conditioning Companion
+    host: 192.168.31.224
+    token: !secret token_climate
+    target_sensor: sensor.datchik_temper_zal_temperature
+    scan_interval: 60

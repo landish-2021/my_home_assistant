@@ -1,0 +1,121 @@
+# Включение света
+- alias: Свет в спальной потолочный свет Вкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "double"
+   - platform: state
+     entity_id: sensor.vykluch_v_spal_click
+     to: "right"
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_spal_occupancy
+     to: "on"
+  condition:
+   - type: is_illuminance
+     condition: device
+     device_id: 59d8f5951c89c52b7759a34db270daee
+     entity_id: sensor.datchik_dvijeniya_v_spal_illuminance_lux
+     domain: sensor
+     below: 20
+   - condition: state
+     entity_id: light.pot_lev_lamp_v_spal
+     state: "off"
+   - condition: state
+     entity_id: light.pot_prav_lamp_v_spal
+     state: "off"
+   - condition: time
+     after: "06:00:00"
+     before: "22:00:00"
+  action:
+   - service: script.turn_on
+     entity_id: script.spal_na_50
+
+# Отключение света
+- alias: Свет в спальной потолочный свет Выкл.
+  initial_state: true
+  trigger:
+   - platform: state
+     entity_id: binary_sensor.datchik_dvijeniya_v_spal_occupancy
+     to: "off"
+     for:
+      hours: 0
+      minutes: 1
+      seconds: 20
+      milliseconds: 0
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "double"
+   - platform: state
+     entity_id: sensor.vykluch_v_spal_click
+     to: "right"
+  condition:
+   - condition: state
+     entity_id: light.pot_lev_lamp_v_spal
+     state: "on"
+   - condition: state
+     entity_id: light.pot_prav_lamp_v_spal
+     state: "on"
+  action:
+   - service: script.turn_on
+     entity_id: script.spal_off
+
+# Включение люстры
+- alias: Люстра свет в спальне Вкл.
+  trigger:
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "long"
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_spal_left
+     state: "off"
+  action:
+   - service: switch.turn_on
+     entity_id: switch.vykluch_v_spal_left
+
+# Выключение люстры
+- alias: Люстра свет в спальне Выкл.
+  trigger:
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "long"
+  condition:
+   - condition: state
+     entity_id: switch.vykluch_v_spal_left
+     state: "on"
+  action:
+   - service: switch.turn_off
+     entity_id: switch.vykluch_v_spal_left
+  
+# Включение настольной лампы
+- alias: Настольная лампа свет в спальне Вкл.
+  trigger:
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "single"
+  condition:
+   - condition: state
+     entity_id: light.nastol_lamp_v_spal
+     state: "off"
+  action:
+   - service: light.turn_on
+     entity_id: light.nastol_lamp_v_spal
+     data_template:
+       brightness_pct: 50
+       kelvin: 2700
+
+# Выключение настольной лампы
+- alias: Настольная лампа свет в спальне Выкл.
+  trigger:
+   - platform: state
+     entity_id: sensor.mi_knopka_click
+     to: "single"
+  condition:
+   - condition: state
+     entity_id: light.nastol_lamp_v_spal
+     state: "on"
+  action:
+   - service: light.turn_off
+     entity_id: light.nastol_lamp_v_spal
+  

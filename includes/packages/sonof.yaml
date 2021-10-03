@@ -1,0 +1,118 @@
+sonof:
+
+    binary_sensor:
+
+     # Сенсоры времени
+      - platform: tod
+        name: sonof_day
+        after: '09:00'
+        before: '21:00'
+        
+      - platform: tod
+        name: sonof_night
+        after: '23:00'
+        before: '07:00'
+    
+      # Сенсор автоотключения вентеляции в ванной 
+      - platform: template
+        sensors:
+          sonof_vanna:
+            friendly_name: "Автоотключение"
+            value_template: >-
+              {{ is_state('switch.sonoff_1000eccecd', 'on')  
+                 and is_state('binary_sensor.datchik_dvijeniya_v_vanna_occupancy', 'off')  }}
+            icon_template: >-
+              {% if is_state("binary_sensor.sonof_vanna", "on") %}
+              mdi:timer
+              {% else %}
+              mdi:timer-off
+              {% endif %}
+        
+    timer:
+        
+          sonof_vanna:
+            name: выключение вентиляции -
+            duration: '00:10:00'          
+     
+    automation:
+    
+        # Включение вентеляции в ванной
+        - alias: sonof_vanna_vent_on
+          initial_state: true
+          trigger:
+        # Выключатель Aqara
+          - platform: state
+            entity_id: sensor.vykluch_v_korid_click
+            to: 'both'
+        ## Датчик движения
+          - platform: state
+            entity_id: binary_sensor.datchik_dvijeniya_v_vanna_occupancy
+            to: 'on'
+        ### Влажность более 70 процентов
+          - platform: numeric_state
+            entity_id: sensor.datchik_temper_vanna_humidity
+            above: 70
+          condition:
+          - condition: state
+            entity_id: switch.sonoff_1000eccecd
+            state: 'off'
+          action:
+          - service: switch.turn_on
+            entity_id:
+              - switch.sonoff_1000eccecd
+
+        # Выключение вентеляции 
+        - alias: sonof_vanna_vent_off
+          initial_state: true
+          trigger:
+        # Выключатель Aqara
+          - platform: state
+            entity_id: sensor.vykluch_v_korid_click
+            to: 'both'
+        # Таймер
+          - platform: event
+            event_type: timer.finished
+            event_data:
+              entity_id: timer.sonof_vanna
+          condition:
+          - condition: state
+            entity_id: switch.sonoff_1000eccecd
+            state: 'on'
+          action:
+          - service: switch.turn_off
+            entity_id:
+              - switch.sonoff_1000eccecd
+
+        ## Таймер автоотключения
+        - alias: sonof_vanna_timer_on
+          initial_state: true
+          trigger:
+        # Условия для запуска таймера вентеляции
+          - platform: state
+            entity_id: binary_sensor.sonof_vanna
+            to: 'on'
+          action:
+            service: timer.start
+            entity_id: timer.sonof_vanna
+            data_template: 
+                duration: > 
+                 {%- if states("binary_sensor.sonof_night") == 'on' -%}
+                 00:03:00
+                 {%- elif states("binary_sensor.sonof_day") == 'on'  -%}
+                 00:10:00
+                 {%- else -%}
+                 00:05:00
+                 {% endif %} 
+                 
+        # Сброс таймера при выключении
+        - alias: sonof_vanna_timer_off
+          initial_state: true
+          trigger:
+          - platform: state
+            entity_id: binary_sensor.sonof_vanna
+            to: 'off'
+          action:
+          - service: timer.cancel
+            entity_id: timer.sonof_vanna
+            
+            

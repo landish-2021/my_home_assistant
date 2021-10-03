@@ -1,0 +1,65 @@
+  db_url: mysql://hass:hass@core-mariadb/homeassistant?charset=utf8
+
+  purge_keep_days: 3
+  auto_purge: true
+  include:
+    domains:
+      - switch
+      - light
+    entities: 
+#Сенсоры температуры и влажности
+      - sensor.datchik_temper_zal_temperature
+      - sensor.datchik_temper_vanna_temperature
+      - sensor.t2_cloud_e0eg00_temperature
+      - sensor.datchik_temper_zal_humidity
+      - sensor.datchik_temper_vanna_humidity
+      - sensor.t2_cloud_e0eg00_humidity
+      - sensor.datchik_temper_zal_pressure_mmhg
+      - sensor.datchik_temper_vanna_pressure_mmhg
+      - sensor.datchik_temper_ulica_temperature
+      - sensor.datchik_temper_ulica_humidity
+      - sensor.datchik_temper_ulica_pressure_mmhg
+      - sensor.datchik_temper_spal_temperature
+      - sensor.datchik_temper_spal_humidity
+      - sensor.datchik_temper_spal_pressure_mmhg
+# Сенсоры мощности
+      - sensor.rozetka_v_prihojey_power
+      - sensor.rozetka_v_zale_power
+#Объем БД
+      - sensor.maria_db_size
+# Датчики движения
+      - binary_sensor.datchik_dvijeniya_v_prix_occupancy
+# Датчики открытия      
+      - binary_sensor.datchik_dveri_v_prix_contact
+      - binary_sensor.datchik_dveri_v_vanna_contact
+      - binary_sensor.datchik_okna_v_kux_contact
+      - binary_sensor.datchik_okna_v_zal_contact
+      - binary_sensor.datchik_okna_v_spal_contact
+      
+# Сенсоры Raspberyy pi 4
+      - sensor.processor_use_percent
+      - sensor.cpu_temp
+      - sensor.memory_use_percent
+      - sensor.disk_use_percent
+      - sensor.disk_free
+      
+# Потребляемая мощность кондиционером
+      - sensor.xiaomi_gateway_load_power
+
+# Энергомонитор
+      - sensor.energy_monitor_current
+      - sensor.energy_monitor_energy
+      - sensor.energy_monitor_power
+      - sensor.energy_monitor_voltage
+      - sensor.energy_monitor_energy_cost
+#      - sensor.money_day_energy_monitor_day
+#      - sensor.money_month_energy_monitor_month
+#      - sensor.money_month_energy_monitor_yearly
+
+# Mi Flora
+      - sensor.v1_cloud_d4lc00_humidity
+      - plant.ficus_ble
+
+# Пылесос
+      - vacuum.v2_cloud_542790
+      

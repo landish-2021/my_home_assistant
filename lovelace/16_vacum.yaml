@@ -1,0 +1,67 @@
+##################   Пылесос
+title: Vacuum cleaner
+icon: mdi:robot-vacuum-variant
+cards:
+
+  - type: 'custom:vacuum-card'
+    entity: vacuum.v2_cloud_542790
+    stats:
+      default:
+        - attribute: filter_left
+          unit: hours
+          subtitle: Filter
+        - attribute: side_brush_left
+          unit: hours
+          subtitle: Side brush
+        - attribute: main_brush_left
+          unit: hours
+          subtitle: Main brush
+        - attribute: sensor_dirty_left
+          unit: hours
+          subtitle: Sensors
+      cleaning:
+        - attribute: cleaned_area
+          unit: m2
+          subtitle: Cleaning area
+        - attribute: cleaning_time
+          unit: minutes
+          subtitle: Cleaning time
+    actions:
+      - name: Clean living room
+        service: script.clean_living_room
+        icon: 'mdi:sofa'
+      - name: Clean bedroom
+        service: script.clean_bedroom
+        icon: 'mdi:bed-empty'
+      - name: Clean kitchen
+        service: script.clean_kitchen
+        icon: 'mdi:silverware-fork-knife'
+
+          
+  - type: custom:xiaomi-vacuum-map-card
+    entity: vacuum.v2_cloud_542790
+    map_image: '/local/plan.png'
+    calibration_points:
+      - vacuum:
+          x: 25500
+          y: 25500
+        map:
+          x: 466
+          y: 1889
+      - vacuum:
+          x: 26500
+          y: 26500
+        map:
+          x: 730
+          y: 1625
+      - vacuum:
+          x: 25500
+          y: 26500
+        map:
+          x: 466
+          y: 1625
+    zones:
+      - [[25500, 25500, 26500, 26500]]
+      - [[24215, 28125, 29465, 32175]]
+      - [[24245, 25190, 27495, 27940], [27492, 26789, 28942, 27889]]
+      - [[28972, 26715, 31072, 27915], [29457, 27903, 31107, 29203], [30198, 29215, 31498, 31215], [29461, 31228, 31511, 32478]]

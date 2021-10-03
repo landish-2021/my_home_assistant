@@ -1,0 +1,54 @@
+# Открытие двери
+- alias: Voice Open Vanna door
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.datchik_dveri_v_vanna_contact
+      to: 'on'
+  action:
+    - service: tts.yandex_station_say
+      entity_id: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+      data_template:
+        message: "Дверь в ванную открыта"
+        options:
+          volume_level: 0.8
+
+- alias: Voice Open Vxod door
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.datchik_dveri_v_prix_contact
+      to: 'on'
+  action:
+    - service: tts.yandex_station_say
+      entity_id: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+      data_template:
+        message: "Входная дверь открыта"
+        options:
+          volume_level: 0.8
+
+# Открытие окна
+- alias: Voice Open Kux door
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.datchik_okna_v_kux_contact
+      to: 'on'
+  action:
+    - service: tts.yandex_station_say
+      entity_id: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+      data_template:
+        message: "Окно на кухне открыто"
+        options:
+          volume_level: 0.8
+
+# Закрытые окна
+- alias: Voice Open Kux door
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.datchik_okna_v_kux_contact
+      to: 'off'
+  action:
+    - service: tts.yandex_station_say
+      entity_id: media_player.yandex_station_ff98f02995ece59b4a43e7e0_2
+      data_template:
+        message: "Окно на кухне закрыто"
+        options:
+          volume_level: 0.8

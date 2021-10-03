@@ -1,0 +1,4550 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.andrey",
+                "state": "home",
+                "attributes": {
+                    "editable": false,
+                    "id": "andrey",
+                    "latitude": 53.6029049,
+                    "longitude": 87.3366413,
+                    "gps_accuracy": 20,
+                    "source": "device_tracker.bkl_l09",
+                    "user_id": "af10a108b0a34405b55a94a2e51e4461",
+                    "friendly_name": "Andrey",
+                    "entity_picture": "/api/image/serve/c2c050a66d2005aa7623b353bd7cacfe/512x512"
+                },
+                "last_changed": "2021-10-03T10:28:22.759144+00:00",
+                "last_updated": "2021-10-03T10:29:31.485519+00:00",
+                "context": {
+                    "id": "7773a94dfb18d23d22e4fa749c49cbdf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.paspberyy_pi4",
+                "state": "on",
+                "attributes": {
+                    "round_trip_time_avg": 2.187,
+                    "round_trip_time_max": 2.26,
+                    "round_trip_time_mdev": "",
+                    "round_trip_time_min": 2.115,
+                    "friendly_name": "paspberyy_pi4",
+                    "device_class": "connectivity"
+                },
+                "last_changed": "2021-10-03T10:28:24.528003+00:00",
+                "last_updated": "2021-10-03T10:29:25.598877+00:00",
+                "context": {
+                    "id": "4ae3f4bc0385e9e7b7fa0ae00123b67c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "utility_meter.um_one_daily_energy_monitor",
+                "state": "electicity",
+                "attributes": {
+                    "tariffs": [
+                        "electicity"
+                    ],
+                    "friendly_name": "um_one_daily_energy_monitor",
+                    "icon": "mdi:clock-outline"
+                },
+                "last_changed": "2021-10-03T10:28:34.532301+00:00",
+                "last_updated": "2021-10-03T10:28:34.532301+00:00",
+                "context": {
+                    "id": "39d629bc4c72bf81d912c04c6b66f3f7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.control_mode",
+                "state": "on",
+                "attributes": {
+                    "friendly_name": "\u0420\u0435\u0436\u0438\u043c \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f",
+                    "icon": "mdi:server-off"
+                },
+                "last_changed": "2021-10-03T10:29:31.706521+00:00",
+                "last_updated": "2021-10-03T10:29:31.706521+00:00",
+                "context": {
+                    "id": "181ba10478b6a0840dd090cef2eba657",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "timer.zigbee_permit_join",
+                "state": "idle",
+                "attributes": {
+                    "duration": "0:10:00",
+                    "editable": false,
+                    "friendly_name": "Time remaining"
+                },
+                "last_changed": "2021-10-03T10:28:36.688707+00:00",
+                "last_updated": "2021-10-03T10:28:36.688707+00:00",
+                "context": {
+                    "id": "a07089f294fc53679bfd7121115489dd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "timer.vent",
+                "state": "idle",
+                "attributes": {
+                    "duration": "0:10:00",
+                    "editable": false,
+                    "friendly_name": "\u0412\u0435\u043d\u0442\u0438\u043b\u044f\u0446\u0438\u044f \u0432\u044b\u043a\u043b \u0447\u0435\u0440\u0435\u0437 -"
+                },
+                "last_changed": "2021-10-03T10:28:36.689142+00:00",
+                "last_updated": "2021-10-03T10:28:36.689142+00:00",
+                "context": {
+                    "id": "647cfb81ce988e6bf44e61a26ca371cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "timer.camphoto",
+                "state": "idle",
+                "attributes": {
+                    "duration": "0:03:00",
+                    "editable": false,
+                    "friendly_name": "\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0435 \u0444\u043e\u0442\u043e \u043d\u0430 \u0432\u0445\u043e\u0434\u0435 \u0447\u0435\u0440\u0435\u0437 -"
+                },
+                "last_changed": "2021-10-03T10:28:36.689610+00:00",
+                "last_updated": "2021-10-03T10:28:36.689610+00:00",
+                "context": {
+                    "id": "3efed0ca8da64971c84996c4e09e5adf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "timer.sonof_vanna",
+                "state": "idle",
+                "attributes": {
+                    "duration": "0:10:00",
+                    "editable": false,
+                    "friendly_name": "\u0432\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0432\u0435\u043d\u0442\u0438\u043b\u044f\u0446\u0438\u0438 -"
+                },
+                "last_changed": "2021-10-03T10:28:36.689906+00:00",
+                "last_updated": "2021-10-03T10:28:36.689906+00:00",
+                "context": {
+                    "id": "18e4eda87aed88beb105a86c800b22b7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.zigbee_permit_join",
+                "state": "off",
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Allow devices to join",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-10-03T10:28:37.037877+00:00",
+                "last_updated": "2021-10-03T10:28:37.037877+00:00",
+                "context": {
+                    "id": "201b888a16ff04faf0c670b819b08d40",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_number.room_temperature",
+                "state": "24.0",
+                "attributes": {
+                    "initial": 24.0,
+                    "editable": false,
+                    "min": 16.0,
+                    "max": 30.0,
+                    "step": 1.0,
+                    "mode": "slider",
+                    "friendly_name": "\u0422\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043e\u0431\u043e\u0433\u0440\u0435\u0432\u0430",
+                    "icon": "mdi:thermostat-box"
+                },
+                "last_changed": "2021-10-03T10:28:37.388045+00:00",
+                "last_updated": "2021-10-03T10:28:37.388045+00:00",
+                "context": {
+                    "id": "612b82d72d79ce4910a42c7f97a50498",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "alarm_control_panel.home_50_alarm",
+                "state": "disarmed",
+                "attributes": {
+                    "code_format": "number",
+                    "changed_by": null,
+                    "code_arm_required": true,
+                    "friendly_name": "home_50 alarm",
+                    "supported_features": 31
+                },
+                "last_changed": "2021-10-03T10:28:37.611601+00:00",
+                "last_updated": "2021-10-03T10:28:37.611601+00:00",
+                "context": {
+                    "id": "370d912e9f41702d2e4be88c48f2d5f8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "utility_meter.um_one_monthly_energy_monitor",
+                "state": "electicity",
+                "attributes": {
+                    "tariffs": [
+                        "electicity"
+                    ],
+                    "friendly_name": "um_one_monthly_energy_monitor",
+                    "icon": "mdi:clock-outline"
+                },
+                "last_changed": "2021-10-03T10:28:37.630841+00:00",
+                "last_updated": "2021-10-03T10:28:37.630841+00:00",
+                "context": {
+                    "id": "86e8b934c0b708b5c53d847b14d7fffb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "utility_meter.um_one_yearly_energy_monitor",
+                "state": "electicity",
+                "attributes": {
+                    "tariffs": [
+                        "electicity"
+                    ],
+                    "friendly_name": "um_one_yearly_energy_monitor",
+                    "icon": "mdi:clock-outline"
+                },
+                "last_changed": "2021-10-03T10:28:46.132112+00:00",
+                "last_updated": "2021-10-03T10:28:46.132112+00:00",
+                "context": {
+                    "id": "5a999045e59e604c8980cd9d3e050982",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.um_one_daily_energy_monitor_electicity",
+                "state": "5.05",
+                "attributes": {
+                    "state_class": "total_increasing",
+                    "last_reset": "2021-10-02T17:00:00.027195+00:00",
+                    "source": "sensor.energy_monitor_energy",
+                    "status": "collecting",
+                    "last_period": "7.01",
+                    "meter_period": "daily",
+                    "tariff": "electicity",
+                    "unit_of_measurement": "kWh",
+                    "friendly_name": "um_one_daily_energy_monitor electicity",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2021-10-03T10:28:49.633047+00:00",
+                "last_updated": "2021-10-03T10:28:49.633047+00:00",
+                "context": {
+                    "id": "59e5aeb697f54b45af000bbdfe223ba0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.um_one_monthly_energy_monitor_electicity",
+                "state": "17.10",
+                "attributes": {
+                    "state_class": "total_increasing",
+                    "last_reset": "2021-09-30T17:00:00.025542+00:00",
+                    "source": "sensor.energy_monitor_energy",
+                    "status": "collecting",
+                    "last_period": "171.90",
+                    "meter_period": "monthly",
+                    "tariff": "electicity",
+                    "unit_of_measurement": "kWh",
+                    "friendly_name": "um_one_monthly_energy_monitor electicity",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2021-10-03T10:28:49.634048+00:00",
+                "last_updated": "2021-10-03T10:28:49.634048+00:00",
+                "context": {
+                    "id": "dbfa2708b859097089aa620fece5e185",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.start",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T08:34:22.222048+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0417\u0430\u043f\u0443\u0441\u043a \u0438\u043d\u0441\u0442\u0430\u043d\u0441\u0430",
+                    "friendly_name": "start"
+                },
+                "last_changed": "2021-10-03T10:28:49.634676+00:00",
+                "last_updated": "2021-10-03T10:28:49.634676+00:00",
+                "context": {
+                    "id": "7c95c80f28a30bb832512037651ad251",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.persistent_notification_clear_pwned",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-01T11:04:11.148026+00:00",
+                    "mode": "parallel",
+                    "current": 0,
+                    "max": 10,
+                    "id": "\u041e\u0447\u0438\u0441\u0442\u043a\u0430 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0439 \u043e \u043f\u0430\u0440\u043e\u043b\u044f\u0445",
+                    "friendly_name": "persistent_notification_clear_pwned"
+                },
+                "last_changed": "2021-10-03T10:28:49.635219+00:00",
+                "last_updated": "2021-10-03T10:28:49.635219+00:00",
+                "context": {
+                    "id": "75cf1fc74c886228077cb27c4f377878",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.00_telegramm_ping",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-11T14:45:08.307452+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "00_telegramm_ping"
+                },
+                "last_changed": "2021-10-03T10:28:49.635645+00:00",
+                "last_updated": "2021-10-03T10:28:49.635645+00:00",
+                "context": {
+                    "id": "6acf7105f97d30588df39273cce532bd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.zapros_na_foto_otchet_zal",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-27T14:26:47.188758+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0444\u043e\u0442\u043e \u043e\u0442\u0447\u0435\u0442 \u0437\u0430\u043b"
+                },
+                "last_changed": "2021-10-03T10:28:49.636196+00:00",
+                "last_updated": "2021-10-03T10:28:49.636196+00:00",
+                "context": {
+                    "id": "c989295fc88ddc8e9c3439df71e439fd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.zapros_na_foto_otchet_kukhnia",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0444\u043e\u0442\u043e \u043e\u0442\u0447\u0435\u0442 \u043a\u0443\u0445\u043d\u044f"
+                },
+                "last_changed": "2021-10-03T10:28:49.636682+00:00",
+                "last_updated": "2021-10-03T10:28:49.636682+00:00",
+                "context": {
+                    "id": "a86685dacf073fe0bd3736a535905c17",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.zapros_na_foto_otchet_spalnia",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-27T14:27:44.759420+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0444\u043e\u0442\u043e \u043e\u0442\u0447\u0435\u0442 \u0441\u043f\u0430\u043b\u044c\u043d\u044f"
+                },
+                "last_changed": "2021-10-03T10:28:49.637114+00:00",
+                "last_updated": "2021-10-03T10:28:49.637114+00:00",
+                "context": {
+                    "id": "7eead1b2a750ff117ae4fa55fa272d3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.zapros_na_foto_otchet_prikhozhaia",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u0444\u043e\u0442\u043e \u043e\u0442\u0447\u0435\u0442 \u043f\u0440\u0438\u0445\u043e\u0436\u0430\u044f"
+                },
+                "last_changed": "2021-10-03T10:28:49.637717+00:00",
+                "last_updated": "2021-10-03T10:28:49.637717+00:00",
+                "context": {
+                    "id": "16f28c424c89f94e2e8bc1d33813c06e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.mi_flora_problema",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-11T12:00:00.011593+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Mi Flora \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430"
+                },
+                "last_changed": "2021-10-03T10:28:49.638127+00:00",
+                "last_updated": "2021-10-03T10:28:49.638127+00:00",
+                "context": {
+                    "id": "104c77e8eda69ac530792a8cbeb9ca9b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.mi_flora_sensors_available",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-08-07T13:25:56.930664+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Mi flora sensors available"
+                },
+                "last_changed": "2021-10-03T10:28:49.638525+00:00",
+                "last_updated": "2021-10-03T10:28:49.638525+00:00",
+                "context": {
+                    "id": "72b57c58d53e7c7d2fb33b17dd23320f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.z2m_offline_detection",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-21T03:10:00.065766+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Z2m offline detection"
+                },
+                "last_changed": "2021-10-03T10:28:49.638911+00:00",
+                "last_updated": "2021-10-03T10:28:49.638911+00:00",
+                "context": {
+                    "id": "71af474c45a2696476f351e8111a4321",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.01_enter_photo",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T06:38:06.866293+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "01_enter_photo"
+                },
+                "last_changed": "2021-10-03T10:28:49.644391+00:00",
+                "last_updated": "2021-10-03T10:28:49.644391+00:00",
+                "context": {
+                    "id": "8005ed4a402a909357dd546c5bc8a1b5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.02_enter_photo",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "02_enter_photo"
+                },
+                "last_changed": "2021-10-03T10:28:49.645044+00:00",
+                "last_updated": "2021-10-03T10:28:49.645044+00:00",
+                "context": {
+                    "id": "851c8599428ee098549c846f20521d45",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.03_enter_photo",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:18:47.553406+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "03_enter_photo"
+                },
+                "last_changed": "2021-10-03T10:28:49.645508+00:00",
+                "last_updated": "2021-10-03T10:28:49.645508+00:00",
+                "context": {
+                    "id": "f46edb9c3b1763b6e1263a83c285fe3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.04_enter_photo",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "04_enter_photo"
+                },
+                "last_changed": "2021-10-03T10:28:49.645920+00:00",
+                "last_updated": "2021-10-03T10:28:49.645920+00:00",
+                "context": {
+                    "id": "8c01100b878d209ac53f762468a60dc3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.trigger_alarm_otkrytie",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-30T12:11:25.290257+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Trigger alarm \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:49.646342+00:00",
+                "last_updated": "2021-10-03T10:28:49.646342+00:00",
+                "context": {
+                    "id": "707324eb63e91d81d3eb7264e5df0a0d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.otpravka_soobshcheniia_alarm_triggered",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-30T12:11:55.334934+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f alarm triggered"
+                },
+                "last_changed": "2021-10-03T10:28:49.646824+00:00",
+                "last_updated": "2021-10-03T10:28:49.646824+00:00",
+                "context": {
+                    "id": "11ba43e97cb50e6d7ee3091e6cb6d853",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.signalizatsiia_postanovka_na_okhranu",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-30T12:15:03.200503+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f, \u043f\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u043d\u0430 \u043e\u0445\u0440\u0430\u043d\u0443"
+                },
+                "last_changed": "2021-10-03T10:28:49.647284+00:00",
+                "last_updated": "2021-10-03T10:28:49.647284+00:00",
+                "context": {
+                    "id": "44e13a0e877fb1906d0658f19830d641",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.signalizatsiia_opr_polz_dver_sniatie",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-30T12:15:46.784471+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0438\u0433\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f. \u041e\u043f\u0440.\u043f\u043e\u043b\u044c\u0437. \u0434\u0432\u0435\u0440\u044c, \u0441\u043d\u044f\u0442\u0438\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:49.647854+00:00",
+                "last_updated": "2021-10-03T10:28:49.647854+00:00",
+                "context": {
+                    "id": "4e4ee50becaf8cb7285a3b8617f060cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.dvernoi_zvonok",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-29T14:11:24.163749+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0414\u0432\u0435\u0440\u043d\u043e\u0439 \u0437\u0432\u043e\u043d\u043e\u043a"
+                },
+                "last_changed": "2021-10-03T10:28:49.648344+00:00",
+                "last_updated": "2021-10-03T10:28:49.648344+00:00",
+                "context": {
+                    "id": "48f46bb2926af8c6ae16a7096c0a7a88",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_energy_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-07-23T03:46:56.343890+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_energy \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-10-03T10:28:49.648784+00:00",
+                "last_updated": "2021-10-03T10:28:49.648784+00:00",
+                "context": {
+                    "id": "c2f4770a11ec2df7279bde0243d0078e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_power_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-07-23T03:46:56.340586+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_power \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-10-03T10:28:49.649114+00:00",
+                "last_updated": "2021-10-03T10:28:49.649114+00:00",
+                "context": {
+                    "id": "014641227f4de0902c189916f2c72e47",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_current_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-07-23T03:46:56.342420+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_current \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-10-03T10:28:49.649424+00:00",
+                "last_updated": "2021-10-03T10:28:49.649424+00:00",
+                "context": {
+                    "id": "87ec6f892f142769efb1eb805b198e05",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_voltage_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-09-30T14:14:49.247594+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_voltage \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-10-03T10:28:49.649741+00:00",
+                "last_updated": "2021-10-03T10:28:49.649741+00:00",
+                "context": {
+                    "id": "3b96ec9fe58be4e3fecaa8e8ffa53dc0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_cost_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-02T00:41:27.224420+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_cost \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-10-03T10:28:49.650048+00:00",
+                "last_updated": "2021-10-03T10:28:49.650048+00:00",
+                "context": {
+                    "id": "b742b6117111378713c257c22b0c29e5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.otkliuchenie_posle_vostanovleniia_pitaniia_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-15T05:39:00.145270+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u043b\u0435 \u0432\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u0438\u0442\u0430\u043d\u0438\u044f \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.650444+00:00",
+                "last_updated": "2021-10-03T10:28:49.650444+00:00",
+                "context": {
+                    "id": "26f4d3fa4d67719932046987bff38884",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.otkliuchenie_posle_vostanovleniia_pitaniia_vykl_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-25T06:12:02.166037+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u0441\u043b\u0435 \u0432\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u0438\u0442\u0430\u043d\u0438\u044f \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.650841+00:00",
+                "last_updated": "2021-10-03T10:28:49.650841+00:00",
+                "context": {
+                    "id": "f8d4cfcc5687b0cf12ae33e3b23ab513",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.vkliuchenie_nochnika_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-01T11:49:58.512786+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u043e\u0447\u043d\u0438\u043a\u0430 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.651254+00:00",
+                "last_updated": "2021-10-03T10:28:49.651254+00:00",
+                "context": {
+                    "id": "d7d065a05a708a7dc487793ad517d0ea",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.vykliuchenie_nochnika_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T00:11:28.430693+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u043e\u0447\u043d\u0438\u043a\u0430 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.651676+00:00",
+                "last_updated": "2021-10-03T10:28:49.651676+00:00",
+                "context": {
+                    "id": "713a2341d28e93203e6ee3c4b2c25427",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_kladovke_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:19:42.999839+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u043b\u0430\u0434\u043e\u0432\u043a\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.652140+00:00",
+                "last_updated": "2021-10-03T10:28:49.652140+00:00",
+                "context": {
+                    "id": "1c7150b03ff9ad4b14f84c4514cdf333",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_kladovke_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:21:32.961939+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u043b\u0430\u0434\u043e\u0432\u043a\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.652722+00:00",
+                "last_updated": "2021-10-03T10:28:49.652722+00:00",
+                "context": {
+                    "id": "df3cfb1653d4f3fea03fb6564d5fa7a2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_koridore_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:18:06.914772+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u043e\u0440\u0438\u0434\u043e\u0440\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.653126+00:00",
+                "last_updated": "2021-10-03T10:28:49.653126+00:00",
+                "context": {
+                    "id": "20191d92a4ef0ec952156b0be58b4c97",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_koridore_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:19:56.902318+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u043e\u0440\u0438\u0434\u043e\u0440\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.653531+00:00",
+                "last_updated": "2021-10-03T10:28:49.653531+00:00",
+                "context": {
+                    "id": "c2e5aa9c05014ed77f742610cd7a9f73",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_kukhne_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T01:18:12.971948+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u0443\u0445\u043d\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.653940+00:00",
+                "last_updated": "2021-10-03T10:28:49.653940+00:00",
+                "context": {
+                    "id": "f87905b4a34b4ce29b13f5ebde1bb462",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_kukhne_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T01:01:58.065726+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043a\u0443\u0445\u043d\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.654341+00:00",
+                "last_updated": "2021-10-03T10:28:49.654341+00:00",
+                "context": {
+                    "id": "926c06704393c9c425c80257e76f29ec",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_prikhozhei_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:06:36.790637+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043f\u0440\u0438\u0445\u043e\u0436\u0435\u0439 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.654720+00:00",
+                "last_updated": "2021-10-03T10:28:49.654720+00:00",
+                "context": {
+                    "id": "6dd674ce3cdbc14b6e923d092b5e48ef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_prikhozhei_vkl_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T06:38:06.868058+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043f\u0440\u0438\u0445\u043e\u0436\u0435\u0439 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.655112+00:00",
+                "last_updated": "2021-10-03T10:28:49.655112+00:00",
+                "context": {
+                    "id": "9b6e020e31ba3ef975754a2e8d31d9a8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_prikhozhei_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:46:18.920409+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u043f\u0440\u0438\u0445\u043e\u0436\u0435\u0439 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.655492+00:00",
+                "last_updated": "2021-10-03T10:28:49.655492+00:00",
+                "context": {
+                    "id": "1925f8d389b65f3490d67bce627278a1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_spalnoi_potolochnyi_svet_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:17:19.539076+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u043e\u0439 \u043f\u043e\u0442\u043e\u043b\u043e\u0447\u043d\u044b\u0439 \u0441\u0432\u0435\u0442 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.655862+00:00",
+                "last_updated": "2021-10-03T10:28:49.655862+00:00",
+                "context": {
+                    "id": "7c8fd96e6d223f61b20256366cca5f00",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_spalnoi_potolochnyi_svet_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:20:09.517426+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u043e\u0439 \u043f\u043e\u0442\u043e\u043b\u043e\u0447\u043d\u044b\u0439 \u0441\u0432\u0435\u0442 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.656351+00:00",
+                "last_updated": "2021-10-03T10:28:49.656351+00:00",
+                "context": {
+                    "id": "2f3dea30b2fcb94e99376ebb13960fbd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.liustra_svet_v_spalne_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-30T10:58:26.494632+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041b\u044e\u0441\u0442\u0440\u0430 \u0441\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.656809+00:00",
+                "last_updated": "2021-10-03T10:28:49.656809+00:00",
+                "context": {
+                    "id": "86406c6946b43aba8544aba6e30b0d98",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.liustra_svet_v_spalne_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-30T10:58:33.483850+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041b\u044e\u0441\u0442\u0440\u0430 \u0441\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.657398+00:00",
+                "last_updated": "2021-10-03T10:28:49.657398+00:00",
+                "context": {
+                    "id": "d810241aed8aedd5f1a7e1d191f24c22",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.nastolnaia_lampa_svet_v_spalne_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T23:20:34.889173+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0441\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.657773+00:00",
+                "last_updated": "2021-10-03T10:28:49.657773+00:00",
+                "context": {
+                    "id": "e79f1b704f267078a54899a9397800bc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.nastolnaia_lampa_svet_v_spalne_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:32:02.820723+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0441\u0432\u0435\u0442 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.658166+00:00",
+                "last_updated": "2021-10-03T10:28:49.658166+00:00",
+                "context": {
+                    "id": "5f62f3748a1f3f04cedcd91c2c72db84",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_vannoi_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:06:38.627484+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0432\u0430\u043d\u043d\u043e\u0439 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.658546+00:00",
+                "last_updated": "2021-10-03T10:28:49.658546+00:00",
+                "context": {
+                    "id": "c9c2b63466172dd52c84afd7666370a3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_vannoi_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:07:47.221770+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0432\u0430\u043d\u043d\u043e\u0439 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.658994+00:00",
+                "last_updated": "2021-10-03T10:28:49.658994+00:00",
+                "context": {
+                    "id": "5d068cba12f1b4331a32e47c4ed02c89",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_sleva_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T15:59:00.843072+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u0441\u043b\u0435\u0432\u0430 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.660144+00:00",
+                "last_updated": "2021-10-03T10:28:49.660144+00:00",
+                "context": {
+                    "id": "efe1a8bcef3c46391ddcf53e2f0591d9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_s_pravo_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:18:19.593415+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u0441 \u043f\u0440\u0430\u0432\u043e \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.660632+00:00",
+                "last_updated": "2021-10-03T10:28:49.660632+00:00",
+                "context": {
+                    "id": "8149ef12f4e6ede8b0511862f8a6ca90",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_sleva_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T08:45:38.709342+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u0441\u043b\u0435\u0432\u0430 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.661062+00:00",
+                "last_updated": "2021-10-03T10:28:49.661062+00:00",
+                "context": {
+                    "id": "23a04cef37e3e2fa36161dba91a43f0c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_s_pravo_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:16:56.140378+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u0441 \u043f\u0440\u0430\u0432\u043e \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.661453+00:00",
+                "last_updated": "2021-10-03T10:28:49.661453+00:00",
+                "context": {
+                    "id": "cf911e177c6fc41eb79eeb076af44ca0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_liustra_svet_vkl_pm",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:21:13.294420+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u043b\u044e\u0441\u0442\u0440\u0430 \u0441\u0432\u0435\u0442 \u0412\u043a\u043b pm."
+                },
+                "last_changed": "2021-10-03T10:28:49.661861+00:00",
+                "last_updated": "2021-10-03T10:28:49.661861+00:00",
+                "context": {
+                    "id": "1987ca80de7033c595ff3b0cff60d092",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_liustra_svet_vkl_pm_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T15:21:01.677452+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u043b\u044e\u0441\u0442\u0440\u0430 \u0441\u0432\u0435\u0442 \u0412\u043a\u043b pm."
+                },
+                "last_changed": "2021-10-03T10:28:49.662410+00:00",
+                "last_updated": "2021-10-03T10:28:49.662410+00:00",
+                "context": {
+                    "id": "7429fef1655d0616976f4feb550a5706",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.svet_v_zale_liustra_svet_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:21:14.794364+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0432\u0435\u0442 \u0432 \u0437\u0430\u043b\u0435 \u043b\u044e\u0441\u0442\u0440\u0430 \u0441\u0432\u0435\u0442 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.662811+00:00",
+                "last_updated": "2021-10-03T10:28:49.662811+00:00",
+                "context": {
+                    "id": "13604f6319ee75117a1da005636d61e8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kubik_liustra_v_zale_iarkost",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-07-07T14:25:30.901053+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041a\u0443\u0431\u0438\u043a \u043b\u044e\u0441\u0442\u0440\u0430 \u0432 \u0437\u0430\u043b\u0435 \u044f\u0440\u043a\u043e\u0441\u0442\u044c +"
+                },
+                "last_changed": "2021-10-03T10:28:49.663213+00:00",
+                "last_updated": "2021-10-03T10:28:49.663213+00:00",
+                "context": {
+                    "id": "6bac19470ec46058d23df6270a03569d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kubik_liustra_v_zale_iarkost_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-07-24T10:59:06.186751+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041a\u0443\u0431\u0438\u043a \u043b\u044e\u0441\u0442\u0440\u0430 \u0432 \u0437\u0430\u043b\u0435 \u044f\u0440\u043a\u043e\u0441\u0442\u044c -"
+                },
+                "last_changed": "2021-10-03T10:28:49.663596+00:00",
+                "last_updated": "2021-10-03T10:28:49.663596+00:00",
+                "context": {
+                    "id": "c7c00cf06fa2cd3fe9957a50e8115952",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.00_purge_everyday",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T18:00:00.013993+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0421\u0436\u0430\u0442\u0438\u0435 \u0431\u0430\u0437\u044b",
+                    "friendly_name": "00_purge_everyday"
+                },
+                "last_changed": "2021-10-03T10:28:49.664040+00:00",
+                "last_updated": "2021-10-03T10:28:49.664040+00:00",
+                "context": {
+                    "id": "9a6a2c8c93c8d05f731498cc4f8935d6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.voice_open_vanna_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:06:38.628305+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Voice Open Vanna door"
+                },
+                "last_changed": "2021-10-03T10:28:49.664462+00:00",
+                "last_updated": "2021-10-03T10:28:49.664462+00:00",
+                "context": {
+                    "id": "f9c4b6ce7e96f0c7a0cf135cd4a8fc74",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.voice_open_vxod_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T06:38:06.868767+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Voice Open Vxod door"
+                },
+                "last_changed": "2021-10-03T10:28:49.664859+00:00",
+                "last_updated": "2021-10-03T10:28:49.664859+00:00",
+                "context": {
+                    "id": "437fa655a0256570d9c957cb43ecee8d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.voice_open_kux_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:18:47.554504+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Voice Open Kux door"
+                },
+                "last_changed": "2021-10-03T10:28:49.665252+00:00",
+                "last_updated": "2021-10-03T10:28:49.665252+00:00",
+                "context": {
+                    "id": "4f3ad12b15d24a6a8238b0985980a966",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.voice_open_kux_door_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:41:35.171742+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Voice Open Kux door"
+                },
+                "last_changed": "2021-10-03T10:28:49.665644+00:00",
+                "last_updated": "2021-10-03T10:28:49.665644+00:00",
+                "context": {
+                    "id": "66ddaa9cfa61f6b46857a7c926fd9f11",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.vytiazhka_na_kukhne_vkl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T04:11:51.125400+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u044b\u0442\u044f\u0436\u043a\u0430 \u043d\u0430 \u043a\u0443\u0445\u043d\u0435 \u0412\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.666034+00:00",
+                "last_updated": "2021-10-03T10:28:49.666034+00:00",
+                "context": {
+                    "id": "eef345e0cbab70f979090aea3e31614b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.vytiazhka_na_kukhne_vykl",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T04:53:17.941343+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u044b\u0442\u044f\u0436\u043a\u0430 \u043d\u0430 \u043a\u0443\u0445\u043d\u0435 \u0412\u044b\u043a\u043b."
+                },
+                "last_changed": "2021-10-03T10:28:49.666546+00:00",
+                "last_updated": "2021-10-03T10:28:49.666546+00:00",
+                "context": {
+                    "id": "83b284442ea8ee29675ff4eda0b6679b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.enable_zigbee_join",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-27T10:01:52.590611+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0412\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 Zigbee",
+                    "friendly_name": "enable_zigbee_join"
+                },
+                "last_changed": "2021-10-03T10:28:49.667239+00:00",
+                "last_updated": "2021-10-03T10:28:49.667239+00:00",
+                "context": {
+                    "id": "49dd7bd353d39b11544bfe47ad2bd1ea",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.disable_zigbee_join",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-06-27T10:01:58.944202+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0412\u044b\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 Zigbee",
+                    "friendly_name": "disable_zigbee_join"
+                },
+                "last_changed": "2021-10-03T10:28:49.667699+00:00",
+                "last_updated": "2021-10-03T10:28:49.667699+00:00",
+                "context": {
+                    "id": "cc1504987af0c5f4d53f8559ebea32f0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.disable_zigbee_join_timer",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-30T10:50:59.003748+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0412\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043f\u043e \u0442\u0430\u0439\u043c\u0435\u0440\u0443 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u044f Zigbee",
+                    "friendly_name": "disable_zigbee_join_timer"
+                },
+                "last_changed": "2021-10-03T10:28:49.668566+00:00",
+                "last_updated": "2021-10-03T10:28:49.668566+00:00",
+                "context": {
+                    "id": "e0e9645ad1a9dba469de80718dfc19d0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.zigbee_map_aktualisieren",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:20:00.036516+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "update_networkmap",
+                    "friendly_name": "Zigbee Map aktualisieren"
+                },
+                "last_changed": "2021-10-03T10:28:49.669337+00:00",
+                "last_updated": "2021-10-03T10:28:49.669337+00:00",
+                "context": {
+                    "id": "3cdf4a1241a5b512160073a207cb010f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kn_detect_smoke",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d\u0438\u0435 \u0434\u044b\u043c\u0430",
+                    "friendly_name": "kn_detect_smoke"
+                },
+                "last_changed": "2021-10-03T10:28:49.669792+00:00",
+                "last_updated": "2021-10-03T10:28:49.669792+00:00",
+                "context": {
+                    "id": "b871b2fa591df494bca3f8a00ecd4b7c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kn_detect_smoke_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u0437\u0430\u0434\u044b\u043c\u043b\u0435\u043d\u0438\u0435 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u043e",
+                    "friendly_name": "kn_detect_smoke_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.670178+00:00",
+                "last_updated": "2021-10-03T10:28:49.670178+00:00",
+                "context": {
+                    "id": "cb30dff8c024d2db7489e76fca07e531",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ln_wleak_washmash_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-30T07:17:23.796229+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0412\u0430\u043d\u043d\u0430\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u0432\u043e\u0437\u043b\u0435 \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0430\u0448\u0438\u043d\u044b",
+                    "friendly_name": "ln_wleak_washmash_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.670623+00:00",
+                "last_updated": "2021-10-03T10:28:49.670623+00:00",
+                "context": {
+                    "id": "e12ac46039c296294f4b1924cacad8da",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ln_wleak_washmash_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-30T07:17:37.347629+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0412\u0430\u043d\u043d\u0430\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u0432\u043e\u0437\u043b\u0435 \u0441\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043c\u0430\u0448\u0438\u043d\u044b \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0430",
+                    "friendly_name": "ln_wleak_washmash_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.671027+00:00",
+                "last_updated": "2021-10-03T10:28:49.671027+00:00",
+                "context": {
+                    "id": "1035026d6c6d0f9e7d26b74c3e11d5aa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kn_wleak_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u043e\u0439",
+                    "friendly_name": "kn_wleak_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.671458+00:00",
+                "last_updated": "2021-10-03T10:28:49.671458+00:00",
+                "context": {
+                    "id": "08dfa53b9c617e22aae70a30bba904f4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.kn_kitchen_wleak_washstand_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u043e\u0439 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0430",
+                    "friendly_name": "kn_kitchen_wleak_washstand_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.672094+00:00",
+                "last_updated": "2021-10-03T10:28:49.672094+00:00",
+                "context": {
+                    "id": "1fdc1e6b1cd5c773d26fbb068ea70c6f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_kn_wleak_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439",
+                    "friendly_name": "bat_kn_wleak_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.672526+00:00",
+                "last_updated": "2021-10-03T10:28:49.672526+00:00",
+                "context": {
+                    "id": "6e8b015462d20adeb0bd3677ccc7d592",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_kn_kitchen_wleak_washstand_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u041a\u0443\u0445\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0430",
+                    "friendly_name": "bat_kn_kitchen_wleak_washstand_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.672938+00:00",
+                "last_updated": "2021-10-03T10:28:49.672938+00:00",
+                "context": {
+                    "id": "96391edd84f217c2eeb6400c6de280de",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_zl_wleak_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0417\u0430\u043b, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439",
+                    "friendly_name": "bat_zl_wleak_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.673323+00:00",
+                "last_updated": "2021-10-03T10:28:49.673323+00:00",
+                "context": {
+                    "id": "e4be674ede40190ab5d622f8e2c61191",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_zl_kitchen_wleak_washstand_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0417\u0430\u043b, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0430",
+                    "friendly_name": "bat_zl_kitchen_wleak_washstand_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.673697+00:00",
+                "last_updated": "2021-10-03T10:28:49.673697+00:00",
+                "context": {
+                    "id": "19bdeb26f7a4a2c63b80535a5a984f6b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_sp_wleak_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0421\u043f\u0430\u043b\u044c\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439",
+                    "friendly_name": "bat_sp_wleak_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.674480+00:00",
+                "last_updated": "2021-10-03T10:28:49.674480+00:00",
+                "context": {
+                    "id": "e2a9578f012f513d579dd93dba6ae4b9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.bat_sp_kitchen_wleak_washstand_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0421\u043f\u0430\u043b\u044c\u043d\u044f, \u043f\u0440\u043e\u0442\u0435\u0447\u043a\u0430 \u043f\u043e\u0434 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u0439 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0430",
+                    "friendly_name": "bat_sp_kitchen_wleak_washstand_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.674918+00:00",
+                "last_updated": "2021-10-03T10:28:49.674918+00:00",
+                "context": {
+                    "id": "7d96c25574e5c4cf00bd8fdd8e2bb9a0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_sushka_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-06-19T01:47:26.847080+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_sushka_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.675322+00:00",
+                "last_updated": "2021-10-03T10:28:49.675322+00:00",
+                "context": {
+                    "id": "16f87d7d2819ab8930e32ea7db1bd457",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_auto_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-06-03T11:23:38.181542+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_auto_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.675645+00:00",
+                "last_updated": "2021-10-03T10:28:49.675645+00:00",
+                "context": {
+                    "id": "48489e83c8463183dad4ebbd7fca7694",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_vent_on_auto",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_vent_on_auto"
+                },
+                "last_changed": "2021-10-03T10:28:49.675922+00:00",
+                "last_updated": "2021-10-03T10:28:49.675922+00:00",
+                "context": {
+                    "id": "2bd2086aa72fe8a0cae6baff30f8f362",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_obogrev_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_obogrev_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.676278+00:00",
+                "last_updated": "2021-10-03T10:28:49.676278+00:00",
+                "context": {
+                    "id": "dcb93047d592fded73ce362c57cc7ccd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_xolod_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-06-03T14:12:09.858247+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_xolod_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.676583+00:00",
+                "last_updated": "2021-10-03T10:28:49.676583+00:00",
+                "context": {
+                    "id": "60ebc1e3b21e8ef360aa4df877ba246a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_24_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-06-03T10:44:56.071901+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_24_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.677031+00:00",
+                "last_updated": "2021-10-03T10:28:49.677031+00:00",
+                "context": {
+                    "id": "8d9a2445974db12b91ab220fa1bb01fb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_24_on_2",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_24_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.677345+00:00",
+                "last_updated": "2021-10-03T10:28:49.677345+00:00",
+                "context": {
+                    "id": "ce3c72eda7e7982f7aad656cb3647124",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.conditioner_zal_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-06-03T14:12:16.737037+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "conditioner_zal_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.677706+00:00",
+                "last_updated": "2021-10-03T10:28:49.677706+00:00",
+                "context": {
+                    "id": "be0096a4418845f20d8d6c3de86b8e3d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.send_climate_report",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-02T23:10:00.039789+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "\u0417\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043e\u0442\u0447\u0435\u0442 \u043e \u043f\u043e\u0433\u043e\u0434\u0435",
+                    "friendly_name": "send_climate_report"
+                },
+                "last_changed": "2021-10-03T10:28:49.678089+00:00",
+                "last_updated": "2021-10-03T10:28:49.678089+00:00",
+                "context": {
+                    "id": "583e1a7ed27bd635583eee2aeac0c60e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.sonof_vanna_vent_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:06:39.115168+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "sonof_vanna_vent_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.678484+00:00",
+                "last_updated": "2021-10-03T10:28:49.678484+00:00",
+                "context": {
+                    "id": "cbfa5a08da9305855b4204b9fc7e4154",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.sonof_vanna_vent_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:07:49.459308+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "sonof_vanna_vent_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.678896+00:00",
+                "last_updated": "2021-10-03T10:28:49.678896+00:00",
+                "context": {
+                    "id": "6a1234e0b1c610171cd49dfc5e89c8ad",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.sonof_vanna_timer_on",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:19:48.601878+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "sonof_vanna_timer_on"
+                },
+                "last_changed": "2021-10-03T10:28:49.679283+00:00",
+                "last_updated": "2021-10-03T10:28:49.679283+00:00",
+                "context": {
+                    "id": "579ccc8930ac1be6075bb5201a4efb80",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.sonof_vanna_timer_off",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:29:48.147000+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "sonof_vanna_timer_off"
+                },
+                "last_changed": "2021-10-03T10:28:49.679704+00:00",
+                "last_updated": "2021-10-03T10:28:49.679704+00:00",
+                "context": {
+                    "id": "ec9d5da58bd9d960108a4f863c116b46",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.um_one_yearly_energy_monitor_electicity",
+                "state": "346.04",
+                "attributes": {
+                    "state_class": "total_increasing",
+                    "last_reset": "2021-07-31T02:15:09.658220+00:00",
+                    "source": "sensor.energy_monitor_energy",
+                    "status": "collecting",
+                    "last_period": 0,
+                    "meter_period": "yearly",
+                    "tariff": "electicity",
+                    "unit_of_measurement": "kWh",
+                    "friendly_name": "um_one_yearly_energy_monitor electicity",
+                    "icon": "mdi:counter",
+                    "device_class": "energy"
+                },
+                "last_changed": "2021-10-03T10:28:49.752984+00:00",
+                "last_updated": "2021-10-03T10:28:49.752984+00:00",
+                "context": {
+                    "id": "69d4e2fd806dd72a3db1a54552e5f1c9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.bkl_l09_uroven_zariada_akkumuliatora",
+                "state": "46",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "BKL-L09 \u0423\u0440\u043e\u0432\u0435\u043d\u044c \u0437\u0430\u0440\u044f\u0434\u0430 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0430",
+                    "icon": "mdi:battery-40",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-10-03T10:28:51.110270+00:00",
+                "last_updated": "2021-10-03T10:28:51.110270+00:00",
+                "context": {
+                    "id": "a49c35b1f23f44ca62bec89d8c1010d1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.bkl_l09_sostoianie_akkumuliatora",
+                "state": "discharging",
+                "attributes": {
+                    "friendly_name": "BKL-L09 \u0421\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0430",
+                    "icon": "mdi:battery-minus"
+                },
+                "last_changed": "2021-10-03T10:28:51.110989+00:00",
+                "last_updated": "2021-10-03T10:28:51.110989+00:00",
+                "context": {
+                    "id": "24db43fec0594634453dd6f253ad58fe",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.bkl_l09_tip_zariadnogo_ustroistva",
+                "state": "none",
+                "attributes": {
+                    "friendly_name": "BKL-L09 \u0422\u0438\u043f \u0437\u0430\u0440\u044f\u0434\u043d\u043e\u0433\u043e \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430",
+                    "icon": "mdi:battery"
+                },
+                "last_changed": "2021-10-03T10:28:51.111426+00:00",
+                "last_updated": "2021-10-03T10:28:51.111426+00:00",
+                "context": {
+                    "id": "833d1855c5c90decbf72f9b70762fe97",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.bkl_l09_rabotosposobnost_akkumuliatora",
+                "state": "good",
+                "attributes": {
+                    "friendly_name": "BKL-L09 \u0420\u0430\u0431\u043e\u0442\u043e\u0441\u043f\u043e\u0441\u043e\u0431\u043d\u043e\u0441\u0442\u044c \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440\u0430",
+                    "icon": "mdi:battery-heart-variant"
+                },
+                "last_changed": "2021-10-03T10:28:51.111860+00:00",
+                "last_updated": "2021-10-03T10:28:51.111860+00:00",
+                "context": {
+                    "id": "e6b465c170f4e52eb81c8bab697ee3c8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.bkl_l09_battery_temperature",
+                "state": "36.0",
+                "attributes": {
+                    "unit_of_measurement": "\u00b0C",
+                    "friendly_name": "BKL-L09 Battery Temperature",
+                    "icon": "mdi:battery",
+                    "device_class": "temperature"
+                },
+                "last_changed": "2021-10-03T10:28:51.112595+00:00",
+                "last_updated": "2021-10-03T10:28:51.112595+00:00",
+                "context": {
+                    "id": "a0d1c548f48dcbded3f44c5c8df9ab99",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.bkl_l09_zariadka_ustroistva",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "BKL-L09 \u0417\u0430\u0440\u044f\u0434\u043a\u0430 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430",
+                    "icon": "mdi:power-plug-off",
+                    "device_class": "plug"
+                },
+                "last_changed": "2021-10-03T10:28:51.113063+00:00",
+                "last_updated": "2021-10-03T10:28:51.113063+00:00",
+                "context": {
+                    "id": "35139d4247c44bfb90097e84fed80add",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.bkl_l09",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": 53.6029049,
+                    "longitude": 87.3366413,
+                    "gps_accuracy": 20,
+                    "altitude": 203.0,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 3,
+                    "friendly_name": "BKL-L09"
+                },
+                "last_changed": "2021-10-03T10:28:51.114096+00:00",
+                "last_updated": "2021-10-03T10:28:51.114096+00:00",
+                "context": {
+                    "id": "fad05bc22547d130d472967ccb75dd2c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.rozetka_v_prihojey",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Rozetka_v_prihojey"
+                },
+                "last_changed": "2021-10-03T10:28:51.227529+00:00",
+                "last_updated": "2021-10-03T10:28:51.227529+00:00",
+                "context": {
+                    "id": "6ad3f684844f1f729084b7c52b9375df",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.rozetka_v_prihojey_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Rozetka_v_prihojey_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.228198+00:00",
+                "last_updated": "2021-10-03T10:28:51.228198+00:00",
+                "context": {
+                    "id": "efedb420507c57d2ddee405c32a62052",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.rozetka_v_zale",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Rozetka_v_zale"
+                },
+                "last_changed": "2021-10-03T10:28:51.338531+00:00",
+                "last_updated": "2021-10-03T10:28:51.338531+00:00",
+                "context": {
+                    "id": "a3b1d3f0ca4d10932274bb6dbd9294de",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.rozetka_v_zale_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Rozetka_v_zale_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.338887+00:00",
+                "last_updated": "2021-10-03T10:28:51.338887+00:00",
+                "context": {
+                    "id": "ed7fb3edaf88fd1f40ce1edc2ecb1fc0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_spal_left",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_spal_left"
+                },
+                "last_changed": "2021-10-03T10:28:51.339104+00:00",
+                "last_updated": "2021-10-03T10:28:51.339104+00:00",
+                "context": {
+                    "id": "a73a52a232280dfccbae02f72ee1f1fa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_spal_right",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_spal_right"
+                },
+                "last_changed": "2021-10-03T10:28:51.498984+00:00",
+                "last_updated": "2021-10-03T10:28:51.498984+00:00",
+                "context": {
+                    "id": "e1af057dc988eb86cb995f5dcacd0015",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_klad",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_klad"
+                },
+                "last_changed": "2021-10-03T10:28:51.499316+00:00",
+                "last_updated": "2021-10-03T10:28:51.499316+00:00",
+                "context": {
+                    "id": "f660a8357b84f91bd5f3c73cc62b6f3a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_kux",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_kux"
+                },
+                "last_changed": "2021-10-03T10:28:51.499522+00:00",
+                "last_updated": "2021-10-03T10:28:51.499522+00:00",
+                "context": {
+                    "id": "f5e7d036a4003a0279ff8b675d9c5d9c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_prix",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_prix"
+                },
+                "last_changed": "2021-10-03T10:28:51.638168+00:00",
+                "last_updated": "2021-10-03T10:28:51.638168+00:00",
+                "context": {
+                    "id": "1ff50f4ed75236cd396b05dd437da58a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_korid_left",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_korid_left"
+                },
+                "last_changed": "2021-10-03T10:28:51.638538+00:00",
+                "last_updated": "2021-10-03T10:28:51.638538+00:00",
+                "context": {
+                    "id": "3dd73762be641c9920664cec687ccfc8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_korid_right",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_korid_right"
+                },
+                "last_changed": "2021-10-03T10:28:51.638755+00:00",
+                "last_updated": "2021-10-03T10:28:51.638755+00:00",
+                "context": {
+                    "id": "8b67c7603d1343b266ad93676d893198",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_zal_lev",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_zal_lev"
+                },
+                "last_changed": "2021-10-03T10:28:51.779884+00:00",
+                "last_updated": "2021-10-03T10:28:51.779884+00:00",
+                "context": {
+                    "id": "e51b60dc7e3b251ba19a0fc354abc49c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_zal_prav_left",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_zal_prav_left"
+                },
+                "last_changed": "2021-10-03T10:28:51.780308+00:00",
+                "last_updated": "2021-10-03T10:28:51.780308+00:00",
+                "context": {
+                    "id": "61cbea5cf8458d93efb751a5eed47fc3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.vykluch_v_zal_prav_right",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Vykluch_v_zal_prav_right"
+                },
+                "last_changed": "2021-10-03T10:28:51.780579+00:00",
+                "last_updated": "2021-10-03T10:28:51.780579+00:00",
+                "context": {
+                    "id": "121a261719f3e9ceb8d0b4f04304a760",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp1_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp1_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.878358+00:00",
+                "last_updated": "2021-10-03T10:28:51.878358+00:00",
+                "context": {
+                    "id": "ef773171f9e5d88471a1be581e9de457",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp2_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp2_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.878951+00:00",
+                "last_updated": "2021-10-03T10:28:51.878951+00:00",
+                "context": {
+                    "id": "efdc292a4ad389c317d71f854814a85f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp3_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp3_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.879232+00:00",
+                "last_updated": "2021-10-03T10:28:51.879232+00:00",
+                "context": {
+                    "id": "5e9a448382a681047a9a6c79f8069f0f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp4_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp4_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.978211+00:00",
+                "last_updated": "2021-10-03T10:28:51.978211+00:00",
+                "context": {
+                    "id": "8d0a3a625ad84f6cff7444ea2434e8dd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp5_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp5_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.978559+00:00",
+                "last_updated": "2021-10-03T10:28:51.978559+00:00",
+                "context": {
+                    "id": "d472e05b3692d1ca3822f3acc6d19a87",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lustra_lamp6_v_zal_power_outage_memory",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "lustra_lamp6_v_zal_power_outage_memory"
+                },
+                "last_changed": "2021-10-03T10:28:51.978778+00:00",
+                "last_updated": "2021-10-03T10:28:51.978778+00:00",
+                "context": {
+                    "id": "c5b2898e635c0c2a30828ec93e727205",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.energy_monitor",
+                "state": "on",
+                "attributes": {
+                    "current": 2.395,
+                    "energy": 447.27,
+                    "last_seen": "2021-10-03T17:29:21+07:00",
+                    "linkquality": 78,
+                    "power": 358.9,
+                    "voltage": 217,
+                    "friendly_name": "energy_monitor"
+                },
+                "last_changed": "2021-10-03T10:29:18.981614+00:00",
+                "last_updated": "2021-10-03T10:29:21.910497+00:00",
+                "context": {
+                    "id": "20cb89526f7a2ef4b72fddfa551dd734",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.sirena_humidity_alarm",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "sirena humidity_alarm"
+                },
+                "last_changed": "2021-10-03T10:28:52.070094+00:00",
+                "last_updated": "2021-10-03T10:28:52.070094+00:00",
+                "context": {
+                    "id": "8c7bb8bcbd1d88472949e132c70d56b9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.sirena_temperature_alarm",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "sirena temperature_alarm"
+                },
+                "last_changed": "2021-10-03T10:28:52.070300+00:00",
+                "last_updated": "2021-10-03T10:28:52.070300+00:00",
+                "context": {
+                    "id": "cf5be9c422b03b9726fd18f80bebdd3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.sirena_alarm",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "sirena alarm"
+                },
+                "last_changed": "2021-10-03T10:28:52.070499+00:00",
+                "last_updated": "2021-10-03T10:28:52.070499+00:00",
+                "context": {
+                    "id": "5415cdb62982d7c00355f0c00ca7632c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.rozetka_v_kux",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "rozetka_v_kux"
+                },
+                "last_changed": "2021-10-03T10:28:52.156762+00:00",
+                "last_updated": "2021-10-03T10:28:52.156762+00:00",
+                "context": {
+                    "id": "0a3d16e5b8271e610c44b6cb5fa48592",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp1_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp1_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.351290+00:00",
+                "last_updated": "2021-10-03T10:28:54.351290+00:00",
+                "context": {
+                    "id": "f4ac98bd0c28303270b4ce211343377d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp2_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp2_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.351703+00:00",
+                "last_updated": "2021-10-03T10:28:54.351703+00:00",
+                "context": {
+                    "id": "fc4a95c43c7f72b30fc8d2ea4d7f58f9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp3_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp3_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.443193+00:00",
+                "last_updated": "2021-10-03T10:28:54.443193+00:00",
+                "context": {
+                    "id": "8a33a5baf99f831b6a78d76bf0a5c774",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp4_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp4_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.443608+00:00",
+                "last_updated": "2021-10-03T10:28:54.443608+00:00",
+                "context": {
+                    "id": "576d2a9330dc1e97cb4819bcc4875697",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp5_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp5_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.443886+00:00",
+                "last_updated": "2021-10-03T10:28:54.443886+00:00",
+                "context": {
+                    "id": "67db414e727f8e56e66e6c3f7fd3d729",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp6_v_zal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 150,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp"
+                    ],
+                    "friendly_name": "lustra_lamp6_v_zal",
+                    "supported_features": 47
+                },
+                "last_changed": "2021-10-03T10:28:54.556137+00:00",
+                "last_updated": "2021-10-03T10:28:54.556137+00:00",
+                "context": {
+                    "id": "7604b0a5a6ed0d447d150d1e7f5e9213",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lev_lamp_v_spal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lev_lamp_v_spal",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.556564+00:00",
+                "last_updated": "2021-10-03T10:28:54.556564+00:00",
+                "context": {
+                    "id": "33ba229e568e74db073bbe547da98d08",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_prav_lamp_v_spal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_prav_lamp_v_spal",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.556890+00:00",
+                "last_updated": "2021-10-03T10:28:54.556890+00:00",
+                "context": {
+                    "id": "bdcbdcec0bbb0f24cf616ff9a2d95b47",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.photo_reolink_zal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044f Reolink E1 Pro \u0437\u0430\u043b \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.586039+00:00",
+                "last_updated": "2021-10-03T10:28:54.586039+00:00",
+                "context": {
+                    "id": "04e31963eabf4473bde285e66dcd6fb1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.photo_reolink_kux",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T09:18:48.013313+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044f Reolink E1 Pro \u043a\u0443\u0445\u043d\u044f \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.586500+00:00",
+                "last_updated": "2021-10-03T10:28:54.586500+00:00",
+                "context": {
+                    "id": "5ef1d1bbd65542eaa5b6a2ae9c595f30",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.photo_reolink_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044f Reolink E1 Pro \u0441\u043f\u0430\u043b\u044c\u043d\u044f \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.586806+00:00",
+                "last_updated": "2021-10-03T10:28:54.586806+00:00",
+                "context": {
+                    "id": "482a19d422d205e7f4e5da4bba30af04",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.photo_reolink_vxod",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T06:38:15.082288+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044f Reolink C1 Pro \u043f\u0440\u0438\u0445\u043e\u0436\u0430\u044f \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.587080+00:00",
+                "last_updated": "2021-10-03T10:28:54.587080+00:00",
+                "context": {
+                    "id": "8b13592b1cf6275ee2571ae5f8ccea60",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.video_reolink_zal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0438\u0441\u044c \u0441 \u043a\u0430\u043c\u0435\u0440\u044b Reolink E1 Pro \u0437\u0430\u043b \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.587327+00:00",
+                "last_updated": "2021-10-03T10:28:54.587327+00:00",
+                "context": {
+                    "id": "b1624106ec7bb576f4ff0a45abe9dc6c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.video_reolink_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0438\u0441\u044c \u0441 \u043a\u0430\u043c\u0435\u0440\u044b Reolink E1 Pro \u0441\u043f\u0430\u043b\u044c\u043d\u044f \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.587569+00:00",
+                "last_updated": "2021-10-03T10:28:54.587569+00:00",
+                "context": {
+                    "id": "08411cf218fd47e84d7b905e4a159afc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.video_reolink_kux",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0438\u0441\u044c \u0441 \u043a\u0430\u043c\u0435\u0440\u044b Reolink E1 Pro \u043a\u0443\u0445\u043d\u044f \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.587805+00:00",
+                "last_updated": "2021-10-03T10:28:54.587805+00:00",
+                "context": {
+                    "id": "4384ee3f2b31b23a1ebcafd44f03ef60",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.video_reolink_vxod",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0417\u0430\u043f\u0438\u0441\u044c \u0441 \u043a\u0430\u043c\u0435\u0440\u044b Reolink C1 Pro \u0432  \u043f\u0440\u0438\u0445\u043e\u0436\u0435\u0439 \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c"
+                },
+                "last_changed": "2021-10-03T10:28:54.588087+00:00",
+                "last_updated": "2021-10-03T10:28:54.588087+00:00",
+                "context": {
+                    "id": "fc2b31b456f0875b14697e390489147d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.group_on",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "group ON \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u043c\u044b\u0445 \u043b\u0430\u043c\u043f\u043e\u0447\u0435\u043a"
+                },
+                "last_changed": "2021-10-03T10:28:54.588331+00:00",
+                "last_updated": "2021-10-03T10:28:54.588331+00:00",
+                "context": {
+                    "id": "4d795038104e54dda5e6b5a016302e59",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.group_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "group OFF \u0432\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u043c\u044b\u0445 \u043b\u0430\u043c\u043f\u043e\u0447\u0435\u043a"
+                },
+                "last_changed": "2021-10-03T10:28:54.588564+00:00",
+                "last_updated": "2021-10-03T10:28:54.588564+00:00",
+                "context": {
+                    "id": "24043c2ca3fe8eafa9661d4368df17b0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.lustra_na_50",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:21:13.337607+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044f\u0440\u043a\u043e\u0441\u0442\u0438 \u043d\u0430 \u043b\u044e\u0441\u0442\u0440\u0435 50% \u0438 \u0434\u043d\u0435\u0432\u043d\u043e\u0439 \u0431\u0435\u043b\u044b\u0439 \u0441\u0432\u0435\u0442"
+                },
+                "last_changed": "2021-10-03T10:28:54.589543+00:00",
+                "last_updated": "2021-10-03T10:28:54.589543+00:00",
+                "context": {
+                    "id": "d2750510fb6786d4b2c5622b6a6b130a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.lustra_zal_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T00:21:14.830486+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043b\u044e\u0441\u0442\u0440\u044b \u0432 \u0437\u0430\u043b\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.590057+00:00",
+                "last_updated": "2021-10-03T10:28:54.590057+00:00",
+                "context": {
+                    "id": "78007b39767ad4170887532f4806df49",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.spal_na_50",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:17:19.563792+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044f\u0440\u043a\u043e\u0441\u0442\u0438 \u043d\u0430 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u0430\u0445 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435 50% \u0438 \u0436\u0435\u043b\u0442\u044b\u0439 \u0441\u0432\u0435\u0442"
+                },
+                "last_changed": "2021-10-03T10:28:54.590317+00:00",
+                "last_updated": "2021-10-03T10:28:54.590317+00:00",
+                "context": {
+                    "id": "79398b1ea00ef50244172d79fcd043a6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.spal_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:20:09.539746+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u043e\u0432 \u0432 \u0441\u043f\u0430\u043b\u044c\u043d\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.590566+00:00",
+                "last_updated": "2021-10-03T10:28:54.590566+00:00",
+                "context": {
+                    "id": "b31ced52fecfe1af665efc735d8b7aa0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.kor_na_50",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:18:06.952869+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044f\u0440\u043a\u043e\u0441\u0442\u0438 \u043d\u0430 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u0430\u0445 \u0432 \u043a\u043e\u0440\u0438\u0434\u043e\u0440\u0435 50% \u0438 \u0431\u0435\u043b\u044b\u0439 \u0441\u0432\u0435\u0442"
+                },
+                "last_changed": "2021-10-03T10:28:54.590813+00:00",
+                "last_updated": "2021-10-03T10:28:54.590813+00:00",
+                "context": {
+                    "id": "4e31f473420067dee71b82aead1df650",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.kor_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:19:56.925575+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u043e\u0432 \u0432 \u043a\u043e\u0440\u0438\u0434\u043e\u0440\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.591059+00:00",
+                "last_updated": "2021-10-03T10:28:54.591059+00:00",
+                "context": {
+                    "id": "9908d31fd7529e5cb5ecb8e354a941cd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.lustra_kux_na_70",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T01:18:12.993539+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044f\u0440\u043a\u043e\u0441\u0442\u0438 \u043d\u0430 \u043b\u044e\u0441\u0442\u0440\u0435 70% \u0438 \u0434\u043d\u0435\u0432\u043d\u043e\u0439 \u0431\u0435\u043b\u044b\u0439 \u0441\u0432\u0435\u0442"
+                },
+                "last_changed": "2021-10-03T10:28:54.591298+00:00",
+                "last_updated": "2021-10-03T10:28:54.591298+00:00",
+                "context": {
+                    "id": "30a91c89dc1a0dd5cde09758f59ae3ff",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.lustra_kux_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T01:01:58.093425+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043b\u044e\u0441\u0442\u0440\u044b \u0432 \u043a\u0443\u0445\u043d\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.591537+00:00",
+                "last_updated": "2021-10-03T10:28:54.591537+00:00",
+                "context": {
+                    "id": "8f64645e57eb69853d0fb2cce45a2427",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.van_na_50",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:06:38.637040+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044f\u0440\u043a\u043e\u0441\u0442\u0438 \u043d\u0430 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u0430\u0445 \u0432 \u0432\u0430\u043d\u043d\u043e\u0439 50% \u0438 \u0431\u0435\u043b\u044b\u0439 \u0441\u0432\u0435\u0442"
+                },
+                "last_changed": "2021-10-03T10:28:54.591791+00:00",
+                "last_updated": "2021-10-03T10:28:54.591791+00:00",
+                "context": {
+                    "id": "c24adceb2f64398fdae2ebc4d1802af0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.van_off",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-03T10:07:47.261762+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u043e\u0432 \u0432 \u0432\u0430\u043d\u043d\u043e\u0439"
+                },
+                "last_changed": "2021-10-03T10:28:54.592095+00:00",
+                "last_updated": "2021-10-03T10:28:54.592095+00:00",
+                "context": {
+                    "id": "71125babb0edff0e1e81f694fe0504ae",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.playlist_spotify",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "playlist_spotify"
+                },
+                "last_changed": "2021-10-03T10:28:54.592366+00:00",
+                "last_updated": "2021-10-03T10:28:54.592366+00:00",
+                "context": {
+                    "id": "a306b555fb1ec1f8dc54a476df7a107f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.telegramm_state",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-09-11T14:40:53.054722+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "telegramm_state"
+                },
+                "last_changed": "2021-10-03T10:28:54.592621+00:00",
+                "last_updated": "2021-10-03T10:28:54.592621+00:00",
+                "context": {
+                    "id": "c47ef283d1205f2ab67861e7ba0dce78",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.telegramm_start",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "telegramm_start"
+                },
+                "last_changed": "2021-10-03T10:28:54.592848+00:00",
+                "last_updated": "2021-10-03T10:28:54.592848+00:00",
+                "context": {
+                    "id": "a5cd8924c441c183461547db5fb6f31c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.telegramm_test_messager",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0422\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0442\u0435\u043b\u0435\u0433\u0438"
+                },
+                "last_changed": "2021-10-03T10:28:54.593075+00:00",
+                "last_updated": "2021-10-03T10:28:54.593075+00:00",
+                "context": {
+                    "id": "37bf8725ca70291e11e3dc201aa55a26",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.telegramm_zvonok_messager",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-09-29T14:11:24.281994+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0414\u0432\u0435\u0440\u043d\u043e\u0439 \u0437\u0432\u043e\u043d\u043e\u043a"
+                },
+                "last_changed": "2021-10-03T10:28:54.593322+00:00",
+                "last_updated": "2021-10-03T10:28:54.593322+00:00",
+                "context": {
+                    "id": "ae0b340c15db0cc7dceace5afd392963",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_left_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_left_spal"
+                },
+                "last_changed": "2021-10-03T10:28:54.593553+00:00",
+                "last_updated": "2021-10-03T10:28:54.593553+00:00",
+                "context": {
+                    "id": "9243d3a594790c2c0adeeeb96e9e77b5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_right_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_right_spal"
+                },
+                "last_changed": "2021-10-03T10:28:54.593780+00:00",
+                "last_updated": "2021-10-03T10:28:54.593780+00:00",
+                "context": {
+                    "id": "5f07def67a3e01f2264ef60c80976ac8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_left_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_left_spal"
+                },
+                "last_changed": "2021-10-03T10:28:54.593979+00:00",
+                "last_updated": "2021-10-03T10:28:54.593979+00:00",
+                "context": {
+                    "id": "84adb98d7e3b86a33ecb6c634bc9f3a6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_right_spal",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_right_spal"
+                },
+                "last_changed": "2021-10-03T10:28:54.594182+00:00",
+                "last_updated": "2021-10-03T10:28:54.594182+00:00",
+                "context": {
+                    "id": "b15c5ea1092a63bfc415aaa1c1a11664",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_left_zal_r",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_left_zal_r"
+                },
+                "last_changed": "2021-10-03T10:28:54.594382+00:00",
+                "last_updated": "2021-10-03T10:28:54.594382+00:00",
+                "context": {
+                    "id": "9b08ca11b500d77ef8bd09a118c968c4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_right_zal_r",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_right_zal_r"
+                },
+                "last_changed": "2021-10-03T10:28:54.594830+00:00",
+                "last_updated": "2021-10-03T10:28:54.594830+00:00",
+                "context": {
+                    "id": "2c06664439ef1a4187bb859ccbdc91e1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_left_zal_r",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_left_zal_r"
+                },
+                "last_changed": "2021-10-03T10:28:54.595047+00:00",
+                "last_updated": "2021-10-03T10:28:54.595047+00:00",
+                "context": {
+                    "id": "cc03ea9d29f7d6dd432af80a2e4062e0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_right_zal_r",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_right_zal_r"
+                },
+                "last_changed": "2021-10-03T10:28:54.595252+00:00",
+                "last_updated": "2021-10-03T10:28:54.595252+00:00",
+                "context": {
+                    "id": "98a80f920455351d0d42a12e6a337c05",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_left_kor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_left_kor"
+                },
+                "last_changed": "2021-10-03T10:28:54.595594+00:00",
+                "last_updated": "2021-10-03T10:28:54.595594+00:00",
+                "context": {
+                    "id": "26acc88054898365741cfa6e66d55ebe",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_decoupled_right_kor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_decoupled_right_kor"
+                },
+                "last_changed": "2021-10-03T10:28:54.595878+00:00",
+                "last_updated": "2021-10-03T10:28:54.595878+00:00",
+                "context": {
+                    "id": "98eb01d4ebdb5547f7ed038918561a1d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_left_kor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_left_kor"
+                },
+                "last_changed": "2021-10-03T10:28:54.596132+00:00",
+                "last_updated": "2021-10-03T10:28:54.596132+00:00",
+                "context": {
+                    "id": "ff49bf8e430d139f5baeaa4991f31ac4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.set_control_right_kor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "set_control_right_kor"
+                },
+                "last_changed": "2021-10-03T10:28:54.596338+00:00",
+                "last_updated": "2021-10-03T10:28:54.596338+00:00",
+                "context": {
+                    "id": "697d58af2dead4d34fd47a6a344919f5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.en_smoke_selftest",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0421\u0430\u043c\u043e\u0442\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0434\u0430\u0442\u0447\u0438\u043a\u0430 \u0434\u044b\u043c\u0430 \u0432 \u043a\u0443\u0445\u043d\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.596655+00:00",
+                "last_updated": "2021-10-03T10:28:54.596655+00:00",
+                "context": {
+                    "id": "eecebc514d921b8934c39ca8d189f2bd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.warning",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0442\u0440\u0435\u0432\u043e\u0433\u0438"
+                },
+                "last_changed": "2021-10-03T10:28:54.596890+00:00",
+                "last_updated": "2021-10-03T10:28:54.596890+00:00",
+                "context": {
+                    "id": "0c73107b7eb20a5ad83590f4984e6cb8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.all_ok",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u0412\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0442\u0440\u0435\u0432\u043e\u0433\u0438"
+                },
+                "last_changed": "2021-10-03T10:28:54.597092+00:00",
+                "last_updated": "2021-10-03T10:28:54.597092+00:00",
+                "context": {
+                    "id": "f53dce4246e16ff62055179ec29b17de",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "script.climate_report",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-10-02T23:10:00.070788+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "\u041e\u0442\u0447\u0435\u0442 \u043e \u043f\u043e\u0433\u043e\u0434\u0435"
+                },
+                "last_changed": "2021-10-03T10:28:54.597328+00:00",
+                "last_updated": "2021-10-03T10:28:54.597328+00:00",
+                "context": {
+                    "id": "a90244def1344b7741282d6051cfcca6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp1_v_kor",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp1_v_kor",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.665648+00:00",
+                "last_updated": "2021-10-03T10:28:54.665648+00:00",
+                "context": {
+                    "id": "0173eb036b34769aa30b017f428dec11",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp2_v_kor",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp2_v_kor",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.666098+00:00",
+                "last_updated": "2021-10-03T10:28:54.666098+00:00",
+                "context": {
+                    "id": "47ef94a39ed1a3c6d21c2d9f22c944f8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp3_v_kor",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp3_v_kor",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.666357+00:00",
+                "last_updated": "2021-10-03T10:28:54.666357+00:00",
+                "context": {
+                    "id": "55e39dd6259e575d32c1389854ded65e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp1_v_kux",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "lustra_lamp1_v_kux",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.788177+00:00",
+                "last_updated": "2021-10-03T10:28:54.788177+00:00",
+                "context": {
+                    "id": "f485f5ebb0d43005aeaba788af3ef722",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp2_v_kux",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "lustra_lamp2_v_kux",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.788566+00:00",
+                "last_updated": "2021-10-03T10:28:54.788566+00:00",
+                "context": {
+                    "id": "a4a1aaed0ef0276d079c5b1df2eb3196",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.lustra_lamp3_v_kux",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "lustra_lamp3_v_kux",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.788825+00:00",
+                "last_updated": "2021-10-03T10:28:54.788825+00:00",
+                "context": {
+                    "id": "406d9aa22aa8f5cf8b85ead2552cb063",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.led_lenta_kor",
+                "state": "off",
+                "attributes": {
+                    "effect_list": [
+                        "blink",
+                        "breathe",
+                        "okay",
+                        "channel_change",
+                        "finish_effect",
+                        "stop_effect"
+                    ],
+                    "supported_color_modes": [
+                        "brightness"
+                    ],
+                    "friendly_name": "led_lenta_kor",
+                    "supported_features": 45
+                },
+                "last_changed": "2021-10-03T10:28:54.875508+00:00",
+                "last_updated": "2021-10-03T10:28:54.875508+00:00",
+                "context": {
+                    "id": "198119f88300dd5b3cb112f23ad5b993",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.nastol_lamp_v_spal",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "Nastol_lamp_v_spal",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.875898+00:00",
+                "last_updated": "2021-10-03T10:28:54.875898+00:00",
+                "context": {
+                    "id": "166a9f3044b94810ef07be268c61304a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp1_v_van",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp1_v_van",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:54.876346+00:00",
+                "last_updated": "2021-10-03T10:28:54.876346+00:00",
+                "context": {
+                    "id": "4207aa04561f3bb18901bce06d82cbf2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp2_v_van",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp2_v_van",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:55.911671+00:00",
+                "last_updated": "2021-10-03T10:28:55.911671+00:00",
+                "context": {
+                    "id": "b7649e74f423052a8a40242c4b5c77f6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp3_v_van",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp3_v_van",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:55.912109+00:00",
+                "last_updated": "2021-10-03T10:28:55.912109+00:00",
+                "context": {
+                    "id": "367d3dff3082e6c57c779b69c65d7aea",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.pot_lamp4_v_van",
+                "state": "off",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "supported_color_modes": [
+                        "color_temp",
+                        "xy"
+                    ],
+                    "friendly_name": "pot_lamp4_v_van",
+                    "supported_features": 59
+                },
+                "last_changed": "2021-10-03T10:28:55.912361+00:00",
+                "last_updated": "2021-10-03T10:28:55.912361+00:00",
+                "context": {
+                    "id": "e906cc6cf72df0386279b9df3a31705a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "select.sirena_melody",
+                "state": "unknown",
+                "attributes": {
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18"
+                    ],
+                    "friendly_name": "sirena melody",
+                    "icon": "mdi:music-note"
+                },
+                "last_changed": "2021-10-03T10:28:56.412830+00:00",
+                "last_updated": "2021-10-03T10:28:56.412830+00:00",
+                "context": {
+                    "id": "9562a170c27c34bdc1dd587cf8433412",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "select.sirena_volume",
+                "state": "unknown",
+                "attributes": {
+                    "options": [
+                        "low",
+                        "medium",
+                        "high"
+                    ],
+                    "friendly_name": "sirena volume",
+                    "icon": "mdi: volume-high"
+                },
+                "last_changed": "2021-10-03T10:28:56.413189+00:00",
+                "last_updated": "2021-10-03T10:28:56.413189+00:00",
+                "context": {
+                    "id": "9bbe7db59b43f6c76beb7dbea1bd9ab9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "select.rozetka_v_kux_power_outage_memory",
+                "state": "unknown",
+                "attributes": {
+                    "options": [
+                        "on",
+                        "off",
+                        "restore"
+                    ],
+                    "friendly_name": "rozetka_v_kux_power_outage_memory",
+                    "icon": "mdi:power-settings"
+                },
+                "last_changed": "2021-10-03T10:28:56.413396+00:00",
+                "last_updated": "2021-10-03T10:28:56.413396+00:00",
+                "context": {
+                    "id": "a2b135b57623c31e0bc34546981b5092",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "number.sirena_duration",
+                "state": "unknown",
+                "attributes": {
+                    "min": -65535.0,
+                    "max": 65535.0,
+                    "step": 1.0,
+                    "friendly_name": "sirena duration"
+                },
+                "last_changed": "2021-10-03T10:28:56.539272+00:00",
+                "last_updated": "2021-10-03T10:28:56.539272+00:00",
+                "context": {
+                    "id": "7d456f3cb38c2fd7eb8b6a109844f3bf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "number.sirena_temperature_min",
+                "state": "unknown",
+                "attributes": {
+                    "min": -65535.0,
+                    "max": 65535.0,
+                    "step": 1.0,
+                    "friendly_name": "sirena temperature min"
+                },
+                "last_changed": "2021-10-03T10:28:56.539603+00:00",
+                "last_updated": "2021-10-03T10:28:56.539603+00:00",
+                "context": {
+                    "id": "60e2ed436c8f16a42f72b816bda0c3e4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "number.sirena_temperature_max",
+                "state": "unknown",
+                "attributes": {
+                    "min": -65535.0,
+                    "max": 65535.0,
+                    "step": 1.0,
+                    "friendly_name": "sirena temperature max"
+                },
+                "last_changed": "2021-10-03T10:28:56.539804+00:00",
+                "last_updated": "2021-10-03T10:28:56.539804+00:00",
+                "context": {
+                    "id": "dd843aec1ba08e911de7aa6114edc84a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "number.sirena_humidity_min",
+                "state": "unknown",
+                "attributes": {
+                    "min": -65535.0,
+                    "max": 65535.0,
+                    "step": 1.0,
+                    "friendly_name": "sirena humidity min"
+                },
+                "last_changed": "2021-10-03T10:28:56.621522+00:00",
+                "last_updated": "2021-10-03T10:28:56.621522+00:00",
+                "context": {
+                    "id": "d7008856cc9bc02033b1c1b035d808fa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "number.sirena_humidity_max",
+                "state": "unknown",
+                "attributes": {
+                    "min": -65535.0,
+                    "max": 65535.0,
+                    "step": 1.0,
+                    "friendly_name": "sirena humidity max"
+                },
+                "last_changed": "2021-10-03T10:28:56.621857+00:00",
+                "last_updated": "2021-10-03T10:28:56.621857+00:00",
+                "context": {
+                    "id": "d95d555e9d1495e53abf8a3ce14cce7f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T10:29:31.712396+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_xiaomi_mijia_2",
+                "state": "63",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1B:8E:66",
+                    "last packet id": 212,
+                    "firmware": "Xiaomi (MiBeacon V3)",
+                    "rssi": -72,
+                    "unit_of_measurement": "%",
+                    "friendly_name": "ble battery Xiaomi Mijia 2",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-10-03T01:24:21.460275+00:00",
+                "last_updated": "2021-10-03T01:24:21.460275+00:00",
+                "context": {
+                    "id": "435ac6649ed9dd32bc362ae27343af48",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T01:29:03.081644+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_xiaomi_mijia_2",
+                "state": "40",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1B:8E:66",
+                    "median": 40,
+                    "mean": 40,
+                    "last median of": 1,
+                    "rssi": -72,
+                    "firmware": "Xiaomi (MiBeacon V3)",
+                    "last packet id": 213,
+                    "battery_level": 63,
+                    "unit_of_measurement": "%",
+                    "friendly_name": "ble humidity Xiaomi Mijia 2",
+                    "device_class": "humidity"
+                },
+                "last_changed": "2021-10-03T01:24:21.459742+00:00",
+                "last_updated": "2021-10-03T01:24:21.459742+00:00",
+                "context": {
+                    "id": "6d30b62b77bcb18316d7c29cf9a13b3c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T01:29:03.081644+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_xiaomi_mijia_2",
+                "state": "25.8",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1B:8E:66",
+                    "median": 25.8,
+                    "mean": 25.8,
+                    "last median of": 1,
+                    "rssi": -72,
+                    "firmware": "Xiaomi (MiBeacon V3)",
+                    "last packet id": 213,
+                    "battery_level": 63,
+                    "unit_of_measurement": "\u00b0C",
+                    "friendly_name": "ble temperature Xiaomi Mijia 2",
+                    "device_class": "temperature"
+                },
+                "last_changed": "2021-10-03T01:24:21.459087+00:00",
+                "last_updated": "2021-10-03T01:24:21.459087+00:00",
+                "context": {
+                    "id": "6b641a75c09fdcd80e1387d361eb5b09",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T01:29:03.081644+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_xiaomi_mijia_2",
+                "state": "2.8",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1B:8E:66",
+                    "last packet id": 212,
+                    "firmware": "Xiaomi (MiBeacon V3)",
+                    "battery_level": 63,
+                    "median": 2.8,
+                    "mean": 2.8,
+                    "last median of": 1,
+                    "rssi": -72,
+                    "unit_of_measurement": "V",
+                    "friendly_name": "ble voltage Xiaomi Mijia 2",
+                    "device_class": "voltage"
+                },
+                "last_changed": "2021-10-03T01:24:21.460814+00:00",
+                "last_updated": "2021-10-03T01:24:21.460814+00:00",
+                "context": {
+                    "id": "d804ee86cba3f4d8f8c849642de0a505",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T01:29:03.081644+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1381b8e66",
+                "state": "-71.5",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1B:8E:66",
+                    "last packet id": 213,
+                    "firmware": "Xiaomi (MiBeacon V3)",
+                    "battery_level": 63,
+                    "median": -71.5,
+                    "mean": -71.5,
+                    "last median of": 2,
+                    "unit_of_measurement": "dBm",
+                    "friendly_name": "ble rssi A4C1381B8E66",
+                    "device_class": "signal_strength"
+                },
+                "last_changed": "2021-10-03T01:24:21.461436+00:00",
+                "last_updated": "2021-10-03T01:24:21.461436+00:00",
+                "context": {
+                    "id": "47f2f0e6a20d8fb2edd341c568fc18ac",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-03T01:29:03.081644+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_c47c8d6d7705",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "HHCCJCY01",
+                    "mac address": "C4:7C:8D:6D:77:05",
+                    "unit_of_measurement": "\u00b0C",
+                    "friendly_name": "ble temperature C47C8D6D7705",
+                    "device_class": "temperature"
+                },
+                "last_changed": "2021-09-29T23:05:04.576101+00:00",
+                "last_updated": "2021-09-29T23:05:04.576101+00:00",
+                "context": {
+                    "id": "16fb1d543e6ddd52aa6e51d0448aa260",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-01T08:56:13.398392+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_moisture_c47c8d6d7705",
+                "state": "23",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "HHCCJCY01",
+                    "mac address": "C4:7C:8D:6D:77:05",
+                    "last packet id": 87,
+                    "firmware": "Xiaomi (MiBeacon V2)",
+                    "last median of": 1,
+                    "median": 23,
+                    "mean": 23,
+                    "rssi": -77,
+                    "unit_of_measurement": "%",
+                    "friendly_name": "ble moisture C47C8D6D7705",
+                    "device_class": "humidity"
+                },
+                "last_changed": "2021-09-29T23:05:05.569394+00:00",
+                "last_updated": "2021-09-29T23:05:05.569394+00:00",
+                "context": {
+                    "id": "5f02f6ec5c3e96699a38c79ce94781f8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-01T08:56:13.398392+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_conductivity_c47c8d6d7705",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "HHCCJCY01",
+                    "mac address": "C4:7C:8D:6D:77:05",
+                    "unit_of_measurement": "\u00b5S/cm",
+                    "friendly_name": "ble conductivity C47C8D6D7705",
+                    "icon": "mdi:flash-circle"
+                },
+                "last_changed": "2021-09-29T23:05:04.576873+00:00",
+                "last_updated": "2021-09-29T23:05:04.576873+00:00",
+                "context": {
+                    "id": "6637a45a89659b1f64c0270abaed4619",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-01T08:56:13.398392+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_illuminance_c47c8d6d7705",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "HHCCJCY01",
+                    "mac address": "C4:7C:8D:6D:77:05",
+                    "unit_of_measurement": "lx",
+                    "friendly_name": "ble illuminance C47C8D6D7705",
+                    "device_class": "illuminance"
+                },
+                "last_changed": "2021-09-29T23:05:04.577114+00:00",
+                "last_updated": "2021-09-29T23:05:04.577114+00:00",
+                "context": {
+                    "id": "1a95022901162eb00db588d0bdeb965e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-10-01T08:56:13.398392+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_energy_2_otpravka_v_google_energomonitor",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2021-08-27T08:09:29.522746+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_energy_2 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-09-29T22:25:58.825208+00:00",
+                "last_updated": "2021-09-29T22:25:58.825208+00:00",
+                "context": {
+                    "id": "6cd8693ae502aac928deccaa0c157119",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-09-30T13:49:34.658621+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_voltage_otpravka_v_google_energomonitor_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-09-30T14:14:01.646610+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "IFTTT_voltage \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0430 \u0432 google \u044d\u043d\u0435\u0440\u0433\u043e\u043c\u043e\u043d\u0438\u0442\u043e\u0440"
+                },
+                "last_changed": "2021-09-30T14:13:28.483204+00:00",
+                "last_updated": "2021-09-30T14:14:02.767590+00:00",
+                "context": {
+                    "id": "2830b9093915ee01e6d3dcb115388fa1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-09-30T14:14:38.158625+00:00"
+        }
+    ]
+}

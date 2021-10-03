@@ -1,0 +1,37 @@
+##################  Camera
+title: Камеры в квартире
+icon: mdi:webcam
+cards:
+
+      - type: vertical-stack
+        cards:
+        
+        - type: markdown
+          content: >
+              **Reolink E1 Pro зал** 
+        
+        - type: custom:webrtc-camera
+          entity: camera.camera_zal_profile000_mainstream
+          
+        - type: markdown
+          content: >
+              **Reolink E1 Pro спальня**   
+                
+        - type: custom:webrtc-camera
+          entity: camera.camera_spal_profile000_mainstream
+         
+        - type: markdown
+          content: >
+              **Reolink E1 Pro кухня**   
+                
+        - type: custom:webrtc-camera
+          entity: camera.camera_kux_profile000_mainstream
+         
+             
+        - type: markdown
+          content: >
+              **Reolink C1 Pro прихожая**      
+              
+        - type: custom:webrtc-camera
+          entity: camera.camera_vxod_profile000_mainstream
+          
